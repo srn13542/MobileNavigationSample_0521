@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/reportFragment"
+        android:title="기록"
+        android:icon="@drawable/nav_report_show"/>
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="홈"
+        android:icon="@drawable/nav_home_show"/>
+
+    <item
+        android:id="@+id/startExcerciseFragment"
+        android:title="운동"
+        android:icon="@drawable/nav_exercise_show"/>
+
+    <item
+        android:id="@+id/myInfoFragment"
+        android:title="내 정보"
+        android:icon="@drawable/nav_myinfo_show"/>
+
+</menu>
