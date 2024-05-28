@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원 가입"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp"
+            />
+
+        <!-- 이름 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="이름"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="text"
+                android:hint="이름"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- 이메일 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="이메일"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:hint="abc@healty.com"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- 전화번호 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="전화번호"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="phone"
+                android:hint="010-0000-0000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- 아이디 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="아이디"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="text"
+                android:hint="아이디"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- 비밀번호 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="비밀번호"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:hint="비밀번호"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- 비밀번호 재입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textViewConfirmPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="비밀번호\n재입력"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:hint="비밀번호 재입력"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="20sp"
+            android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#333ab4" />
+
+    </LinearLayout>
+</RelativeLayout>
+

@@ -13,10 +13,22 @@
         android:theme="@style/Theme.MobileNavigationSample"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".NaviActivity"
+            android:name=".StartLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindPwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindIdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +36,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".NaviActivity"
+            android:exported="false"></activity>
     </application>
 
 </manifest>
