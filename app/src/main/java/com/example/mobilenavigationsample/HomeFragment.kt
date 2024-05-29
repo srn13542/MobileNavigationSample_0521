@@ -1,5 +1,6 @@
 package com.example.mobilenavigationsample
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -89,6 +90,7 @@ class HomeFragment : Fragment() {
          * @param param2 매개변수 2.
          * @return HomeFragment의 새 인스턴스.
          */
+        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             HomeFragment().apply {
