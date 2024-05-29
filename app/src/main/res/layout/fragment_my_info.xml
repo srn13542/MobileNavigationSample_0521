@@ -134,6 +134,7 @@
                 android:inputType="number"
                 android:hint="세"
                 android:textSize="24sp"
+                android:background="@drawable/edittext_border"
                 />
             <!--
             <NumberPicker
@@ -171,7 +172,8 @@
                 android:gravity="center"
                 android:inputType="number"
                 android:hint="cm"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:background="@drawable/edittext_border"/>
 
         </LinearLayout>
 
@@ -191,7 +193,7 @@
                 android:text="몸무게"
                 android:textSize="20sp"
                 android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <EditText
                 android:id="@+id/Weight"
@@ -203,7 +205,8 @@
                 android:inputType="number"
                 android:hint="kg"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:background="@drawable/edittext_border"/>
 
         </LinearLayout>
 
@@ -235,7 +238,8 @@
                 android:inputType="number"
                 android:hint="kg"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:background="@drawable/edittext_border"/>
 
         </LinearLayout>
 
@@ -243,7 +247,7 @@
             android:id="@+id/buttonSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="저장"
+            android:text="저장 / Bmi 확인"
             android:textSize="20sp"
             android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
             android:layout_marginTop="40dp"

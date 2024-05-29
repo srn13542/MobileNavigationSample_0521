@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
+import android.view.inputmethod.EditorInfo
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
@@ -22,6 +23,7 @@ class FirstOptionsActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences("login_prefs", Context.MODE_PRIVATE)
         val btnSave: Button = findViewById(R.id.buttonSave)
+
 
         btnSave.setOnClickListener {
             // 수정된 사용자 정보 저장하기
@@ -47,9 +49,8 @@ class FirstOptionsActivity : AppCompatActivity() {
             finish()
         }
 
-        // 수정된 부분 시작
+        // 포커스 시 테두리
         val editTextNickname = findViewById<EditText>(R.id.Nickname)
-        val editTextGender = findViewById<RadioGroup>(R.id.radioGroupGender)
         val editTextAge = findViewById<EditText>(R.id.Age)
         val editTextHeight = findViewById<EditText>(R.id.Height)
         val editTextWeight = findViewById<EditText>(R.id.Weight)
@@ -62,7 +63,6 @@ class FirstOptionsActivity : AppCompatActivity() {
         editTextNickname.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 editTextNickname.background = focusedBackground
-                editTextGender.background = originalBackground
                 editTextAge.background = originalBackground
                 editTextHeight.background = originalBackground
                 editTextWeight.background = originalBackground
@@ -72,24 +72,11 @@ class FirstOptionsActivity : AppCompatActivity() {
             }
         }
 
-        editTextGender.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editTextGender.background = focusedBackground
-                editTextNickname.background = originalBackground
-                editTextAge.background = originalBackground
-                editTextHeight.background = originalBackground
-                editTextWeight.background = originalBackground
-                editTextTargetWeight.background = originalBackground
-            } else {
-                editTextGender.background = originalBackground
-            }
-        }
 
         editTextAge.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 editTextAge.background = focusedBackground
                 editTextNickname.background = originalBackground
-                editTextGender.background = originalBackground
                 editTextHeight.background = originalBackground
                 editTextWeight.background = originalBackground
                 editTextTargetWeight.background = originalBackground
@@ -102,7 +89,6 @@ class FirstOptionsActivity : AppCompatActivity() {
             if (hasFocus) {
                 editTextHeight.background = focusedBackground
                 editTextNickname.background = originalBackground
-                editTextGender.background = originalBackground
                 editTextAge.background = originalBackground
                 editTextWeight.background = originalBackground
                 editTextTargetWeight.background = originalBackground
@@ -115,7 +101,6 @@ class FirstOptionsActivity : AppCompatActivity() {
             if (hasFocus) {
                 editTextWeight.background = focusedBackground
                 editTextNickname.background = originalBackground
-                editTextGender.background = originalBackground
                 editTextAge.background = originalBackground
                 editTextHeight.background = originalBackground
                 editTextTargetWeight.background = originalBackground
@@ -128,7 +113,6 @@ class FirstOptionsActivity : AppCompatActivity() {
             if (hasFocus) {
                 editTextTargetWeight.background = focusedBackground
                 editTextNickname.background = originalBackground
-                editTextGender.background = originalBackground
                 editTextAge.background = originalBackground
                 editTextHeight.background = originalBackground
                 editTextWeight.background = originalBackground
@@ -137,5 +121,6 @@ class FirstOptionsActivity : AppCompatActivity() {
             }
         }
         // 수정된 부분 끝
+
     }
 }

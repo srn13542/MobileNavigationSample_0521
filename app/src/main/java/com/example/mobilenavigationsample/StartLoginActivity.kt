@@ -39,6 +39,9 @@ class StartLoginActivity : AppCompatActivity() {
         val originalBackgroundPw = editTextPw.background
         val focusedBackground = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)
 
+
+        // 포커스 시 동작
+
         editTextId.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_NEXT) {
                 editTextPw.requestFocus()

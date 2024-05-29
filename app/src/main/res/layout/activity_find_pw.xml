@@ -52,7 +52,8 @@
                 android:gravity="center"
                 android:inputType="text"
                 android:hint="이름"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
         </LinearLayout>
 
 
@@ -84,7 +85,8 @@
                 android:gravity="center"
                 android:inputType="text"
                 android:hint="아이디"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
         </LinearLayout>
 
 
@@ -115,7 +117,8 @@
                 android:gravity="center"
                 android:inputType="phone"
                 android:hint="010-0000-0000"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
         </LinearLayout>
 
 
@@ -129,7 +132,7 @@
             android:textSize="20sp"
             android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#333ab4" />
+            android:backgroundTint="#0047BB" />
 
     </LinearLayout>
 </RelativeLayout>

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.EditorInfo
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
@@ -52,6 +53,7 @@ class MyInfoFragment : Fragment() {
         val weight = sharedPreferences.getInt("weight", 0)
         val targetWeight = sharedPreferences.getInt("targetWeight", 0)
 
+
         // 포커스 변경 이벤트 처리
         val editTextList = listOf<EditText>(
             view.findViewById(R.id.Age),
@@ -68,6 +70,7 @@ class MyInfoFragment : Fragment() {
                 }
             }
         }
+
 
         // 화면에 사용자 정보 설정
         view.findViewById<TextView>(R.id.Nickname).apply {
@@ -119,8 +122,11 @@ class MyInfoFragment : Fragment() {
             transaction.commit()
         }
 
+
         return view
     }
+
+
 
     companion object {
         @JvmStatic

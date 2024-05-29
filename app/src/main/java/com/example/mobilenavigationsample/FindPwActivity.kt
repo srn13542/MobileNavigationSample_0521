@@ -27,7 +27,8 @@ class FindPwActivity : AppCompatActivity() {
         val editTextPhone = findViewById<EditText>(R.id.editTextPhone)
         val buttonSave = findViewById<Button>(R.id.buttonSave)
 
-        // Focus change listener for EditTextName
+
+        // 포커스 받았을 때 테두리 색 변화
         editTextName.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 editTextName.background = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)
@@ -35,8 +36,6 @@ class FindPwActivity : AppCompatActivity() {
                 editTextPhone.background = ContextCompat.getDrawable(this, R.drawable.edittext_border)
             }
         }
-
-        // Focus change listener for EditTextId
         editTextId.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 editTextId.background = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)
@@ -44,8 +43,6 @@ class FindPwActivity : AppCompatActivity() {
                 editTextPhone.background = ContextCompat.getDrawable(this, R.drawable.edittext_border)
             }
         }
-
-        // Focus change listener for EditTextPhone
         editTextPhone.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 editTextPhone.background = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)

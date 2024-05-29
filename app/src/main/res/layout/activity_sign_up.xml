@@ -52,7 +52,8 @@
                 android:gravity="center"
                 android:inputType="text"
                 android:hint="이름"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
         </LinearLayout>
 
         <!-- 이메일 입력 -->
@@ -82,7 +83,8 @@
                 android:gravity="center"
                 android:inputType="textEmailAddress"
                 android:hint="abc@healty.com"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
         </LinearLayout>
 
         <!-- 전화번호 입력 -->
@@ -112,7 +114,8 @@
                 android:gravity="center"
                 android:inputType="phone"
                 android:hint="010-0000-0000"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
         </LinearLayout>
 
         <!-- 아이디 입력 -->
@@ -142,7 +145,8 @@
                 android:gravity="center"
                 android:inputType="text"
                 android:hint="아이디"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
         </LinearLayout>
 
         <!-- 비밀번호 입력 -->
@@ -172,7 +176,8 @@
                 android:gravity="center"
                 android:inputType="textPassword"
                 android:hint="비밀번호"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
         </LinearLayout>
 
         <!-- 비밀번호 재입력 -->
@@ -202,7 +207,8 @@
                 android:gravity="center"
                 android:inputType="textPassword"
                 android:hint="비밀번호 재입력"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
         </LinearLayout>
 
         <!-- Sign Up Button -->
@@ -214,7 +220,7 @@
             android:textSize="20sp"
             android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#333ab4" />
+            android:backgroundTint="#0047BB" />
 
     </LinearLayout>
 </RelativeLayout>
