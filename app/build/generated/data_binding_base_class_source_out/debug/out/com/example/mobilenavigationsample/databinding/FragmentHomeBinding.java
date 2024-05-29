@@ -5,8 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -18,32 +20,54 @@ import java.lang.String;
 
 public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
-  public final EditText emailEt;
+  public final TextView Calorie;
 
   @NonNull
-  public final Button logingbutton;
+  public final TextView Food;
 
   @NonNull
-  public final EditText pwdEt;
+  public final TextView TextViewCalcorie;
 
   @NonNull
-  public final Button signupbutton;
+  public final TextView TextViewFood;
 
-  private FragmentHomeBinding(@NonNull LinearLayout rootView, @NonNull EditText emailEt,
-      @NonNull Button logingbutton, @NonNull EditText pwdEt, @NonNull Button signupbutton) {
+  @NonNull
+  public final ImageView characterImage;
+
+  @NonNull
+  public final TextView exerciseAmountTitle;
+
+  @NonNull
+  public final Button goExerciseButton;
+
+  @NonNull
+  public final View lineView;
+
+  @NonNull
+  public final LinearLayout main;
+
+  private FragmentHomeBinding(@NonNull RelativeLayout rootView, @NonNull TextView Calorie,
+      @NonNull TextView Food, @NonNull TextView TextViewCalcorie, @NonNull TextView TextViewFood,
+      @NonNull ImageView characterImage, @NonNull TextView exerciseAmountTitle,
+      @NonNull Button goExerciseButton, @NonNull View lineView, @NonNull LinearLayout main) {
     this.rootView = rootView;
-    this.emailEt = emailEt;
-    this.logingbutton = logingbutton;
-    this.pwdEt = pwdEt;
-    this.signupbutton = signupbutton;
+    this.Calorie = Calorie;
+    this.Food = Food;
+    this.TextViewCalcorie = TextViewCalcorie;
+    this.TextViewFood = TextViewFood;
+    this.characterImage = characterImage;
+    this.exerciseAmountTitle = exerciseAmountTitle;
+    this.goExerciseButton = goExerciseButton;
+    this.lineView = lineView;
+    this.main = main;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -68,32 +92,62 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.email_et;
-      EditText emailEt = ViewBindings.findChildViewById(rootView, id);
-      if (emailEt == null) {
+      id = R.id.Calorie;
+      TextView Calorie = ViewBindings.findChildViewById(rootView, id);
+      if (Calorie == null) {
         break missingId;
       }
 
-      id = R.id.logingbutton;
-      Button logingbutton = ViewBindings.findChildViewById(rootView, id);
-      if (logingbutton == null) {
+      id = R.id.Food;
+      TextView Food = ViewBindings.findChildViewById(rootView, id);
+      if (Food == null) {
         break missingId;
       }
 
-      id = R.id.pwd_et;
-      EditText pwdEt = ViewBindings.findChildViewById(rootView, id);
-      if (pwdEt == null) {
+      id = R.id.TextViewCalcorie;
+      TextView TextViewCalcorie = ViewBindings.findChildViewById(rootView, id);
+      if (TextViewCalcorie == null) {
         break missingId;
       }
 
-      id = R.id.signupbutton;
-      Button signupbutton = ViewBindings.findChildViewById(rootView, id);
-      if (signupbutton == null) {
+      id = R.id.TextViewFood;
+      TextView TextViewFood = ViewBindings.findChildViewById(rootView, id);
+      if (TextViewFood == null) {
         break missingId;
       }
 
-      return new FragmentHomeBinding((LinearLayout) rootView, emailEt, logingbutton, pwdEt,
-          signupbutton);
+      id = R.id.characterImage;
+      ImageView characterImage = ViewBindings.findChildViewById(rootView, id);
+      if (characterImage == null) {
+        break missingId;
+      }
+
+      id = R.id.exerciseAmountTitle;
+      TextView exerciseAmountTitle = ViewBindings.findChildViewById(rootView, id);
+      if (exerciseAmountTitle == null) {
+        break missingId;
+      }
+
+      id = R.id.goExerciseButton;
+      Button goExerciseButton = ViewBindings.findChildViewById(rootView, id);
+      if (goExerciseButton == null) {
+        break missingId;
+      }
+
+      id = R.id.lineView;
+      View lineView = ViewBindings.findChildViewById(rootView, id);
+      if (lineView == null) {
+        break missingId;
+      }
+
+      id = R.id.main;
+      LinearLayout main = ViewBindings.findChildViewById(rootView, id);
+      if (main == null) {
+        break missingId;
+      }
+
+      return new FragmentHomeBinding((RelativeLayout) rootView, Calorie, Food, TextViewCalcorie,
+          TextViewFood, characterImage, exerciseAmountTitle, goExerciseButton, lineView, main);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

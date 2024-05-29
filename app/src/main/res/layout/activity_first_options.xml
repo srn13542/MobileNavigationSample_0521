@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="40dp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원정보"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <!-- 이름 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/textViewNickname"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="닉네임"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/Nickname"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="text"
+                android:hint="닉네임"
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
+        </LinearLayout>
+
+        <!-- 이메일 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="성별"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/BtnMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="남자"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
+
+                <RadioButton
+                    android:id="@+id/BtnWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="여자"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 전화번호 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="나이"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/Age"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="세"
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
+        </LinearLayout>
+
+        <!-- 아이디 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/textViewHeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="키"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/Height"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="cm"
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
+        </LinearLayout>
+
+        <!-- 비밀번호 입력 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/textViewWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="몸무게"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/Weight"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="kg"
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/textViewTargetWeight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="목표 몸무게"
+                android:textSize="20sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/TargetWeight"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"
+                android:inputType="number"
+                android:hint="kg"
+                android:textSize="20sp"
+                android:background="@drawable/edittext_border"/>
+        </LinearLayout>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:textSize="20sp"
+            android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#0047BB" />
+    </LinearLayout>
+</RelativeLayout>
+
