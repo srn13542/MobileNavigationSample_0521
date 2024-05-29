@@ -1,10 +1,15 @@
 package com.example.mobilenavigationsample
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +26,13 @@ class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    lateinit var emailEt: EditText
+    lateinit var passwordEt: EditText
+    lateinit var loginBtn: Button
+    lateinit var signupBtn: Button
+    lateinit var auth: FirebaseAuth
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -30,12 +42,50 @@ class HomeFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        auth = FirebaseAuth.getInstance()
+        emailEt = view.findViewById(R.id.email_et)
+        passwordEt = view.findViewById(R.id.pwd_et)
+        loginBtn = view.findViewById(R.id.logingbutton)
+        signupBtn = view.findViewById(R.id.signupbutton)
+
+        signupBtn.setOnClickListener {
+            val email = emailEt.text.toString()
+            val password = passwordEt.text.toString()
+            auth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        Toast.makeText(requireContext(), "회원가입에 성공했습니다!", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(requireContext(), "이미 존재하는 계정이거나,이메일 형식으로 적어주세요", Toast.LENGTH_SHORT)
+                            .show()
+                    }
+                }
+        }
+
+
+        loginBtn.setOnClickListener {
+            val email = emailEt.text.toString()
+            val password = passwordEt.text.toString()
+            auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful) {
+                        Toast.makeText(requireContext(), "로그인에 성공했습니다!", Toast.LENGTH_SHORT).show()
+                        // 액티비티 종료
+                        // finish()
+                    } else {
+                        Toast.makeText(requireContext(), "아이디와 비밀번호를 확인해주세요.", Toast.LENGTH_SHORT)
+                            .show()
+                    }
+                }
+        }
+
+        return view
     }
+
 
     companion object {
         /**
@@ -48,12 +98,11 @@ class HomeFragment : Fragment() {
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+        fun newInstance(param1: String, param2: String) = HomeFragment().apply {
+            arguments = Bundle().apply {
+                putString(ARG_PARAM1, param1)
+                putString(ARG_PARAM2, param2)
             }
+        }
     }
 }
