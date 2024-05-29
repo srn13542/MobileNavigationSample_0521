@@ -37,10 +37,22 @@
         android:testOnly="true"
         android:theme="@style/Theme.MobileNavigationSample" >
         <activity
-            android:name="com.example.mobilenavigationsample.MainActivity"
+            android:name="com.example.mobilenavigationsample.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.NaviActivity"
+            android:name="com.example.mobilenavigationsample.StartLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.FirstOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.FindPwActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.FindIdActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,6 +60,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.mobilenavigationsample.NaviActivity"
+            android:exported="false" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

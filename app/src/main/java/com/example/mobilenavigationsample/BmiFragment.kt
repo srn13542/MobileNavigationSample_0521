@@ -16,6 +16,16 @@ import androidx.appcompat.app.AppCompatActivity
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
+/*
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
+private const val TAG_REPORT = "report_fragment"
+private const val TAG_HOME = "home_fragment"
+private const val TAG_START_EXERCISE = "start_exercise_fragment"
+private const val TAG_MY_INFO = "my_info_fragment"
+private const val TAG_BMI = "bmi_fragment"
+ */
+
 class BmiFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
