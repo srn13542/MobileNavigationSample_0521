@@ -1,6 +1,5 @@
 package com.example.mobilenavigationsample
 
-
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -11,11 +10,13 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
+private const val TAG_BMI = "bmi_fragment"
 
 class MyInfoFragment : Fragment() {
     private var param1: String? = null
@@ -39,6 +40,10 @@ class MyInfoFragment : Fragment() {
 
         val btnSave: Button = view.findViewById(R.id.buttonSave)
 
+        // 원래의 배경과 포커스를 받은 배경을 가져옴
+        val originalBackground = ContextCompat.getDrawable(requireContext(), R.drawable.edittext_border)
+        val focusedBackground = ContextCompat.getDrawable(requireContext(), R.drawable.click_edittext_border)
+
         // 이전에 저장된 사용자 정보 불러오기
         val nickname = sharedPreferences.getString("nickname", "")
         val gender = sharedPreferences.getString("gender", "")
@@ -46,6 +51,23 @@ class MyInfoFragment : Fragment() {
         val height = sharedPreferences.getInt("height", 0)
         val weight = sharedPreferences.getInt("weight", 0)
         val targetWeight = sharedPreferences.getInt("targetWeight", 0)
+
+        // 포커스 변경 이벤트 처리
+        val editTextList = listOf<EditText>(
+            view.findViewById(R.id.Age),
+            view.findViewById(R.id.Height),
+            view.findViewById(R.id.Weight),
+            view.findViewById(R.id.TargetWeight)
+        )
+        editTextList.forEach { editText ->
+            editText.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
+                if (hasFocus) {
+                    editText.background = focusedBackground
+                } else {
+                    editText.background = originalBackground
+                }
+            }
+        }
 
         // 화면에 사용자 정보 설정
         view.findViewById<TextView>(R.id.Nickname).apply {
@@ -92,14 +114,13 @@ class MyInfoFragment : Fragment() {
             // BmiFragment로 이동
             val bmiFragment = BmiFragment.newInstance("", "")
             val transaction: FragmentTransaction = parentFragmentManager.beginTransaction()
-            transaction.replace(R.id.mainFrameLayout, bmiFragment)
-            transaction.addToBackStack(null)
+            transaction.replace(R.id.mainFrameLayout, bmiFragment, TAG_BMI)
+            transaction.addToBackStack(TAG_BMI)
             transaction.commit()
         }
 
         return view
     }
-
 
     companion object {
         @JvmStatic

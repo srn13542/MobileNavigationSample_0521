@@ -4,13 +4,14 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
+import androidx.fragment.app.FragmentManager
 import com.example.mobilenavigationsample.databinding.ActivityNaviBinding
 
 private const val TAG_REPORT = "report_fragment"
 private const val TAG_HOME = "home_fragment"
 private const val TAG_START_EXERCISE = "start_exercise_fragment"
 private const val TAG_MY_INFO = "my_info_fragment"
+private const val TAG_BMI = "bmi_fragment"
 
 class NaviActivity : AppCompatActivity() {
 
@@ -36,34 +37,33 @@ class NaviActivity : AppCompatActivity() {
                 R.id.startExcerciseFragment -> setFragment(TAG_START_EXERCISE, StartExerciseFragment())
                 R.id.myInfoFragment -> setFragment(TAG_MY_INFO, MyInfoFragment())
             }
+            // BmiFragment가 백 스택에 있을 때 popBackStack 호출
+            supportFragmentManager.popBackStack(TAG_BMI, FragmentManager.POP_BACK_STACK_INCLUSIVE)
             true
         }
     }
 
     private fun setFragment(tag: String, fragment: Fragment) {
         val manager = supportFragmentManager
-        val fragTransaction: FragmentTransaction = manager.beginTransaction()
+        val fragTransaction = manager.beginTransaction()
 
         if (manager.findFragmentByTag(tag) == null) {
             fragTransaction.add(R.id.mainFrameLayout, fragment, tag)
         }
 
-        val report = manager.findFragmentByTag(TAG_REPORT)
-        val home = manager.findFragmentByTag(TAG_HOME)
-        val startExercise = manager.findFragmentByTag(TAG_START_EXERCISE)
-        val myInfo = manager.findFragmentByTag(TAG_MY_INFO)
+        val fragments = listOf(
+            manager.findFragmentByTag(TAG_REPORT),
+            manager.findFragmentByTag(TAG_HOME),
+            manager.findFragmentByTag(TAG_START_EXERCISE),
+            manager.findFragmentByTag(TAG_MY_INFO)
+        )
 
-        if (report != null) fragTransaction.hide(report)
-        if (home != null) fragTransaction.hide(home)
-        if (startExercise != null) fragTransaction.hide(startExercise)
-        if (myInfo != null) fragTransaction.hide(myInfo)
-
-        when (tag) {
-            TAG_REPORT -> if (report != null) fragTransaction.show(report)
-            TAG_HOME -> if (home != null) fragTransaction.show(home)
-            TAG_START_EXERCISE -> if (startExercise != null) fragTransaction.show(startExercise)
-            TAG_MY_INFO -> if (myInfo != null) fragTransaction.show(myInfo)
+        fragments.forEach { frag ->
+            if (frag != null) fragTransaction.hide(frag)
         }
+
+        val showFragment = manager.findFragmentByTag(tag)
+        if (showFragment != null) fragTransaction.show(showFragment)
 
         fragTransaction.commitAllowingStateLoss()
     }
