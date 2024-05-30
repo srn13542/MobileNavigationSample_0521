@@ -5,12 +5,9 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
-import android.view.inputmethod.EditorInfo
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
@@ -21,35 +18,48 @@ class FirstOptionsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first_options)
 
+        // SharedPreferences 초기화
         sharedPreferences = getSharedPreferences("login_prefs", Context.MODE_PRIVATE)
         val btnSave: Button = findViewById(R.id.buttonSave)
 
-
+        // 저장 버튼 클릭 시 동작 설정
         btnSave.setOnClickListener {
-            // 수정된 사용자 정보 저장하기
-            val editedNickname = findViewById<EditText>(R.id.Nickname).text.toString()
-            val editedGender = if (findViewById<RadioButton>(R.id.BtnMan).isChecked) "남자" else "여자"
-            val editedAge = findViewById<EditText>(R.id.Age).text.toString().toInt()
-            val editedHeight = findViewById<EditText>(R.id.Height).text.toString().toInt()
-            val editedWeight = findViewById<EditText>(R.id.Weight).text.toString().toInt()
-            val editedTargetWeight = findViewById<EditText>(R.id.TargetWeight).text.toString().toInt()
-
-            val editor = sharedPreferences.edit()
-            editor.putString("nickname", editedNickname)
-            editor.putString("gender", editedGender)
-            editor.putInt("age", editedAge)
-            editor.putInt("height", editedHeight)
-            editor.putInt("weight", editedWeight)
-            editor.putInt("targetWeight", editedTargetWeight)
-            editor.putBoolean("isLoggedIn", true)
-            editor.apply()
-
-            val intent = Intent(this, NaviActivity::class.java)
-            startActivity(intent)
-            finish()
+            saveUserInfoAndNavigate()
         }
 
-        // 포커스 시 테두리
+        // EditText 포커스 시 배경 변경
+        setupEditTextFocusListeners()
+    }
+
+    // 사용자 정보를 저장하고 NaviActivity로 이동
+    private fun saveUserInfoAndNavigate() {
+        val editedNickname = findViewById<EditText>(R.id.Nickname).text.toString()
+        val editedGender = if (findViewById<RadioButton>(R.id.BtnMan).isChecked) "남자" else "여자"
+        val editedAge = findViewById<EditText>(R.id.Age).text.toString().toInt()
+        val editedHeight = findViewById<EditText>(R.id.Height).text.toString().toInt()
+        val editedWeight = findViewById<EditText>(R.id.Weight).text.toString().toInt()
+        val editedTargetWeight = findViewById<EditText>(R.id.TargetWeight).text.toString().toInt()
+
+        // 사용자 정보 저장
+        sharedPreferences.edit().apply {
+            putString("nickname", editedNickname)
+            putString("gender", editedGender)
+            putInt("age", editedAge)
+            putInt("height", editedHeight)
+            putInt("weight", editedWeight)
+            putInt("targetWeight", editedTargetWeight)
+            putBoolean("isLoggedIn", true)
+            apply()
+        }
+
+        // NaviActivity로 이동
+        val intent = Intent(this, NaviActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    // EditText 포커스 시 배경 변경 설정
+    private fun setupEditTextFocusListeners() {
         val editTextNickname = findViewById<EditText>(R.id.Nickname)
         val editTextAge = findViewById<EditText>(R.id.Age)
         val editTextHeight = findViewById<EditText>(R.id.Height)
@@ -57,70 +67,13 @@ class FirstOptionsActivity : AppCompatActivity() {
         val editTextTargetWeight = findViewById<EditText>(R.id.TargetWeight)
 
         val originalBackground = editTextNickname.background
-
         val focusedBackground = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)
 
-        editTextNickname.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editTextNickname.background = focusedBackground
-                editTextAge.background = originalBackground
-                editTextHeight.background = originalBackground
-                editTextWeight.background = originalBackground
-                editTextTargetWeight.background = originalBackground
-            } else {
-                editTextNickname.background = originalBackground
+        // 각 EditText 포커스 변경 시 배경 변경
+        listOf(editTextNickname, editTextAge, editTextHeight, editTextWeight, editTextTargetWeight).forEach { editText ->
+            editText.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
+                editText.background = if (hasFocus) focusedBackground else originalBackground
             }
         }
-
-
-        editTextAge.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editTextAge.background = focusedBackground
-                editTextNickname.background = originalBackground
-                editTextHeight.background = originalBackground
-                editTextWeight.background = originalBackground
-                editTextTargetWeight.background = originalBackground
-            } else {
-                editTextAge.background = originalBackground
-            }
-        }
-
-        editTextHeight.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editTextHeight.background = focusedBackground
-                editTextNickname.background = originalBackground
-                editTextAge.background = originalBackground
-                editTextWeight.background = originalBackground
-                editTextTargetWeight.background = originalBackground
-            } else {
-                editTextHeight.background = originalBackground
-            }
-        }
-
-        editTextWeight.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editTextWeight.background = focusedBackground
-                editTextNickname.background = originalBackground
-                editTextAge.background = originalBackground
-                editTextHeight.background = originalBackground
-                editTextTargetWeight.background = originalBackground
-            } else {
-                editTextWeight.background = originalBackground
-            }
-        }
-
-        editTextTargetWeight.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editTextTargetWeight.background = focusedBackground
-                editTextNickname.background = originalBackground
-                editTextAge.background = originalBackground
-                editTextHeight.background = originalBackground
-                editTextWeight.background = originalBackground
-            } else {
-                editTextTargetWeight.background = originalBackground
-            }
-        }
-        // 수정된 부분 끝
-
     }
 }

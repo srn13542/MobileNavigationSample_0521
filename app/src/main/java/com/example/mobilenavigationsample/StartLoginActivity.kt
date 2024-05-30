@@ -35,13 +35,12 @@ class StartLoginActivity : AppCompatActivity() {
         val editTextPw = findViewById<EditText>(R.id.editTextPw)
         val loginButton = findViewById<Button>(R.id.loginButton)
 
+        // EditText 원래와 포커스된 상태의 배경 설정
         val originalBackgroundId = editTextId.background
         val originalBackgroundPw = editTextPw.background
         val focusedBackground = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)
 
-
-        // 포커스 시 동작
-
+        // Id 입력 시 엔터 키 동작 설정
         editTextId.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_NEXT) {
                 editTextPw.requestFocus()
@@ -51,6 +50,7 @@ class StartLoginActivity : AppCompatActivity() {
             }
         }
 
+        // Pw 입력 시 엔터 키 동작 설정
         editTextPw.setOnEditorActionListener { _, actionId, _ ->
             if (actionId == EditorInfo.IME_ACTION_DONE) {
                 loginButton.performClick()
@@ -60,10 +60,12 @@ class StartLoginActivity : AppCompatActivity() {
             }
         }
 
+        // 로그인 버튼 클릭 이벤트 설정
         loginButton.setOnClickListener {
             onLoginClick()
         }
 
+        // Id EditText 포커스 변경 시 배경 변경
         editTextId.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 editTextId.background = focusedBackground
@@ -73,6 +75,7 @@ class StartLoginActivity : AppCompatActivity() {
             }
         }
 
+        // Pw EditText 포커스 변경 시 배경 변경
         editTextPw.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 editTextPw.background = focusedBackground
@@ -83,15 +86,16 @@ class StartLoginActivity : AppCompatActivity() {
         }
     }
 
+    // 로그인 버튼 클릭 시 동작
     private fun onLoginClick() {
-        // 테스트 확인을 위해 작성. (나중엔 뺄 것)
+        // 테스트용 Toast 메시지 표시
         Toast.makeText(this, "로그인 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show()
 
         // 이전에 로그인한 적이 있는지 확인
         val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
 
         if (isLoggedIn) {
-            // 이미 로그인한 적이 있으면 네비게이션 화면으로 이동
+            // 이전 로그인 기록이 있으면 NaviActivity로 이동
             val intent = Intent(this, NaviActivity::class.java)
             startActivity(intent)
             finish()
@@ -103,19 +107,21 @@ class StartLoginActivity : AppCompatActivity() {
         }
     }
 
+    // 비밀번호 찾기 화면으로 이동
     fun onFindPw(view: View) {
         val intent = Intent(this, FindPwActivity::class.java)
         startActivity(intent)
     }
 
+    // 아이디 찾기 화면으로 이동
     fun onFindId(view: View) {
         val intent = Intent(this, FindIdActivity::class.java)
         startActivity(intent)
     }
 
+    // 회원가입 화면으로 이동
     fun onSignUp(view: View) {
         val intent = Intent(this, SignUpActivity::class.java)
         startActivity(intent)
     }
-
 }

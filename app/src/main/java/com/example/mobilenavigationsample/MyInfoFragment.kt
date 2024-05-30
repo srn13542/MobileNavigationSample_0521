@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.inputmethod.EditorInfo
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
@@ -53,8 +52,7 @@ class MyInfoFragment : Fragment() {
         val weight = sharedPreferences.getInt("weight", 0)
         val targetWeight = sharedPreferences.getInt("targetWeight", 0)
 
-
-        // 포커스 변경 이벤트 처리
+        // EditText 포커스 변경 이벤트 처리
         val editTextList = listOf<EditText>(
             view.findViewById(R.id.Age),
             view.findViewById(R.id.Height),
@@ -71,62 +69,44 @@ class MyInfoFragment : Fragment() {
             }
         }
 
-
         // 화면에 사용자 정보 설정
-        view.findViewById<TextView>(R.id.Nickname).apply {
-            text = nickname
-        }
-        if (gender == "남자") {
-            view.findViewById<RadioButton>(R.id.BtnMan).isChecked = true
-        } else {
-            view.findViewById<RadioButton>(R.id.BtnWoman).isChecked = true
-        }
-        view.findViewById<EditText>(R.id.Age).apply {
-            setText(age.toString())
-            isEnabled = true // EditText 수정 가능하도록 변경
-        }
-        view.findViewById<EditText>(R.id.Height).apply {
-            setText(height.toString())
-            isEnabled = true // EditText 수정 가능하도록 변경
-        }
-        view.findViewById<EditText>(R.id.Weight).apply {
-            setText(weight.toString())
-            isEnabled = true // EditText 수정 가능하도록 변경
-        }
-        view.findViewById<EditText>(R.id.TargetWeight).apply {
-            setText(targetWeight.toString())
-            isEnabled = true // EditText 수정 가능하도록 변경
-        }
+        view.findViewById<TextView>(R.id.Nickname).text = nickname
+        view.findViewById<RadioButton>(if (gender == "남자") R.id.BtnMan else R.id.BtnWoman).isChecked = true
+        view.findViewById<EditText>(R.id.Age).setText(age.toString())
+        view.findViewById<EditText>(R.id.Height).setText(height.toString())
+        view.findViewById<EditText>(R.id.Weight).setText(weight.toString())
+        view.findViewById<EditText>(R.id.TargetWeight).setText(targetWeight.toString())
 
+        // 저장 버튼 클릭 시 동작
         btnSave.setOnClickListener {
-            // 수정된 사용자 정보 저장하기
+            // 수정된 사용자 정보 저장
             val editedGender = if (view.findViewById<RadioButton>(R.id.BtnMan).isChecked) "남자" else "여자"
             val editedAge = view.findViewById<EditText>(R.id.Age).text.toString().toInt()
             val editedHeight = view.findViewById<EditText>(R.id.Height).text.toString().toInt()
             val editedWeight = view.findViewById<EditText>(R.id.Weight).text.toString().toInt()
             val editedTargetWeight = view.findViewById<EditText>(R.id.TargetWeight).text.toString().toInt()
 
-            val editor = sharedPreferences.edit()
-            editor.putString("gender", editedGender)
-            editor.putInt("age", editedAge)
-            editor.putInt("height", editedHeight)
-            editor.putInt("weight", editedWeight)
-            editor.putInt("targetWeight", editedTargetWeight)
-            editor.apply()
+            // SharedPreferences에 저장
+            sharedPreferences.edit().apply {
+                putString("gender", editedGender)
+                putInt("age", editedAge)
+                putInt("height", editedHeight)
+                putInt("weight", editedWeight)
+                putInt("targetWeight", editedTargetWeight)
+                apply()
+            }
 
             // BmiFragment로 이동
             val bmiFragment = BmiFragment.newInstance("", "")
-            val transaction: FragmentTransaction = parentFragmentManager.beginTransaction()
-            transaction.replace(R.id.mainFrameLayout, bmiFragment, TAG_BMI)
-            transaction.addToBackStack(TAG_BMI)
-            transaction.commit()
+            parentFragmentManager.beginTransaction().apply {
+                replace(R.id.mainFrameLayout, bmiFragment, TAG_BMI)
+                addToBackStack(TAG_BMI)
+                commit()
+            }
         }
-
 
         return view
     }
-
-
 
     companion object {
         @JvmStatic

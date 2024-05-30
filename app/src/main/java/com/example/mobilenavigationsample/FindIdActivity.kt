@@ -1,8 +1,8 @@
 package com.example.mobilenavigationsample
 
-
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -23,44 +23,50 @@ class FindIdActivity : AppCompatActivity() {
             insets
         }
 
-        val editTextName = findViewById<EditText>(R.id.editTextName)
-        val editTextEmail = findViewById<EditText>(R.id.editTextEmail)
-        val editTextPhone = findViewById<EditText>(R.id.editTextPhone)
+        // 배경 Drawable 초기화
+        val originalBackground = ContextCompat.getDrawable(this, R.drawable.edittext_border)
+        val focusedBackground = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)
+
+        // EditText 리스트 초기화
+        val editTextList = listOf(
+            findViewById<EditText>(R.id.editTextName),
+            findViewById<EditText>(R.id.editTextEmail),
+            findViewById<EditText>(R.id.editTextPhone)
+        )
+
+        // 포커스 변경 이벤트 처리
+        editTextList.forEach { editText ->
+            editText.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
+                if (hasFocus) {
+                    editText.background = focusedBackground
+                } else {
+                    editText.background = originalBackground
+                }
+            }
+        }
+
+        // 버튼 클릭 리스너 설정
         val buttonSave = findViewById<Button>(R.id.buttonSave)
-
-        // 포커스 받았을 때 테두리 색 변화
-        editTextName.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editTextName.background = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)
-                editTextEmail.background = ContextCompat.getDrawable(this, R.drawable.edittext_border)
-                editTextPhone.background = ContextCompat.getDrawable(this, R.drawable.edittext_border)
-            }
-        }
-        editTextEmail.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editTextEmail.background = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)
-                editTextName.background = ContextCompat.getDrawable(this, R.drawable.edittext_border)
-                editTextPhone.background = ContextCompat.getDrawable(this, R.drawable.edittext_border)
-            }
-        }
-        editTextPhone.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                editTextPhone.background = ContextCompat.getDrawable(this, R.drawable.click_edittext_border)
-                editTextName.background = ContextCompat.getDrawable(this, R.drawable.edittext_border)
-                editTextEmail.background = ContextCompat.getDrawable(this, R.drawable.edittext_border)
-            }
-        }
-
         buttonSave.setOnClickListener {
-            // 버튼 클릭 시 동작 추가
+            val name = findViewById<EditText>(R.id.editTextName).text.toString()
+            val email = findViewById<EditText>(R.id.editTextEmail).text.toString()
+            val phone = findViewById<EditText>(R.id.editTextPhone).text.toString()
+
+            if (name.isEmpty() || email.isEmpty() || phone.isEmpty()) {
+                // 입력이 모두 되어있지 않을 경우 경고 메시지 출력
+                Toast.makeText(this, "모두 입력해 주세요.", Toast.LENGTH_SHORT).show()
+            } else {
+                // 입력된 데이터를 저장하거나 전송하는 로직 추가 필요
+                Toast.makeText(this, "저장되었습니다.", Toast.LENGTH_SHORT).show()
+            }
         }
     }
+
     override fun onBackPressed() {
         super.onBackPressed()
-        // 뒤로 가기를 눌렀을 때 StartLoginActivity로 돌아가기
+        // 뒤로 가기를 눌렀을 때 StartLoginActivity로 이동
         val intent = Intent(this, StartLoginActivity::class.java)
         startActivity(intent)
         finish()
     }
 }
-

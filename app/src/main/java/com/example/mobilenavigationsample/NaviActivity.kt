@@ -37,7 +37,7 @@ class NaviActivity : AppCompatActivity() {
                 R.id.startExcerciseFragment -> setFragment(TAG_START_EXERCISE, StartExerciseFragment())
                 R.id.myInfoFragment -> setFragment(TAG_MY_INFO, MyInfoFragment())
             }
-            // BmiFragment가 백 스택에 있을 때 popBackStack 호출
+            // BmiFragment가 백 스택에 있을 때 popBackStack 호출 (BMI_TAG를 백 스택에서 제외)
             supportFragmentManager.popBackStack(TAG_BMI, FragmentManager.POP_BACK_STACK_INCLUSIVE)
             true
         }
