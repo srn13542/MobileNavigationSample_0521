@@ -1,11 +1,31 @@
 package com.example.mobilenavigationsample
 
+import com.example.mobilenavigationsample.HomeFragment
+import com.example.mobilenavigationsample.MapActivity
+import com.example.mobilenavigationsample.MyInfoFragment
+import com.example.mobilenavigationsample.R
+import com.example.mobilenavigationsample.StartExerciseFragment
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+//import androidx.lifecycle.viewmodel.CreationExtras.Empty.map
 import com.example.mobilenavigationsample.databinding.ActivityNaviBinding
+import com.example.mobilenavigationsample.databinding.FragmentStartExerciseBinding
+import com.google.android.gms.maps.CameraUpdate
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
+//import com.google.gson.Gson
+//import com.google.gson.reflect.TypeToken
+//import com.example.com.example.mobilenavigationsample.databinding.
 
 private const val TAG_REPORT = "report_fragment"
 private const val TAG_HOME = "home_fragment"
@@ -66,5 +86,11 @@ class NaviActivity : AppCompatActivity() {
         if (showFragment != null) fragTransaction.show(showFragment)
 
         fragTransaction.commitAllowingStateLoss()
+
     }
+
 }
+
+
+
+
