@@ -66,9 +66,12 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:paddingTop="5dp">
-
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
             <TextView
                 android:id="@+id/Calorie"
                 android:layout_width="wrap_content"
@@ -89,7 +92,7 @@
                 android:text=" 칼로리를 소모했어요"
                 android:textSize="18sp"
                 android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
-
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -97,9 +100,12 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:paddingTop="5dp">
-
+            android:gravity="center">
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
             <TextView
                 android:id="@+id/Food"
                 android:layout_width="wrap_content"
@@ -118,6 +124,7 @@
                 android:text=" 만큼 불태웠어요!"
                 android:textSize="18sp"
                 android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
+            </LinearLayout>
         </LinearLayout>
 
         <Button

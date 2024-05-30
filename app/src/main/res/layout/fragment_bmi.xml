@@ -8,7 +8,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="30dp"
+        android:layout_margin="20dp"
         android:background="#ffffff"
         android:id="@+id/main"
         android:orientation="vertical">
