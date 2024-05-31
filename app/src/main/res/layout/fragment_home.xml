@@ -48,7 +48,7 @@
                 android:textSize="24sp"
                 android:layout_marginBottom="10dp"
                 android:textStyle="bold"
-                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:fontFamily="@font/freesentation_8_extrabold"
                 android:layout_gravity="left"/>
             <View
                 android:id="@+id/lineView"
@@ -81,7 +81,7 @@
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#0047BB"
-                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r">
+                android:fontFamily="@font/freesentation_8_extrabold">
 
             </TextView>
             <TextView
@@ -91,7 +91,7 @@
                 android:layout_gravity="center"
                 android:text=" 칼로리를 소모했어요"
                 android:textSize="18sp"
-                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
+                android:fontFamily="@font/freesentation_6_semibold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -114,16 +114,16 @@
                 android:text="치킨 한 마리"
                 android:textSize="22sp"
                 android:textColor="#0047BB"
-                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
+                android:fontFamily="@font/freesentation_8_extrabold" />
 
-            <TextView
-                android:id="@+id/TextViewFood"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text=" 만큼 불태웠어요!"
-                android:textSize="18sp"
-                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
+                    <TextView
+                        android:id="@+id/TextViewFood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/freesentation_6_semibold"
+                        android:text=" 만큼 불태웠어요!"
+                        android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -133,7 +133,7 @@
             android:layout_height="wrap_content"
             android:text="운동하러 가기"
             android:textSize="20sp"
-            android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+            android:fontFamily="@font/freesentation_8_extrabold"
             android:layout_marginTop="40dp"
             android:backgroundTint="#0047BB"/>
 
