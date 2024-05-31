@@ -1,0 +1,202 @@
+[
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-anydpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/drawable_pw_icon.png.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/drawable/pw_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-anydpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_nav_exercise_show.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\nav_exercise_show.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\layout_fragment_report.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\layout\\fragment_report.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/drawable_click_edittext_border.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/drawable/click_edittext_border.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/layout_activity_find_pw.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/layout/activity_find_pw.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_nav_home_show.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\nav_home_show.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/layout_activity_find_id.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/layout/activity_find_id.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/drawable_logo.png.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/drawable/logo.png"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/font_hakgyoansimmonggeulmonggeul_r.ttf.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/font/hakgyoansimmonggeulmonggeul_r.ttf"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/drawable_nav_exercise_show.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/drawable/nav_exercise_show.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/layout_fragment_bmi_flagment.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/layout/fragment_bmi_flagment.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/layout_fragment_home.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/drawable_id_edittext_border.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/drawable/id_edittext_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_nav_myinfo_show.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\nav_myinfo_show.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/layout_fragment_my_info.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/layout/fragment_my_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_nav_home_hide.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\nav_home_hide.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\layout_fragment_my_info.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\layout\\fragment_my_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_menu_click_color.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\menu_click_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\layout_activity_navi.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\layout\\activity_navi.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\menu_navi_menu.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\menu\\navi_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_nav_exercise_hide.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\nav_exercise_hide.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/layout_activity_start_login.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/layout/activity_start_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_nav_report_hide.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\nav_report_hide.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\layout_fragment_start_exercise.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\layout\\fragment_start_exercise.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/layout_activity_first_options.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/layout/activity_first_options.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/drawable_id_icon.png.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/drawable/id_icon.png"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/drawable_pw_edittext_border.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/drawable/pw_edittext_border.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/drawable_edittext_border.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/drawable/edittext_border.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/layout_fragment_bmi.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/layout/fragment_bmi.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_nav_report_show.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\nav_report_show.xml"
+    },
+    {
+        "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-42:\\drawable_nav_myinfo_hide.xml.flat",
+        "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-44:\\drawable\\nav_myinfo_hide.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-42:/layout_activity_sign_up.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-44:/layout/activity_sign_up.xml"
+    }
+]
