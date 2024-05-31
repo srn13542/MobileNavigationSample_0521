@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"> <!-- 바깥 부분의 배경색 -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="#ffffff"
+        android:id="@+id/main"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:text="체질량 지수 (BMI)"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/text_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="26sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:text="나의 BMI"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/bmi_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="25.25"
+                android:textSize="28sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/TextViewCurrentState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="현재상태"
+                android:textSize="26sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/CurrentState"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="정상"
+                android:textSize="34sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/ideal_weight_range"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="이상적인 체중"
+                android:textSize="26sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/IdealWeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="65 ~ 72 kg"
+                android:textSize="24sp"
+                android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonGoBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="돌아가기"
+            android:textSize="20sp"
+            android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#0047BB"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp">
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
