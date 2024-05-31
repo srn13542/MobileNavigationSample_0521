@@ -51,4 +51,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation ("com.google.android.gms:play-services-location:19.0.1")
+    implementation ("com.google.android.gms:play-services-maps:18.2.0")
+    implementation(libs.gson) //JSON 읽어옴
 }
