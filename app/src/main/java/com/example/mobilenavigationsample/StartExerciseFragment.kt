@@ -43,7 +43,7 @@ private lateinit var binding: FragmentStartExerciseBinding // 주석 하기
  * Use the [StartExerciseFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class StartExerciseFragment(val activity: Activity) : Fragment()/*, OnMapReadyCallback*/ {
+class StartExerciseFragment/*(val activity: Activity)*/ : Fragment()/*, OnMapReadyCallback*/ {
 //class MapsFragment(val activity: Activity) : Fragment(), OnMapReadyCallback
     //onMapReadyCallBack ==
 

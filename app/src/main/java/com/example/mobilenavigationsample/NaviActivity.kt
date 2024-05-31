@@ -34,10 +34,7 @@ class NaviActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.reportFragment -> setFragment(TAG_REPORT, ReportFragment())
                 R.id.homeFragment -> setFragment(TAG_HOME, HomeFragment())
-                R.id.startExcerciseFragment -> setFragment(
-                    TAG_START_EXERCISE,
-                    StartExerciseFragment()
-                )
+                R.id.startExcerciseFragment -> setFragment(TAG_START_EXERCISE, StartExerciseFragment())
 
                 R.id.myInfoFragment -> setFragment(TAG_MY_INFO, MyInfoFragment())
             }
