@@ -4,7 +4,7 @@ package com.example.mobilenavigationsample.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -14,15 +14,15 @@ import java.lang.Override;
 
 public final class FragmentStartExerciseBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final LinearLayout rootView;
 
-  private FragmentStartExerciseBinding(@NonNull FrameLayout rootView) {
+  private FragmentStartExerciseBinding(@NonNull LinearLayout rootView) {
     this.rootView = rootView;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -47,6 +47,6 @@ public final class FragmentStartExerciseBinding implements ViewBinding {
       throw new NullPointerException("rootView");
     }
 
-    return new FragmentStartExerciseBinding((FrameLayout) rootView);
+    return new FragmentStartExerciseBinding((LinearLayout) rootView);
   }
 }

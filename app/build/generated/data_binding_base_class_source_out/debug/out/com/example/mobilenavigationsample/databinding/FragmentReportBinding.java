@@ -4,25 +4,55 @@ package com.example.mobilenavigationsample.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
+import android.widget.DatePicker;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.mobilenavigationsample.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentReportBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
 
-  private FragmentReportBinding(@NonNull LinearLayout rootView) {
+  @NonNull
+  public final DatePicker datePicker;
+
+  @NonNull
+  public final TextView exercise;
+
+  @NonNull
+  public final View first;
+
+  @NonNull
+  public final TextView kcal;
+
+  @NonNull
+  public final View second;
+
+  @NonNull
+  public final TextView time;
+
+  private FragmentReportBinding(@NonNull ConstraintLayout rootView, @NonNull DatePicker datePicker,
+      @NonNull TextView exercise, @NonNull View first, @NonNull TextView kcal, @NonNull View second,
+      @NonNull TextView time) {
     this.rootView = rootView;
+    this.datePicker = datePicker;
+    this.exercise = exercise;
+    this.first = first;
+    this.kcal = kcal;
+    this.second = second;
+    this.time = time;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +73,50 @@ public final class FragmentReportBinding implements ViewBinding {
 
   @NonNull
   public static FragmentReportBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.date_picker;
+      DatePicker datePicker = ViewBindings.findChildViewById(rootView, id);
+      if (datePicker == null) {
+        break missingId;
+      }
 
-    return new FragmentReportBinding((LinearLayout) rootView);
+      id = R.id.exercise;
+      TextView exercise = ViewBindings.findChildViewById(rootView, id);
+      if (exercise == null) {
+        break missingId;
+      }
+
+      id = R.id.first;
+      View first = ViewBindings.findChildViewById(rootView, id);
+      if (first == null) {
+        break missingId;
+      }
+
+      id = R.id.kcal;
+      TextView kcal = ViewBindings.findChildViewById(rootView, id);
+      if (kcal == null) {
+        break missingId;
+      }
+
+      id = R.id.second;
+      View second = ViewBindings.findChildViewById(rootView, id);
+      if (second == null) {
+        break missingId;
+      }
+
+      id = R.id.time;
+      TextView time = ViewBindings.findChildViewById(rootView, id);
+      if (time == null) {
+        break missingId;
+      }
+
+      return new FragmentReportBinding((ConstraintLayout) rootView, datePicker, exercise, first,
+          kcal, second, time);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }
