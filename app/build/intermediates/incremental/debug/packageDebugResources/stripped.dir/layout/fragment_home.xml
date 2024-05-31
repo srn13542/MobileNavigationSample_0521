@@ -3,134 +3,148 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="#ffffff"> <!-- 바깥 부분의 배경색 -->
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:background="#ffffff"
         android:id="@+id/main"
-        android:layout_margin="20dp"
-        tools:context=".MainActivity">
-
-
-        <!-- 고유 캐릭터 이미지 -->
-        <ImageView
-            android:id="@+id/characterImage"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/logo"
-            android:scaleType="fitCenter" />
-
-        <!-- 이번 주 운동량 -->
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_weight="3.7"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="5dp">
+            <ImageView
+                android:id="@+id/characterImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
             android:orientation="vertical"
-            android:layout_gravity="top">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:gravity="center"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/exerciseAmountTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:text="이번 주 운동량"
-                    android:textSize="24sp"
-                    android:layout_marginBottom="10dp"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r"
-                    android:layout_gravity="left"/>
+            android:gravity="center_vertical"
+            android:paddingTop="5dp">
 
-                <!-- 긴 줄선 추가 -->
-                <View
-                    android:id="@+id/lineView"
-                    android:layout_width="match_parent"
-                    android:layout_height="1.5dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="#888888" />
-            </LinearLayout>
-
-            <!-- 이번 주 소모 칼로리 -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/exerciseAmountTitle"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="이번 주 운동량"
+                android:textSize="24sp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/freesentation_8_extrabold"
+                android:layout_gravity="left"/>
+            <View
+                android:id="@+id/lineView"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:background="#888888" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:gravity="center">
-
-                <TextView
-                    android:id="@+id/Calorie"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="1000"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:textColor="#0047BB"
-                    android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r">
-
-                </TextView>
-                <TextView
-                    android:id="@+id/TextViewCalcorie"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_gravity="center_horizontal"
-                    android:text=" 칼로리를 소모했어요"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
-            </LinearLayout>
-            <!-- 이번 주 소모 칼로리 -->
-            <LinearLayout
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/Calorie"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center">
-                <TextView
-                    android:id="@+id/Food"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#0047BB"
+                android:fontFamily="@font/freesentation_8_extrabold">
 
-                    android:layout_gravity="center_horizontal"
-                    android:text="치킨 한 마리"
-                    android:textSize="24sp"
-                    android:textColor="#0047BB"
-                    android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
-
-                <TextView
-                    android:id="@+id/TextViewFood"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_gravity="center_horizontal"
-                    android:text=" 의 칼로리를 불태웠네요!"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
+            </TextView>
+            <TextView
+                android:id="@+id/TextViewCalcorie"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                android:gravity="center">
-                <!-- 운동하러 가기 버튼 -->
-                <Button
-                    android:id="@+id/goExerciseButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:layout_gravity="center_horizontal"
-                    android:text="운동하러 가기"
-                    android:textColor="#FFFFFF"
-                    android:backgroundTint="#0047BB"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/hakgyoansimmonggeulmonggeul_r" />
+                android:layout_gravity="center"
+                android:text=" 칼로리를 소모했어요"
+                android:textSize="18sp"
+                android:fontFamily="@font/freesentation_6_semibold" />
             </LinearLayout>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+            <TextView
+                android:id="@+id/Food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="치킨 한 마리"
+                android:textSize="22sp"
+                android:textColor="#0047BB"
+                android:fontFamily="@font/freesentation_8_extrabold" />
+
+                    <TextView
+                        android:id="@+id/TextViewFood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/freesentation_6_semibold"
+                        android:text=" 만큼 불태웠어요!"
+                        android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/goExerciseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="운동하러 가기"
+            android:textSize="20sp"
+            android:fontFamily="@font/freesentation_8_extrabold"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#0047BB"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp">
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

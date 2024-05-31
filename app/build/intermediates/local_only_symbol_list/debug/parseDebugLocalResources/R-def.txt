@@ -21,7 +21,15 @@ drawable nav_report_hide
 drawable nav_report_show
 drawable pw_edittext_border
 drawable pw_icon
-font hakgyoansimmonggeulmonggeul_r
+font freesentation_1_thin
+font freesentation_2_extralight
+font freesentation_3_light
+font freesentation_4_regular
+font freesentation_5_medium
+font freesentation_6_semibold
+font freesentation_7_bold
+font freesentation_8_extrabold
+font freesentation_9_black
 id Age
 id BtnMan
 id BtnWoman
@@ -47,7 +55,6 @@ id buttonSave
 id buttonSignUp
 id characterImage
 id close
-id date_picker
 id editTextConfirmPassword
 id editTextEmail
 id editTextId
@@ -59,11 +66,9 @@ id editTextUsername
 id exercise
 id exerciseAmountTitle
 id exercise_text
-id first
 id goExerciseButton
 id homeFragment
 id ideal_weight_range
-id kcal
 id lineView
 id lineView1
 id lineView2
@@ -76,7 +81,6 @@ id name_text
 id navigationView
 id radioGroupGender
 id reportFragment
-id second
 id startExcerciseFragment
 id startExerciseMap
 id textViewAge
@@ -94,7 +98,6 @@ id textViewTitle
 id textViewUsername
 id textViewWeight
 id text_bmi
-id time
 id town
 id town_text
 layout activity_find_id
@@ -106,7 +109,6 @@ layout activity_navi
 layout activity_sign_up
 layout activity_start_login
 layout fragment_bmi
-layout fragment_bmi_flagment
 layout fragment_home
 layout fragment_my_info
 layout fragment_report
@@ -115,7 +117,14 @@ menu navi_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string default_web_client_id
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hello_blank_fragment
+string project_id
 style Base.Theme.MobileNavigationSample
 style Theme.MobileNavigationSample
 xml backup_rules
