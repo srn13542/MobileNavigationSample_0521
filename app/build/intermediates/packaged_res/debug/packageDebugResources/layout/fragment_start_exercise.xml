@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.google.android.gms.maps.MapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--tools:context=".NaviActivity" 를 일단 생략. ppt엔 삽입되어있음.!-->
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id= "@+id/startExerciseMap"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:cameraTargetLat = "37.340"
+        map:cameraTargetLng = "126.733"
+        map:cameraZoom="15"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/startExerciseButton"
+        android:text="운동 시작하기"
+        android:fontFamily="@font/freesentation_6_semibold"
+        android:textSize="22sp"
+        android:backgroundTint="#0047BB"
+        android:onClick="onStartExerciseButtonClick"
+        android:layout_gravity="bottom|center"
+        android:visibility="visible"
+        android:layout_marginBottom="150dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        />
+</FrameLayout>
+
+
+

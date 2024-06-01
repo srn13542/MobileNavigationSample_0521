@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <meta-data
         android:name="com.google.android.gms.version"
@@ -38,10 +39,22 @@
             android:name=".MapActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".NaviActivity"
+            android:name=".StartLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindPwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindIdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,6 +70,9 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+        <activity
+            android:name=".NaviActivity"
+            android:exported="false"></activity>
     </application>
 
 </manifest>
