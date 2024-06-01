@@ -3176,6 +3176,7 @@ font freesentation_6_semibold
 font freesentation_7_bold
 font freesentation_8_extrabold
 font freesentation_9_black
+font hakgyoansimmonggeulmonggeul_r
 id ALT
 id Age
 id BOTTOM_END
@@ -3346,6 +3347,7 @@ id custom
 id customPanel
 id cut
 id dark
+id date_picker
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3407,6 +3409,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id first
 id fitCenter
 id fitEnd
 id fitStart
@@ -3455,6 +3458,7 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id kcal
 id labeled
 id layout
 id left
@@ -3625,6 +3629,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id second
 id select_dialog_listview
 id selected
 id selection_type
@@ -3657,6 +3662,7 @@ id src_over
 id standard
 id start
 id startExcerciseFragment
+id startExerciseButton
 id startExerciseMap
 id startHorizontal
 id startToEnd
@@ -3898,6 +3904,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_bmi
+layout fragment_bmi_flagment
 layout fragment_home
 layout fragment_my_info
 layout fragment_report

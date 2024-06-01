@@ -1,50 +1,37 @@
 package com.example.mobilenavigationsample
 
 import android.Manifest
-import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Context
-import android.content.Context.LOCATION_SERVICE
-import android.content.Intent
-import android.location.LocationManager
+import android.content.pm.PackageManager
+import android.location.Location
+import android.os.Build
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.os.Looper
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
-import com.example.mobilenavigationsample.databinding.ActivityNaviBinding
+import androidx.core.app.ActivityCompat
+import androidx.fragment.app.Fragment
 import com.example.mobilenavigationsample.databinding.FragmentStartExerciseBinding
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationCallback
+import com.google.android.gms.location.LocationRequest
+import com.google.android.gms.location.LocationResult
+import com.google.android.gms.location.LocationServices
+
+//import com.google.android.gms.maps.model.CameraPosition
 //import com.google.gson.Gson
 //import com.google.gson.reflect.TypeToken
 //gson이 해결되지 않아 주석 처리.,,.
-
-import androidx.fragment.app.FragmentManager
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationCallback
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.MapView
-import com.google.android.gms.maps.OnMapReadyCallback
-import android.os.Looper
-import android.util.Log
-import androidx.annotation.ReturnThis
-import androidx.core.content.ContextCompat.getSystemService
-import com.google.android.gms.location.*
-//import com.google.android.gms.maps.model.CameraPosition
-
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
-private lateinit var binding: FragmentStartExerciseBinding // 주석 하기
+
 
 /**
  * A simple [Fragment] subclass.
@@ -54,45 +41,145 @@ private lateinit var binding: FragmentStartExerciseBinding // 주석 하기
 class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
 //class MapsFragment(val activity: Activity) : Fragment(), OnMapReadyCallback
 
-    //변수 삽입 부분
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
-    var mLocationManager: LocationManager? = null
-    var mLocationListener: LocationManager? = null
+
+    private var mFusedLocationProviderClient: FusedLocationProviderClient? = null //현재 위치를 가져오기 위한 변수
+    lateinit var mLastLocation: Location //위치 값을 가지고 있는 객체
+    internal lateinit var mLocationRequest: LocationRequest //위치 정보 요청의 매개변수를 저장하는 곳
+    private val REQUEST_PERMISSION_LOCATION = 10
+
+    lateinit var startExerciseCheckButton: Button
+    private lateinit var binding: FragmentStartExerciseBinding
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+
+            //버튼 바인딩
+
+
+            mLocationRequest =  LocationRequest.create().apply {
+
+                priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+                //mLocationRequest는 위치 정보 요청의 매개변수 저장하는 곳.
+                //본 함수를 통해 위기 정보 요청의 매개변수를 저장..,불러옴?
+            }
         }// getSystemService를 사용할 때 context를 사용해야 합니다.
-
-        context?.let {
-            mLocationManager = it.getSystemService(Context.LOCATION_SERVICE) as LocationManager
-        } ?: run {
-            // context가 null인 경우 처리
-            throw IllegalStateException("Context is null")
-        }
-        //mLocationManager = getSystemService(LOCATION_SERVICE) as LocationManager
     }
-
-    private lateinit var mView: MapView
-
-    //MapView 나중에 추가.
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View? {
+        val startExerciseView = inflater.inflate(R.layout.fragment_start_exercise, container, false)
+        binding = FragmentStartExerciseBinding.bind(startExerciseView)
+
+        startExerciseCheckButton = binding.startExerciseButton
+
+        mLocationRequest =  LocationRequest.create().apply {
+
+            priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+            //mLocationRequest는 위치 정보 요청의 매개변수 저장하는 곳.
+            //본 함수를 통해 위기 정보 요청의 매개변수를 저장..,불러옴?
+        }
+
+        // 버튼 이벤트를 통해 현재 위치 찾기
+        startExerciseCheckButton.setOnClickListener {
+            if (checkPermissionForLocation(requireContext())) {
+                startLocationUpdates()
+            }
+
+        }
+
+        // 버튼 이벤트 설정
+        startExerciseCheckButton.setOnClickListener {
+            if (checkPermissionForLocation(requireContext())) {
+                startLocationUpdates()
+            }
+        }
 
 
-        //
-
-        return inflater.inflate(R.layout.fragment_start_exercise, container, false)
+        return startExerciseView
     }
+
+
+    //함수 기입
+
+    private fun startLocationUpdates(){
+        //FusedLocationProvideClient의 인스턴스를 생성.
+        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(requireContext())
+
+        if(ActivityCompat.checkSelfPermission(requireContext(),Manifest.permission.ACCESS_FINE_LOCATION)!=PackageManager.PERMISSION_GRANTED
+            &&ActivityCompat.checkSelfPermission(requireContext(),Manifest.permission.ACCESS_COARSE_LOCATION)!=PackageManager.PERMISSION_GRANTED){
+            return
+        }
+        // 기기의 위치에 관한 정기 업데이트를 요청하는 메서드 실행
+        // 지정한 루퍼 스레드(Looper.myLooper())에서 콜백(mLocationCallback)으로 위치 업데이트를 요청
+
+        mFusedLocationProviderClient!!.requestLocationUpdates(mLocationRequest,mLocationCallback,
+            Looper.myLooper()?: Looper.getMainLooper())
+    }
+
+    private val mLocationCallback = object:LocationCallback(){
+        override fun onLocationResult(locationResult: LocationResult){
+            //시스템에서 받은 Location 정보를 onLocationChanged()에 전달
+            locationResult.lastLocation
+            locationResult.lastLocation?.let { onLocationChanged(it) }
+            Log.d("Location", "위도: "+locationResult.lastLocation?.latitude+" 경도: "+locationResult.lastLocation?.longitude)
+            //onLocationChanged(locationResult.lastLocation)
+            //으로 작성했는데 되는지 모르겠음
+            //본 본문은 https://fre2-dom.tistory.com/134
+            //를 참고함
+        }
+    }
+
+    fun onLocationChanged(location: Location){
+        mLastLocation = location
+        //시스템으로부터 받은 위치 정보를 화면에 갱신해주는 메소드
+    }
+
+    //위치 권한이 있는지 확인하는 메소드
+    private fun checkPermissionForLocation(context: Context):Boolean{
+        // Android 6.0 Marshmallow 이상에서는 위치 권한에 추가 런타임 권한이 필요
+        return if(Build.VERSION.SDK_INT >=Build.VERSION_CODES.M){
+            if(context.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)==PackageManager.PERMISSION_GRANTED){
+                true
+            }else{
+                //권한이 없으므로 권한 요청 알림 보내기
+                ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), REQUEST_PERMISSION_LOCATION)
+                false
+            }
+        }else{
+            true
+        }
+    }
+
+    //사용자에게 권한 요청 수 결과에 대한 처리 로직
+    fun onRequestPermissionResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray){
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if(requestCode == REQUEST_PERMISSION_LOCATION){
+            if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                startLocationUpdates()
+            }else{
+                Log.d("ttt", "onRequestPermissionsResult() _ 권한 허용 거부")
+                Toast.makeText(requireContext(), "권한이 없어 해당 기능을 실행할 수 없습니다.", Toast.LENGTH_SHORT).show()
+            }
+            }
+        }
+
+
+
+
+
 
 
 

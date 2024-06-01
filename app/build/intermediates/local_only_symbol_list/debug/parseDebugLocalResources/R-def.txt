@@ -30,6 +30,7 @@ font freesentation_6_semibold
 font freesentation_7_bold
 font freesentation_8_extrabold
 font freesentation_9_black
+font hakgyoansimmonggeulmonggeul_r
 id Age
 id BtnMan
 id BtnWoman
@@ -55,6 +56,7 @@ id buttonSave
 id buttonSignUp
 id characterImage
 id close
+id date_picker
 id editTextConfirmPassword
 id editTextEmail
 id editTextId
@@ -66,9 +68,11 @@ id editTextUsername
 id exercise
 id exerciseAmountTitle
 id exercise_text
+id first
 id goExerciseButton
 id homeFragment
 id ideal_weight_range
+id kcal
 id lineView
 id lineView1
 id lineView2
@@ -81,7 +85,9 @@ id name_text
 id navigationView
 id radioGroupGender
 id reportFragment
+id second
 id startExcerciseFragment
+id startExerciseButton
 id startExerciseMap
 id textViewAge
 id textViewConfirmPassword
@@ -98,6 +104,7 @@ id textViewTitle
 id textViewUsername
 id textViewWeight
 id text_bmi
+id time
 id town
 id town_text
 layout activity_find_id
@@ -109,6 +116,7 @@ layout activity_navi
 layout activity_sign_up
 layout activity_start_login
 layout fragment_bmi
+layout fragment_bmi_flagment
 layout fragment_home
 layout fragment_my_info
 layout fragment_report
