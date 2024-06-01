@@ -24,12 +24,12 @@
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\font\\hakgyoansimmonggeulmonggeul_r.ttf"
     },
     {
-        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\drawable\\logo.png"
-    },
-    {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\font_freesentation_6_semibold.ttf.flat",
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\font\\freesentation_6_semibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\drawable\\logo.png"
     },
     {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\layout_activity_navi.xml.flat",

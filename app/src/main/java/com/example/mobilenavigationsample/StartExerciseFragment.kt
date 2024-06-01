@@ -21,10 +21,9 @@ import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.location.LocationServices
+import com.google.common.reflect.TypeToken
+import com.google.gson.Gson
 
-//import com.google.android.gms.maps.model.CameraPosition
-//import com.google.gson.Gson
-//import com.google.gson.reflect.TypeToken
 //gson이 해결되지 않아 주석 처리.,,.
 
 // TODO: Rename parameter arguments, choose names that match
@@ -57,6 +56,7 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
 
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -76,6 +76,15 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
         }// getSystemService를 사용할 때 context를 사용해야 합니다.
     }
 
+    //아오  이 하단에 getMapaSync 하면 작동될 것이라고 함
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        //val mapFragment = childFragmentManager.findFragmentById(R.id.startExerciseMap) as SupportMapFragment
+        //mapFragment.getMapAsync()
+    }
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -85,6 +94,9 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
 
         startExerciseCheckButton = binding.startExerciseButton
 
+        //getMapAsync 하려고 똥꼬쇼
+
+        //
         mLocationRequest =  LocationRequest.create().apply {
 
             priority = LocationRequest.PRIORITY_HIGH_ACCURACY
@@ -103,8 +115,21 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
         // 버튼 이벤트 설정
         startExerciseCheckButton.setOnClickListener {
             if (checkPermissionForLocation(requireContext())) {
+                //여기 마커 추가 및
+                //운동을 시작합니다 ㄱ
                 startLocationUpdates()
             }
+        }
+
+
+        //jsonFile 읽어오는 프로세스
+        val jsonLocationString = requireActivity().assets.open("location.json").bufferedReader().use { it.readText() }
+        val jsonLocationType = object:TypeToken<Maps>() {}.type
+        val somePlaceMap = Gson().fromJson(jsonLocationString, jsonLocationType) as Maps //각각이 객체가 되어 somPlaceMap에 담김
+
+        //마커를 더함
+        somePlaceMap.map.forEach{
+
         }
 
 
@@ -175,6 +200,10 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
             }
             }
         }
+
+
+    //--------------------------------------------------------------------
+    //마커 추가하는 프로세스
 
 
 

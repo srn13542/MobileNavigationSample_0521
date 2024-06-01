@@ -1,6 +1,6 @@
 package com.example.mobilenavigationsample
 
-data class Location_information (
+data class LocationInformation (
     val town : String,
     val name : String,
     val address : String,

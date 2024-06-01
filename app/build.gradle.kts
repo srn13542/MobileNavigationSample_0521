@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
-
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
@@ -62,5 +60,5 @@ dependencies {
 
     implementation ("com.google.android.gms:play-services-location:19.0.1")
     implementation ("com.google.android.gms:play-services-maps:18.2.0")
-    implementation(libs.gson) //JSON 읽어옴
+    implementation("com.google.code.gson:gson:2.10.1") //JSON 읽어옴
 }
