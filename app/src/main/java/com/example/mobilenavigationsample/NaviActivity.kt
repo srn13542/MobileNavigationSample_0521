@@ -7,6 +7,7 @@ import com.example.mobilenavigationsample.R
 import com.example.mobilenavigationsample.StartExerciseFragment
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -37,6 +38,9 @@ private const val TAG_MY_INFO = "my_info_fragment"
 class NaviActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityNaviBinding
+    // intent를 통해 navi activity에서 넘어온 운동 종류가 저장되는 코드.
+    //  val selectedExerciseType = intent.getStringExtra("EXERCISE_TYPE")
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -101,7 +105,7 @@ class NaviActivity : AppCompatActivity() {
                 R.id.homeFragment -> setFragment(TAG_HOME, HomeFragment())
                 R.id.startExcerciseFragment -> setFragment(
                     TAG_START_EXERCISE,
-                    StartExerciseFragment()
+                    StartExerciseFragment(this)
                 )
 
                 R.id.myInfoFragment -> setFragment(TAG_MY_INFO, MyInfoFragment())
