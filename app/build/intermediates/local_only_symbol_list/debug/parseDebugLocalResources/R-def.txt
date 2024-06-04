@@ -5,6 +5,8 @@ color white
 drawable click_edittext_border
 drawable custom_botton_start_exercise
 drawable edittext_border
+drawable exercise_icon
+drawable exercise_icon2
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable id_edittext_border
@@ -19,6 +21,7 @@ drawable nav_myinfo_hide
 drawable nav_myinfo_show
 drawable nav_report_hide
 drawable nav_report_show
+drawable point_thing
 drawable pw_edittext_border
 drawable pw_icon
 font freesentation_1_thin

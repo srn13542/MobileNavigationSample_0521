@@ -21,11 +21,17 @@ import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.AdvancedMarkerOptions
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
+import com.google.android.gms.maps.model.LatLng
+import com.google.common.reflect.TypeToken
+import com.google.firebase.annotations.concurrent.UiThread
+import com.google.gson.Gson
 
-//import com.google.android.gms.maps.model.CameraPosition
-//import com.google.gson.Gson
-//import com.google.gson.reflect.TypeToken
-//gson이 해결되지 않아 주석 처리.,,.
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -38,7 +44,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [StartExerciseFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
+class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
 //class MapsFragment(val activity: Activity) : Fragment(), OnMapReadyCallback
 
 
@@ -52,47 +58,85 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
     internal lateinit var mLocationRequest: LocationRequest //위치 정보 요청의 매개변수를 저장하는 곳
     private val REQUEST_PERMISSION_LOCATION = 10
 
-    lateinit var startExerciseCheckButton: Button
+    private lateinit var startExerciseCheckButton: Button
     private lateinit var binding: FragmentStartExerciseBinding
+
+   // private val fragmentManager = childFragmentManager
+    //private var startExerciseMapView: SupportMapFragment? = fragmentManager.findFragmentById(R.id.startExerciseMap) as SupportMapFragment?
+    //  private lateinit var startExerciseMapView : MapFragment
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //이 때, fragment에는 setContentView가 없음에 유의, https://velog.io/@vector13/Android-Fragment-%EB%82%B4%EB%B6%80%EC%97%90-setContentView%ED%95%98%EA%B8%B0
 
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
-
-            //버튼 바인딩
-
-
-            mLocationRequest =  LocationRequest.create().apply {
-
-                priority = LocationRequest.PRIORITY_HIGH_ACCURACY
-                //mLocationRequest는 위치 정보 요청의 매개변수 저장하는 곳.
-                //본 함수를 통해 위기 정보 요청의 매개변수를 저장..,불러옴?
-            }
-        }// getSystemService를 사용할 때 context를 사용해야 합니다.
+            //startExerciseMapView.onCreate(savedInstanceState)
+        }
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val startExerciseView = inflater.inflate(R.layout.fragment_start_exercise, container, false)
-        binding = FragmentStartExerciseBinding.bind(startExerciseView)
 
-        startExerciseCheckButton = binding.startExerciseButton
-
-        mLocationRequest =  LocationRequest.create().apply {
+        /*mLocationRequest =  LocationRequest.create().apply {
 
             priority = LocationRequest.PRIORITY_HIGH_ACCURACY
             //mLocationRequest는 위치 정보 요청의 매개변수 저장하는 곳.
             //본 함수를 통해 위기 정보 요청의 매개변수를 저장..,불러옴?
+        }*/
+        binding = FragmentStartExerciseBinding.bind(startExerciseView)
+        startExerciseCheckButton = binding.startExerciseButton
+
+        val fragmentManager = childFragmentManager
+        val startExerciseMapView: SupportMapFragment? = fragmentManager.findFragmentById(R.id.startExerciseMap) as SupportMapFragment?
+        startExerciseMapView?.getMapAsync{googleMap->
+
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(37.340,126.733),16F))
+
+            googleMap.setMinZoomPreference(14F)
+
+            //jsonFile 읽어오는 프로세스
+            //val jsonLocationString = requireActivity().assets.open("location.json").bufferedReader().use { it.readText() }
+            val jsonLocationString = requireActivity().assets.open("location.json").bufferedReader().readText()
+            val jsonLocationType = object: TypeToken<Maps>() {}.type
+            val somePlaceMap = Gson().fromJson(jsonLocationString, jsonLocationType) as Maps //각각이 객체가 되어 somPlaceMap에 담김
+
+            somePlaceMap.map.forEach{
+                val icon = BitmapDescriptorFactory.fromResource(R.drawable.exercise_icon2)
+
+                googleMap.addMarker(
+                    AdvancedMarkerOptions()
+                        .icon(icon).position(LatLng(it.latitude,it.longitude))
+                        .title(it.name)
+                        .snippet("${it.latitude}, ${it.longitude}")
+                )?.let{
+                    it.tag = "exercisePosition"
+                }
+            }
         }
 
-        // 버튼 이벤트를 통해 현재 위치 찾기
+
+
+
+
+
+
+
+
+        mLocationRequest =  LocationRequest.create().apply {
+
+            priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+            //mLocationRequest 는 위치 정보 요청의 매개 변수 저장 하는 곳.
+            //본 함수를 통해 위기 정보 요청의 매개변 수를 저장..,불러옴?
+        }
+
+        // 버튼 이벤트 를 통해 현재 위치 찾기
         startExerciseCheckButton.setOnClickListener {
             if (checkPermissionForLocation(requireContext())) {
                 startLocationUpdates()
@@ -103,27 +147,42 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
         // 버튼 이벤트 설정
         startExerciseCheckButton.setOnClickListener {
             if (checkPermissionForLocation(requireContext())) {
+                //운동을 시작합니다 ㄱ
                 startLocationUpdates()
             }
         }
 
-
         return startExerciseView
     }
 
+    //https://navermaps.github.io/android-map-sdk/guide-ko/2-1.html
 
-    //함수 기입
+
+
+
+
+
+
+
+
+    @UiThread
+    override fun onMapReady(p0: GoogleMap) {
+        TODO("Not yet implemented")
+    } //무슨 기능 인지 알아 봐야 함.,,
+
+
+    //함수 기입-------------------------------------------------------------------------------------
 
     private fun startLocationUpdates(){
-        //FusedLocationProvideClient의 인스턴스를 생성.
+        //FusedLocationProvideClient 의 인 스턴스 를 생성.
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(requireContext())
 
         if(ActivityCompat.checkSelfPermission(requireContext(),Manifest.permission.ACCESS_FINE_LOCATION)!=PackageManager.PERMISSION_GRANTED
             &&ActivityCompat.checkSelfPermission(requireContext(),Manifest.permission.ACCESS_COARSE_LOCATION)!=PackageManager.PERMISSION_GRANTED){
             return
         }
-        // 기기의 위치에 관한 정기 업데이트를 요청하는 메서드 실행
-        // 지정한 루퍼 스레드(Looper.myLooper())에서 콜백(mLocationCallback)으로 위치 업데이트를 요청
+        // 기기의 위치에 관한 정기 업데이 트 요청 하는 메서드 실행
+        // 지정한 루퍼 스레드(Looper.myLooper())에서 콜백(mLocationCallback)으로 위치 업데이 트를 요청
 
         mFusedLocationProviderClient!!.requestLocationUpdates(mLocationRequest,mLocationCallback,
             Looper.myLooper()?: Looper.getMainLooper())
@@ -133,8 +192,8 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
         override fun onLocationResult(locationResult: LocationResult){
             //시스템에서 받은 Location 정보를 onLocationChanged()에 전달
             locationResult.lastLocation
-            locationResult.lastLocation?.let { onLocationChanged(it) }
-            Log.d("Location", "위도: "+locationResult.lastLocation?.latitude+" 경도: "+locationResult.lastLocation?.longitude)
+            locationResult.lastLocation.let { onLocationChanged(it) }
+            Log.d("Location", "위도: "+locationResult.lastLocation.latitude+" 경도: "+locationResult.lastLocation.longitude)
             //onLocationChanged(locationResult.lastLocation)
             //으로 작성했는데 되는지 모르겠음
             //본 본문은 https://fre2-dom.tistory.com/134
@@ -175,6 +234,10 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
             }
             }
         }
+
+
+    //--------------------------------------------------------------------
+    //마커 추가하는 프로세스
 
 
 
