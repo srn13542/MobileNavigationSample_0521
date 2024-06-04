@@ -21,7 +21,12 @@ import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.MapFragment
+import com.google.android.gms.maps.MapView
+import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.common.reflect.TypeToken
+import com.google.firebase.annotations.concurrent.UiThread
 import com.google.gson.Gson
 
 //gson이 해결되지 않아 주석 처리.,,.
@@ -37,7 +42,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [StartExerciseFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
+class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
 //class MapsFragment(val activity: Activity) : Fragment(), OnMapReadyCallback
 
 
@@ -54,11 +59,15 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
     lateinit var startExerciseCheckButton: Button
     private lateinit var binding: FragmentStartExerciseBinding
 
+    private lateinit var startExerciseMapview : MapView
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+        //이 때, fragment에는 setContentView가 없음에 유의, https://velog.io/@vector13/Android-Fragment-%EB%82%B4%EB%B6%80%EC%97%90-setContentView%ED%95%98%EA%B8%B0
 
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
@@ -74,28 +83,73 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
                 //본 함수를 통해 위기 정보 요청의 매개변수를 저장..,불러옴?
             }
         }// getSystemService를 사용할 때 context를 사용해야 합니다.
+
     }
 
     //아오  이 하단에 getMapaSync 하면 작동될 것이라고 함
+    //생명 주기 맞춰서 해야 작동한다 함
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //val mapFragment = childFragmentManager.findFragmentById(R.id.startExerciseMap) as SupportMapFragment
-        //mapFragment.getMapAsync()
+
+        startExerciseMapview = view.findViewById(R.id.startExerciseMap)
+        startExerciseMapview.onCreate(savedInstanceState)
     }
 
+    override fun onStart() {
+        super.onStart()
+        startExerciseMapview.onStart()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        startExerciseMapview.onResume()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        startExerciseMapview.onPause()
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        startExerciseMapview.onSaveInstanceState(outState)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        startExerciseMapview.onStop()
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        startExerciseMapview.onDestroy()
+    }
+
+    override fun onLowMemory() {
+        super.onLowMemory()
+        startExerciseMapview.onLowMemory()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val startExerciseView = inflater.inflate(R.layout.fragment_start_exercise, container, false)
-        binding = FragmentStartExerciseBinding.bind(startExerciseView)
+        //val startExerciseView = inflater.inflate(R.layout.fragment_start_exercise, container, false)
+
+        binding = FragmentStartExerciseBinding.bind(startExerciseMapview)
 
         startExerciseCheckButton = binding.startExerciseButton
 
         //getMapAsync 하려고 똥꼬쇼
 
+        val fragmentManager = childFragmentManager
+        val mapFragment = fragmentManager.findFragmentById(R.id.startExerciseMap) as MapFragment?
+            ?:MapFragment.newInstance().also{
+                fragmentManager.beginTransaction().add(R.id.startExerciseMap, this).commit()
+            }
+        mapFragment.getMapAsync(this)
+        
         //
         mLocationRequest =  LocationRequest.create().apply {
 
@@ -124,20 +178,34 @@ class StartExerciseFragment() : Fragment()/*, OnMapReadyCallback*/ {
 
         //jsonFile 읽어오는 프로세스
         val jsonLocationString = requireActivity().assets.open("location.json").bufferedReader().use { it.readText() }
-        val jsonLocationType = object:TypeToken<Maps>() {}.type
+        val jsonLocationType = object: TypeToken<Maps>() {}.type
         val somePlaceMap = Gson().fromJson(jsonLocationString, jsonLocationType) as Maps //각각이 객체가 되어 somPlaceMap에 담김
 
         //마커를 더함
-        somePlaceMap.map.forEach{
-
-        }
 
 
-        return startExerciseView
+
+
+
+        return startExerciseMapview
     }
 
+    //https://navermaps.github.io/android-map-sdk/guide-ko/2-1.html
 
-    //함수 기입
+
+
+
+
+
+
+
+    @UiThread
+    override fun onMapReady(p0: GoogleMap) {
+        TODO("Not yet implemented")
+    } //무슨 기능인지 알아봐야함.,,
+
+
+    //함수 기입-------------------------------------------------------------------------------------
 
     private fun startLocationUpdates(){
         //FusedLocationProvideClient의 인스턴스를 생성.
