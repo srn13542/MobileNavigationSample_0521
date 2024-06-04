@@ -3162,6 +3162,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable point_thing
 drawable pw_edittext_border
 drawable pw_icon
 drawable test_level_drawable

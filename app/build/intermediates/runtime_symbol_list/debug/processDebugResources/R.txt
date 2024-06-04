@@ -3161,6 +3161,7 @@ int drawable notification_template_icon_bg 0x7f070106
 int drawable notification_template_icon_low_bg 0x7f070107
 int drawable notification_tile_bg 0x7f070108
 int drawable notify_panel_notification_icon_bg 0x7f070109
+int drawable point_thing 0x7f07010f
 int drawable pw_edittext_border 0x7f07010a
 int drawable pw_icon 0x7f07010b
 int drawable test_level_drawable 0x7f07010c

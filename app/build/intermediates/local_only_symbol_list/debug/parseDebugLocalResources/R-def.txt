@@ -19,6 +19,7 @@ drawable nav_myinfo_hide
 drawable nav_myinfo_show
 drawable nav_report_hide
 drawable nav_report_show
+drawable point_thing
 drawable pw_edittext_border
 drawable pw_icon
 font freesentation_1_thin
