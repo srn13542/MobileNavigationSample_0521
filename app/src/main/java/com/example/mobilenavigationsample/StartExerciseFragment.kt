@@ -25,9 +25,9 @@ import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.AdvancedMarkerOptions
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
 import com.google.common.reflect.TypeToken
 import com.google.firebase.annotations.concurrent.UiThread
 import com.google.gson.Gson
@@ -108,15 +108,15 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
             val somePlaceMap = Gson().fromJson(jsonLocationString, jsonLocationType) as Maps //각각이 객체가 되어 somPlaceMap에 담김
 
             somePlaceMap.map.forEach{
-                val icon = BitmapDescriptorFactory.fromResource(R.drawable.point_thing)
+                val icon = BitmapDescriptorFactory.fromResource(R.drawable.exercise_icon2)
 
                 googleMap.addMarker(
-                    MarkerOptions()
+                    AdvancedMarkerOptions()
                         .icon(icon).position(LatLng(it.latitude,it.longitude))
                         .title(it.name)
                         .snippet("${it.latitude}, ${it.longitude}")
                 )?.let{
-                    //it.tag = "운동 장소!"
+                    it.tag = "exercisePosition"
                 }
             }
         }
