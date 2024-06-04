@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.DatePicker;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,33 +22,83 @@ public final class FragmentReportBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final TextView Exercise1;
+
+  @NonNull
+  public final TextView Exercise1Calories;
+
+  @NonNull
+  public final LinearLayout Exercise1Layout;
+
+  @NonNull
+  public final TextView Exercise1Time;
+
+  @NonNull
+  public final TextView Exercise2;
+
+  @NonNull
+  public final TextView Exercise2Calories;
+
+  @NonNull
+  public final LinearLayout Exercise2Layout;
+
+  @NonNull
+  public final TextView Exercise2Time;
+
+  @NonNull
+  public final TextView Exercise3;
+
+  @NonNull
+  public final TextView Exercise3Calories;
+
+  @NonNull
+  public final LinearLayout Exercise3Layout;
+
+  @NonNull
+  public final TextView Exercise3Time;
+
+  @NonNull
+  public final TextView TextViewCalories;
+
+  @NonNull
+  public final TextView TextViewExercise;
+
+  @NonNull
+  public final LinearLayout TextViewGroup;
+
+  @NonNull
   public final DatePicker datePicker;
 
   @NonNull
-  public final TextView exercise;
+  public final TextView timeHeader;
 
-  @NonNull
-  public final View first;
-
-  @NonNull
-  public final TextView kcal;
-
-  @NonNull
-  public final View second;
-
-  @NonNull
-  public final TextView time;
-
-  private FragmentReportBinding(@NonNull ConstraintLayout rootView, @NonNull DatePicker datePicker,
-      @NonNull TextView exercise, @NonNull View first, @NonNull TextView kcal, @NonNull View second,
-      @NonNull TextView time) {
+  private FragmentReportBinding(@NonNull ConstraintLayout rootView, @NonNull TextView Exercise1,
+      @NonNull TextView Exercise1Calories, @NonNull LinearLayout Exercise1Layout,
+      @NonNull TextView Exercise1Time, @NonNull TextView Exercise2,
+      @NonNull TextView Exercise2Calories, @NonNull LinearLayout Exercise2Layout,
+      @NonNull TextView Exercise2Time, @NonNull TextView Exercise3,
+      @NonNull TextView Exercise3Calories, @NonNull LinearLayout Exercise3Layout,
+      @NonNull TextView Exercise3Time, @NonNull TextView TextViewCalories,
+      @NonNull TextView TextViewExercise, @NonNull LinearLayout TextViewGroup,
+      @NonNull DatePicker datePicker, @NonNull TextView timeHeader) {
     this.rootView = rootView;
+    this.Exercise1 = Exercise1;
+    this.Exercise1Calories = Exercise1Calories;
+    this.Exercise1Layout = Exercise1Layout;
+    this.Exercise1Time = Exercise1Time;
+    this.Exercise2 = Exercise2;
+    this.Exercise2Calories = Exercise2Calories;
+    this.Exercise2Layout = Exercise2Layout;
+    this.Exercise2Time = Exercise2Time;
+    this.Exercise3 = Exercise3;
+    this.Exercise3Calories = Exercise3Calories;
+    this.Exercise3Layout = Exercise3Layout;
+    this.Exercise3Time = Exercise3Time;
+    this.TextViewCalories = TextViewCalories;
+    this.TextViewExercise = TextViewExercise;
+    this.TextViewGroup = TextViewGroup;
     this.datePicker = datePicker;
-    this.exercise = exercise;
-    this.first = first;
-    this.kcal = kcal;
-    this.second = second;
-    this.time = time;
+    this.timeHeader = timeHeader;
   }
 
   @Override
@@ -77,44 +128,112 @@ public final class FragmentReportBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Exercise1;
+      TextView Exercise1 = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise1 == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise1_Calories;
+      TextView Exercise1Calories = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise1Calories == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise1_Layout;
+      LinearLayout Exercise1Layout = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise1Layout == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise1_Time;
+      TextView Exercise1Time = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise1Time == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise2;
+      TextView Exercise2 = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise2 == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise2_Calories;
+      TextView Exercise2Calories = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise2Calories == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise2_Layout;
+      LinearLayout Exercise2Layout = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise2Layout == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise2_Time;
+      TextView Exercise2Time = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise2Time == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise3;
+      TextView Exercise3 = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise3 == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise3_Calories;
+      TextView Exercise3Calories = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise3Calories == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise3_Layout;
+      LinearLayout Exercise3Layout = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise3Layout == null) {
+        break missingId;
+      }
+
+      id = R.id.Exercise3_Time;
+      TextView Exercise3Time = ViewBindings.findChildViewById(rootView, id);
+      if (Exercise3Time == null) {
+        break missingId;
+      }
+
+      id = R.id.TextViewCalories;
+      TextView TextViewCalories = ViewBindings.findChildViewById(rootView, id);
+      if (TextViewCalories == null) {
+        break missingId;
+      }
+
+      id = R.id.TextViewExercise;
+      TextView TextViewExercise = ViewBindings.findChildViewById(rootView, id);
+      if (TextViewExercise == null) {
+        break missingId;
+      }
+
+      id = R.id.TextViewGroup;
+      LinearLayout TextViewGroup = ViewBindings.findChildViewById(rootView, id);
+      if (TextViewGroup == null) {
+        break missingId;
+      }
+
       id = R.id.date_picker;
       DatePicker datePicker = ViewBindings.findChildViewById(rootView, id);
       if (datePicker == null) {
         break missingId;
       }
 
-      id = R.id.exercise;
-      TextView exercise = ViewBindings.findChildViewById(rootView, id);
-      if (exercise == null) {
+      id = R.id.time_header;
+      TextView timeHeader = ViewBindings.findChildViewById(rootView, id);
+      if (timeHeader == null) {
         break missingId;
       }
 
-      id = R.id.first;
-      View first = ViewBindings.findChildViewById(rootView, id);
-      if (first == null) {
-        break missingId;
-      }
-
-      id = R.id.kcal;
-      TextView kcal = ViewBindings.findChildViewById(rootView, id);
-      if (kcal == null) {
-        break missingId;
-      }
-
-      id = R.id.second;
-      View second = ViewBindings.findChildViewById(rootView, id);
-      if (second == null) {
-        break missingId;
-      }
-
-      id = R.id.time;
-      TextView time = ViewBindings.findChildViewById(rootView, id);
-      if (time == null) {
-        break missingId;
-      }
-
-      return new FragmentReportBinding((ConstraintLayout) rootView, datePicker, exercise, first,
-          kcal, second, time);
+      return new FragmentReportBinding((ConstraintLayout) rootView, Exercise1, Exercise1Calories,
+          Exercise1Layout, Exercise1Time, Exercise2, Exercise2Calories, Exercise2Layout,
+          Exercise2Time, Exercise3, Exercise3Calories, Exercise3Layout, Exercise3Time,
+          TextViewCalories, TextViewExercise, TextViewGroup, datePicker, timeHeader);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

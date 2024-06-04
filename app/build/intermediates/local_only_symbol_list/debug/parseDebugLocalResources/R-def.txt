@@ -1,6 +1,7 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color primary_color
 color white
 drawable click_edittext_border
 drawable custom_botton_start_exercise
@@ -39,6 +40,18 @@ id BtnMan
 id BtnWoman
 id Calorie
 id CurrentState
+id Exercise1
+id Exercise1_Calories
+id Exercise1_Layout
+id Exercise1_Time
+id Exercise2
+id Exercise2_Calories
+id Exercise2_Layout
+id Exercise2_Time
+id Exercise3
+id Exercise3_Calories
+id Exercise3_Layout
+id Exercise3_Time
 id FindId
 id FindPw
 id Food
@@ -48,8 +61,11 @@ id Nickname
 id SignUp
 id TargetWeight
 id TextViewCalcorie
+id TextViewCalories
 id TextViewCurrentState
+id TextViewExercise
 id TextViewFood
+id TextViewGroup
 id Weight
 id address
 id address_text
@@ -71,11 +87,9 @@ id editTextUsername
 id exercise
 id exerciseAmountTitle
 id exercise_text
-id first
 id goExerciseButton
 id homeFragment
 id ideal_weight_range
-id kcal
 id lineView
 id lineView1
 id lineView2
@@ -88,7 +102,6 @@ id name_text
 id navigationView
 id radioGroupGender
 id reportFragment
-id second
 id startExcerciseFragment
 id startExerciseButton
 id startExerciseMap
@@ -107,7 +120,7 @@ id textViewTitle
 id textViewUsername
 id textViewWeight
 id text_bmi
-id time
+id time_header
 id town
 id town_text
 layout activity_find_id
@@ -137,6 +150,7 @@ string google_storage_bucket
 string hello_blank_fragment
 string project_id
 style Base.Theme.MobileNavigationSample
+style MyDatePickerStyle
 style Theme.MobileNavigationSample
 xml backup_rules
 xml data_extraction_rules
