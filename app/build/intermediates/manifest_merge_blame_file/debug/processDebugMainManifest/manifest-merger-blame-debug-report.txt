@@ -9,54 +9,54 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:5:5-78
-11-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:5:22-76
+11-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:5:5-78
+11-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:5:22-76
 12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-12-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:6:5-80
-12-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:6:22-78
+12-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:6:5-80
+12-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:6:22-78
 13
 14    <uses-feature
-14-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:8:5-10:35
+14-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:8:5-10:35
 15        android:glEsVersion="0x00020000"
-15-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:9:9-41
+15-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:9:9-41
 16        android:required="true" />
-16-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:10:9-32
+16-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:10:9-32
 17
 18    <permission
-18-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:12:5-14:37
+18-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:12:5-14:37
 19        android:name="com.cookandroid.cookmap.permission.MAPS_RECEIVE"
-19-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:13:9-71
+19-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:13:9-71
 20        android:label="signature" />
-20-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:14:9-34
+20-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:14:9-34
 21
 22    <uses-permission android:name="android.permission.INTERNET" />
-22-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:16:5-67
-22-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:16:22-64
+22-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:16:5-67
+22-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:16:22-64
 23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-23-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:17:5-81
-23-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:17:22-78
+23-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:17:5-81
+23-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:17:22-78
 24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-24-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:18:5-79
-24-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:18:22-76
+24-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:18:5-79
+24-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:18:22-76
 25    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-25-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:5:5-78
-25-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:5:22-76
+25-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:5:5-78
+25-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:5:22-76
 26    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-26-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:6:5-80
-26-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:6:22-78
+26-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:6:5-80
+26-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:6:22-78
 27    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-27-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:21:5-98
-27-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:21:22-95
+27-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:21:5-98
+27-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:21:22-95
 28    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-28-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:5:5-78
-28-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:5:22-76
+28-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:5:5-78
+28-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:5:22-76
 29
 30    <meta-data
-30-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:24:5-26:65
+30-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:24:5-26:65
 31        android:name="com.google.android.gms.version"
-31-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:25:9-54
+31-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:25:9-54
 32        android:value="@integer/google_play_services_version" />
-32-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:26:9-62
+32-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:26:9-62
 33
 34    <uses-permission android:name="android.permission.WAKE_LOCK" />
 34-->[com.google.android.gms:play-services-measurement-api:22.0.0] C:\Users\srnb1\.gradle\caches\transforms-3\b8b41149610f6cbfa0948d5287866826\transformed\play-services-measurement-api-22.0.0\AndroidManifest.xml:24:5-68
@@ -96,101 +96,101 @@
 51-->[androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\cbceb9346a3ca221f9e13d01558b1012\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 52
 53    <application
-53-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:28:5-76:19
+53-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:28:5-76:19
 54        android:allowBackup="true"
-54-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:29:9-35
+54-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:29:9-35
 55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 55-->[androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\cbceb9346a3ca221f9e13d01558b1012\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 56        android:dataExtractionRules="@xml/data_extraction_rules"
-56-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:30:9-65
+56-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:30:9-65
 57        android:debuggable="true"
 58        android:extractNativeLibs="false"
 59        android:fullBackupContent="@xml/backup_rules"
-59-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:31:9-54
+59-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:31:9-54
 60        android:icon="@mipmap/ic_launcher"
-60-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:32:9-43
+60-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:32:9-43
 61        android:label="@string/app_name"
-61-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:33:9-41
+61-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:33:9-41
 62        android:roundIcon="@mipmap/ic_launcher_round"
-62-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:34:9-54
+62-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:34:9-54
 63        android:supportsRtl="true"
-63-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:35:9-35
+63-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:35:9-35
 64        android:testOnly="true"
 65        android:theme="@style/Theme.MobileNavigationSample" >
-65-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:36:9-60
+65-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:36:9-60
 66        <activity
-66-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:38:9-40:40
+66-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:38:9-40:40
 67            android:name="com.example.mobilenavigationsample.MapActivity"
-67-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:39:13-40
+67-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:39:13-40
 68            android:exported="false" />
-68-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:40:13-37
+68-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:40:13-37
 69        <activity
-69-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:41:9-43:40
+69-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:41:9-43:40
 70            android:name="com.example.mobilenavigationsample.SignUpActivity"
-70-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:42:13-43
+70-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:42:13-43
 71            android:exported="false" />
-71-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:43:13-37
+71-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:43:13-37
 72        <activity
-72-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:44:9-46:40
+72-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:44:9-46:40
 73            android:name="com.example.mobilenavigationsample.StartLoginActivity"
-73-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:45:13-47
+73-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:45:13-47
 74            android:exported="false" />
-74-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:46:13-37
+74-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:46:13-37
 75        <activity
-75-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:47:9-49:40
+75-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:47:9-49:40
 76            android:name="com.example.mobilenavigationsample.FirstOptionsActivity"
-76-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:48:13-49
+76-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:48:13-49
 77            android:exported="false" />
-77-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:49:13-37
+77-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:49:13-37
 78        <activity
-78-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:50:9-52:40
+78-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:50:9-52:40
 79            android:name="com.example.mobilenavigationsample.FindPwActivity"
-79-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:51:13-43
+79-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:51:13-43
 80            android:exported="false" />
-80-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:52:13-37
+80-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:52:13-37
 81        <activity
-81-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:53:9-55:40
+81-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:53:9-55:40
 82            android:name="com.example.mobilenavigationsample.FindIdActivity"
-82-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:54:13-43
+82-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:54:13-43
 83            android:exported="false" />
-83-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:55:13-37
+83-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:55:13-37
 84        <activity
-84-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:56:9-64:20
+84-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:56:9-64:20
 85            android:name="com.example.mobilenavigationsample.MainActivity"
-85-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:57:13-41
+85-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:57:13-41
 86            android:exported="true" >
-86-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:58:13-36
+86-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:58:13-36
 87            <intent-filter>
-87-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:59:13-63:29
+87-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:59:13-63:29
 88                <action android:name="android.intent.action.MAIN" />
-88-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:60:17-69
-88-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:60:25-66
+88-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:60:17-69
+88-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:60:25-66
 89
 90                <category android:name="android.intent.category.LAUNCHER" />
-90-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:62:17-77
-90-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:62:27-74
+90-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:62:17-77
+90-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:62:27-74
 91            </intent-filter>
 92        </activity>
 93
 94        <meta-data
 95            android:name="com.google.android.maps.v2.API_KEY"
-95-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:67:13-62
+95-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:67:13-62
 96            android:value="AIzaSyCJdgFTAtfL4qk9gNR07lHeiDJBU3Q2Zaw" />
-96-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:68:13-44
+96-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:68:13-44
 97
 98        <uses-library
-98-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:70:9-72:40
+98-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:70:9-72:40
 99            android:name="org.apache.http.legacy"
-99-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:71:13-50
+99-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:71:13-50
 100            android:required="false" />
-100-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:72:13-37
+100-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:72:13-37
 101
 102        <activity
-102-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:73:9-75:49
+102-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:73:9-75:49
 103            android:name="com.example.mobilenavigationsample.NaviActivity"
-103-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:74:13-41
+103-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:74:13-41
 104            android:exported="false" />
-104-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:75:13-37
+104-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:75:13-37
 105
 106        <service
 106-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\srnb1\.gradle\caches\transforms-3\e3ed549d831e649e3493cfca6aaa9e1d\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:8:9-14:19
@@ -437,11 +437,11 @@
 236-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\srnb1\.gradle\caches\transforms-3\449208728f032243ea1757feec6f0be6\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
 237
 238        <meta-data
-238-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:24:5-26:65
+238-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:24:5-26:65
 239            android:name="com.google.android.gms.version"
-239-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:25:9-54
+239-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:25:9-54
 240            android:value="@integer/google_play_services_version" />
-240-->C:\Users\srnb1\AndroidStudioProjects\MobileNavigationSample\app\src\main\AndroidManifest.xml:26:9-62
+240-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:26:9-62
 241
 242        <provider
 242-->[androidx.emoji2:emoji2:1.2.0] C:\Users\srnb1\.gradle\caches\transforms-3\573f1a74d62d619f8e4d7f759f58c1ab\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20

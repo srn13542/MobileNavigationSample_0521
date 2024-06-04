@@ -96,27 +96,24 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
         val fragmentManager = childFragmentManager
         val startExerciseMapView: SupportMapFragment? = fragmentManager.findFragmentById(R.id.startExerciseMap) as SupportMapFragment?
         startExerciseMapView?.getMapAsync{googleMap->
-
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(37.340,126.733),16F))
-
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(37.340387,126.733572),16F))
             googleMap.setMinZoomPreference(14F)
 
             //jsonFile 읽어오는 프로세스
-            //val jsonLocationString = requireActivity().assets.open("location.json").bufferedReader().use { it.readText() }
-            val jsonLocationString = requireActivity().assets.open("location.json").bufferedReader().readText()
-            val jsonLocationType = object: TypeToken<Maps>() {}.type
-            val somePlaceMap = Gson().fromJson(jsonLocationString, jsonLocationType) as Maps //각각이 객체가 되어 somPlaceMap에 담김
+            val jsonLocationString = requireActivity().assets.open("location.json").bufferedReader().use{it.readText()}
+            val jsonLocationType = object: TypeToken<List<LocationInformation>>() {}.type
+            val locations : List<LocationInformation> = Gson().fromJson(jsonLocationString, jsonLocationType)//각각이 객체가 되어 somPlaceMap에 담김
 
-            somePlaceMap.map.forEach{
+            locations.forEach{location->
                 val icon = BitmapDescriptorFactory.fromResource(R.drawable.exercise_icon2)
 
                 googleMap.addMarker(
                     AdvancedMarkerOptions()
-                        .icon(icon).position(LatLng(it.latitude,it.longitude))
-                        .title(it.name)
-                        .snippet("${it.latitude}, ${it.longitude}")
+                        .icon(icon).position(LatLng(location.latitude,location.longitude))
+                        .title(location.name)
+                        .snippet("${location.latitude}, ${location.longitude}")
                 )?.let{
-                    it.tag = "exercisePosition"
+                     it.tag = "exercisePosition"
                 }
             }
         }

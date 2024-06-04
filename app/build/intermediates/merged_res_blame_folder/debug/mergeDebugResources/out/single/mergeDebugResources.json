@@ -20,32 +20,32 @@
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\drawable\\id_edittext_border.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-debug-43:/drawable_exercise_icon.png.flat",
-        "source": "com.example.mobilenavigationsample.app-main-45:/drawable/exercise_icon.png"
+        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\drawable_exercise_icon.png.flat",
+        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\drawable\\exercise_icon.png"
     },
     {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\font_hakgyoansimmonggeulmonggeul_r.ttf.flat",
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\font\\hakgyoansimmonggeulmonggeul_r.ttf"
     },
     {
-        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\font_freesentation_6_semibold.ttf.flat",
-        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\font\\freesentation_6_semibold.ttf"
-    },
-    {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\drawable_logo.png.flat",
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\layout_activity_find_id.xml.flat",
-        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_find_id.xml"
+        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\font_freesentation_6_semibold.ttf.flat",
+        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\font\\freesentation_6_semibold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\font_freesentation_3_light.ttf.flat",
+        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\font\\freesentation_3_light.ttf"
     },
     {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\layout_activity_navi.xml.flat",
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_navi.xml"
     },
     {
-        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\font_freesentation_3_light.ttf.flat",
-        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\font\\freesentation_3_light.ttf"
+        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\layout_activity_find_id.xml.flat",
+        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_find_id.xml"
     },
     {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\layout_fragment_bmi.xml.flat",
@@ -170,6 +170,10 @@
     {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\mipmap-mdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\drawable_exercise_icon2.png.flat",
+        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\drawable\\exercise_icon2.png"
     },
     {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\drawable_pw_icon.png.flat",
