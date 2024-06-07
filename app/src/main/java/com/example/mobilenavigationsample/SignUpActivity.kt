@@ -24,6 +24,7 @@ class SignUpActivity : AppCompatActivity() {
     lateinit var signupBtn: Button
     lateinit var auth: FirebaseAuth
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
