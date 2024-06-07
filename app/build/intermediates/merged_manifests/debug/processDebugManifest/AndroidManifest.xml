@@ -64,6 +64,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MobileNavigationSample" >
         <activity
+            android:name="com.example.mobilenavigationsample.SelectExerciseActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.mobilenavigationsample.MapActivity"
             android:exported="false" />
         <activity
@@ -101,7 +104,8 @@
 
         <activity
             android:name="com.example.mobilenavigationsample.NaviActivity"
-            android:exported="false" />
+            android:exported="false" >
+        </activity>
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

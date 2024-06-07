@@ -34,7 +34,7 @@ class SelectExerciseActivity : AppCompatActivity() {
         selectExerciseList.adapter = adapter
 
         selectExerciseList.setOnClickListener {
-            //override fun onIt
+           // parent, view, position, id -> applicationContext,mExerciseList[position]
 
            // selectedExerciseType = mExersiceList[position]
             findCheckExerciseButton = true
