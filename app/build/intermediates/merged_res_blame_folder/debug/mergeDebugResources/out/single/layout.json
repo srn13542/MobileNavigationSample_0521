@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_first_options.xml",
-        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_first_options.xml"
+        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_select_exercise.xml",
+        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_select_exercise.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_report.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_report.xml"
+        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_first_options.xml",
+        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_first_options.xml"
     },
     {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_navi.xml",

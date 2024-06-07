@@ -128,10 +128,6 @@
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\font\\freesentation_5_medium.ttf"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-debug-43:/layout_fragment_report.xml.flat",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_report.xml"
-    },
-    {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
@@ -142,6 +138,10 @@
     {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-debug-43:/layout_activity_select_exercise.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_select_exercise.xml"
     },
     {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-debug-43:\\font_freesentation_8_extrabold.ttf.flat",

@@ -2,6 +2,7 @@ package com.example.mobilenavigationsample
 
 import android.Manifest
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Build
@@ -138,16 +139,12 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
             if (checkPermissionForLocation(requireContext())) {
                 startLocationUpdates()
             }
-
+            val intent: Intent = Intent(requireContext(),SelectExerciseActivity::class.java)
+            startActivity(intent)
         }
 
         // 버튼 이벤트 설정
-        startExerciseCheckButton.setOnClickListener {
-            if (checkPermissionForLocation(requireContext())) {
-                //운동을 시작합니다 ㄱ
-                startLocationUpdates()
-            }
-        }
+
 
         return startExerciseView
     }

@@ -102,6 +102,8 @@ id name_text
 id navigationView
 id radioGroupGender
 id reportFragment
+id selectExerciseButton
+id selectExerciseListView
 id startExcerciseFragment
 id startExerciseButton
 id startExerciseMap
@@ -129,6 +131,7 @@ layout activity_first_options
 layout activity_main
 layout activity_map
 layout activity_navi
+layout activity_select_exercise
 layout activity_sign_up
 layout activity_start_login
 layout fragment_bmi
