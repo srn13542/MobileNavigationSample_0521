@@ -3324,7 +3324,6 @@ id browser_actions_menu_view
 id buttonGoBack
 id buttonPanel
 id buttonSave
-id buttonSignUp
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3401,17 +3400,14 @@ id easeInOut
 id easeOut
 id east
 id edge
-id editTextConfirmPassword
 id editTextEmail
 id editTextId
 id editTextName
-id editTextPassword
 id editTextPhone
-id editTextPw
-id editTextUsername
 id edit_query
 id edit_text_id
 id elastic
+id email_et
 id embed
 id end
 id endToStart
@@ -3612,9 +3608,11 @@ id postLayout
 id pressed
 id progress_circular
 id progress_horizontal
+id pwd_et
 id radio
 id radioGroupGender
 id ratio
+id re_pwd_et
 id rectangles
 id reportFragment
 id report_drawn
@@ -3655,6 +3653,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signupbutton
 id sin
 id skipCollapsed
 id skipped
@@ -3724,7 +3723,6 @@ id textViewPassword
 id textViewPhone
 id textViewTargetWeight
 id textViewTitle
-id textViewUsername
 id textViewWeight
 id text_bmi
 id text_input_end_icon
