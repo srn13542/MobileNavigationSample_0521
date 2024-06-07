@@ -8,6 +8,10 @@
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_first_options.xml"
     },
     {
+        "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_select_exercise.xml",
+        "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_select_exercise.xml"
+    },
+    {
         "merged": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_navi.xml",
         "source": "C:\\Users\\srnb1\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_navi.xml"
     },

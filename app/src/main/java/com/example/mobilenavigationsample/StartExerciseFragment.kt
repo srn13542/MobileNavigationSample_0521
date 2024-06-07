@@ -106,7 +106,7 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
             val locations : List<LocationInformation> = Gson().fromJson(jsonLocationString, jsonLocationType)//각각이 객체가 되어 somPlaceMap에 담김
 
             locations.forEach{location->
-                val icon = BitmapDescriptorFactory.fromResource(R.drawable.exercise_icon2)
+                val icon = BitmapDescriptorFactory.fromResource(R.drawable.exercise_icon)
 
                 googleMap.addMarker(
                     AdvancedMarkerOptions()
@@ -139,8 +139,10 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
             if (checkPermissionForLocation(requireContext())) {
                 startLocationUpdates()
             }
-            val intent: Intent = Intent(requireContext(),SelectExerciseActivity::class.java)
-            startActivity(intent)
+            activity?.let{
+                val intent: Intent = Intent(context,SelectExerciseActivity::class.java)
+                startActivity(intent)
+            }
         }
 
         // 버튼 이벤트 설정

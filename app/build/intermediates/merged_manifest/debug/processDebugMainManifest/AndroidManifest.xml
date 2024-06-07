@@ -65,7 +65,13 @@
         android:theme="@style/Theme.MobileNavigationSample" >
         <activity
             android:name="com.example.mobilenavigationsample.SelectExerciseActivity"
-            android:exported="false" />
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.SELECT_EXERCISE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.example.mobilenavigationsample.MapActivity"
             android:exported="false" />
@@ -105,6 +111,11 @@
         <activity
             android:name="com.example.mobilenavigationsample.NaviActivity"
             android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.NAVI" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <service
