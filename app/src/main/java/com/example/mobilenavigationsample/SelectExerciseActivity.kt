@@ -54,9 +54,9 @@ class SelectExerciseActivity : AppCompatActivity() {
             if(!findCheckExerciseButton){  //아무것도 클릭되어있지 않을 때 toast 띄움
                 Toast.makeText(this,"어떤 운동을 하실 것인지 체크해주세요!",Toast.LENGTH_SHORT).show()
             }else{
-                val intent = Intent(applicationContext,TimerActivity::class.java)
-                intent.putExtra("EXERCISE_TYPE",selectedExerciseType)
-                startActivity(intent)
+               // val intent = Intent(applicationContext,TimerActivity::class.java)
+//                intent.putExtra("EXERCISE_TYPE",selectedExerciseType)
+//                startActivity(intent)
             }
         }
     }

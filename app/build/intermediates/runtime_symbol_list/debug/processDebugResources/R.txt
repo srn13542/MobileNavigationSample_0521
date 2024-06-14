@@ -3323,7 +3323,6 @@ int id browser_actions_menu_view 0x7f09008b
 int id buttonGoBack 0x7f09008c
 int id buttonPanel 0x7f09008d
 int id buttonSave 0x7f09008e
-int id buttonSignUp 0x7f09008f
 int id cache_measures 0x7f090090
 int id callMeasure 0x7f090091
 int id cancel_button 0x7f090092
@@ -3400,17 +3399,14 @@ int id easeInOut 0x7f0900d8
 int id easeOut 0x7f0900d9
 int id east 0x7f0900da
 int id edge 0x7f0900db
-int id editTextConfirmPassword 0x7f0900dc
 int id editTextEmail 0x7f0900dd
 int id editTextId 0x7f0900de
 int id editTextName 0x7f0900df
-int id editTextPassword 0x7f0900e0
 int id editTextPhone 0x7f0900e1
-int id editTextPw 0x7f0900e2
-int id editTextUsername 0x7f0900e3
 int id edit_query 0x7f0900e4
 int id edit_text_id 0x7f0900e5
 int id elastic 0x7f0900e6
+int id email_et 0x7f090258
 int id embed 0x7f0900e7
 int id end 0x7f0900e8
 int id endToStart 0x7f0900e9
@@ -3611,9 +3607,11 @@ int id postLayout 0x7f0901ab
 int id pressed 0x7f0901ac
 int id progress_circular 0x7f0901ad
 int id progress_horizontal 0x7f0901ae
+int id pwd_et 0x7f090259
 int id radio 0x7f0901af
 int id radioGroupGender 0x7f0901b0
 int id ratio 0x7f0901b1
+int id re_pwd_et 0x7f09025a
 int id rectangles 0x7f0901b2
 int id reportFragment 0x7f0901b3
 int id report_drawn 0x7f0901b4
@@ -3656,6 +3654,7 @@ int id shortcut 0x7f0901d8
 int id showCustom 0x7f0901d9
 int id showHome 0x7f0901da
 int id showTitle 0x7f0901db
+int id signupbutton 0x7f09025b
 int id sin 0x7f0901dc
 int id skipCollapsed 0x7f0901dd
 int id skipped 0x7f0901de
@@ -3725,7 +3724,6 @@ int id textViewPassword 0x7f09021d
 int id textViewPhone 0x7f09021e
 int id textViewTargetWeight 0x7f09021f
 int id textViewTitle 0x7f090220
-int id textViewUsername 0x7f090221
 int id textViewWeight 0x7f090222
 int id text_bmi 0x7f090223
 int id text_input_end_icon 0x7f090224
