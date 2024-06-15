@@ -1,150 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"> <!-- 바깥 부분의 배경색 -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="30dp"
-        android:background="#ffffff"
-        android:id="@+id/main"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3.7"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:paddingTop="5dp">
-            <ImageView
-                android:id="@+id/characterImage"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/logo"
-                android:scaleType="fitCenter" />
-        </LinearLayout>
+    android:background="#ffffff"
+    android:padding="30dp"> <!-- 바깥 부분의 배경색 및 패딩 -->
 
 
+    <!-- 캐릭터 이미지 -->
 
+    <Button
+        android:id="@+id/credits_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/freesentation_6_semibold"
+        android:gravity="center"
+        android:text="정보"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1.4"
-            android:orientation="vertical"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
+    <ImageView
+        android:id="@+id/characterImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/credits_button" />
 
-            <TextView
-                android:id="@+id/exerciseAmountTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="이번 주 운동량"
-                android:textSize="24sp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold"
-                android:fontFamily="@font/freesentation_8_extrabold"
-                android:layout_gravity="left"/>
-            <View
-                android:id="@+id/lineView"
-                android:layout_width="match_parent"
-                android:layout_height="1.5dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="20dp"
-                android:background="#888888" />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/exerciseAmountTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/freesentation_8_extrabold"
+        android:text="이번 주 운동량"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterImage" />
 
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="300dp"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="15dp"
+        android:background="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/exerciseAmountTitle" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineView">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center">
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-            <TextView
-                android:id="@+id/Calorie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="1000"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#0047BB"
-                android:fontFamily="@font/freesentation_8_extrabold">
-
-            </TextView>
-            <TextView
-                android:id="@+id/TextViewCalcorie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text=" 칼로리를 소모했어요"
-                android:textSize="18sp"
-                android:fontFamily="@font/freesentation_6_semibold" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center">
-                <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
-            <TextView
-                android:id="@+id/Food"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="치킨 한 마리"
-                android:textSize="22sp"
-                android:textColor="#0047BB"
-                android:fontFamily="@font/freesentation_8_extrabold" />
-
-                    <TextView
-                        android:id="@+id/TextViewFood"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="@font/freesentation_6_semibold"
-                        android:text=" 만큼 불태웠어요!"
-                        android:textSize="18sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/goExerciseButton"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/Calorie"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="운동하러 가기"
-            android:textSize="20sp"
             android:fontFamily="@font/freesentation_8_extrabold"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#0047BB"/>
+            android:maxLines="1"
+            android:text="1000"
+            android:textColor="#0047BB"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-        </LinearLayout>
-
+        <TextView
+            android:id="@+id/TextViewCalcorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/freesentation_6_semibold"
+            android:maxLines="1"
+            android:text=" 칼로리를 소모했어요"
+            android:textSize="18dp" />
     </LinearLayout>
-</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+        <TextView
+            android:id="@+id/Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/freesentation_8_extrabold"
+            android:maxLines="1"
+            android:text="치킨 한 마리"
+            android:textColor="#0047BB"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/TextViewFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/freesentation_6_semibold"
+            android:maxLines="1"
+            android:text=" 만큼 불태웠어요!"
+            android:textSize="18dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,208 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     android:background="@color/white"
     tools:context=".ReportFragment">
 
-    <!-- DatePicker centered horizontally at the top -->
-
-    <DatePicker
-        android:id="@+id/date_picker"
-        android:layout_width="wrap_content"
-        android:layout_height="405dp"
-        android:layout_marginTop="15dp"
-        android:calendarViewShown="true"
-        android:datePickerMode="calendar"
-        android:scaleX="0.9"
-        android:scaleY="0.9"
-        android:theme="@style/MyDatePickerStyle"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/TextViewGroup"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/date_picker"
-        android:layout_marginLeft="17dp"
-        android:layout_marginRight="17dp">
-        <!-- TextView for exercise type header -->
-        <TextView
-            android:id="@+id/TextViewExercise"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/freesentation_6_semibold"
-            android:gravity="center_horizontal"
-            android:text="운동 종류"
-            android:textSize="18sp" />
+        android:paddingTop="20dp">
 
-        <!-- TextView for time header -->
-        <TextView
-            android:id="@+id/time_header"
-            android:layout_width="0dp"
+        <!-- DatePicker centered horizontally at the top -->
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/freesentation_6_semibold"
-            android:gravity="center_horizontal"
-            android:text="시간"
-            android:textSize="18sp" />
-
-        <!-- TextView for calories header -->
-        <TextView
-            android:id="@+id/TextViewCalories"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/freesentation_6_semibold"
-            android:gravity="center_horizontal"
-            android:text="소모 칼로리"
-            android:textSize="18sp" />
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/TextViewGroup">
+            android:calendarViewShown="true"
+            android:datePickerMode="calendar"
+            android:theme="@style/MyDatePickerStyle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/TextViewGroup"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp"
-            android:paddingTop="10dp">
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@id/date_picker"
+            app:layout_constraintBottom_toTopOf="@id/navigationView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
-            <LinearLayout
-                android:id="@+id/Exercise1_Layout"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/TextViewExercise"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp">
-                <TextView
-                    android:id="@+id/Exercise1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:text="농구"
-                    android:textSize="15sp" />
+                android:layout_weight="1"
+                android:fontFamily="@font/freesentation_6_semibold"
+                android:gravity="center"
+                android:text="운동 종류"
+                android:textSize="18dp" />
 
-                <!-- TextView for exercise times -->
-                <TextView
-                    android:id="@+id/Exercise1_Time"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:text="30:00"
-                    android:textSize="15sp" />
-
-                <!-- TextView for exercise calories -->
-                <TextView
-                    android:id="@+id/Exercise1_Calories"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:text="600kcal"
-                    android:textSize="15sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/Exercise2_Layout"
-                android:layout_width="match_parent"
+            <!-- TextView for exercise times -->
+            <TextView
+                android:id="@+id/time_header"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp">
-                <!-- TextView for exercises -->
-                <TextView
-                    android:id="@+id/Exercise2"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:text="농구"
-                    android:textSize="15sp" />
+                android:layout_weight="1"
+                android:fontFamily="@font/freesentation_6_semibold"
+                android:gravity="center"
+                android:text="시간"
+                android:textSize="18dp" />
 
-                <!-- TextView for exercise times -->
-                <TextView
-                    android:id="@+id/Exercise2_Time"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:text="30:00"
-                    android:textSize="15sp" />
-
-                <!-- TextView for exercise calories -->
-                <TextView
-                    android:id="@+id/Exercise2_Calories"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:text="600kcal"
-                    android:textSize="15sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/Exercise3_Layout"
-                android:layout_width="match_parent"
+            <!-- TextView for exercise calories -->
+            <TextView
+                android:id="@+id/TextViewCalories"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp">
-                <!-- TextView for exercises -->
-                <TextView
-                    android:id="@+id/Exercise3"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:text="농구"
-                    android:textSize="15sp" />
-
-                <TextView
-                    android:id="@+id/Exercise3_Time"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:text="30:00"
-                    android:textSize="15sp" />
-                
-                <TextView
-                    android:id="@+id/Exercise3_Calories"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:text="600kcal"
-                    android:textSize="15sp" />
-            </LinearLayout>
+                android:layout_weight="1"
+                android:fontFamily="@font/freesentation_6_semibold"
+                android:gravity="center"
+                android:text="소모 칼로리"
+                android:textSize="18dp" />
         </LinearLayout>
-    </ScrollView>
 
+        <!-- ScrollView의 자식 레이아웃 및 내용들을 여기에 추가합니다 -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/Layout_Exercise1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@id/TextViewGroup"
+            app:layout_constraintBottom_toTopOf="@id/navigationView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/Exercise1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/freesentation_6_semibold"
+                android:gravity="center"
+                android:text="농구"
+                android:textSize="16dp" />
+
+            <!-- TextView for exercise times -->
+            <TextView
+                android:id="@+id/Exercise1_Time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/freesentation_6_semibold"
+                android:gravity="center"
+                android:text="30:00"
+                android:textSize="16dp" />
+
+            <!-- TextView for exercise calories -->
+            <TextView
+                android:id="@+id/Exercise1_Calories"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/freesentation_6_semibold"
+                android:gravity="center"
+                android:text="600kcal"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <!-- Exercise2_Layout, Exercise3_Layout 등 추가 -->
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/white"
+            app:itemIconTint="@drawable/menu_click_color"
+            app:itemTextColor="@drawable/menu_click_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:menu="@menu/navi_menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

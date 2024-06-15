@@ -45,12 +45,17 @@ class MyInfoFragment : Fragment() {
         val focusedBackground = ContextCompat.getDrawable(requireContext(), R.drawable.click_edittext_border)
 
         // 이전에 저장된 사용자 정보 불러오기
+        //sharedPreferences.run{}
         val nickname = sharedPreferences.getString("nickname", "")
         val gender = sharedPreferences.getString("gender", "")
         val age = sharedPreferences.getInt("age", 0)
         val height = sharedPreferences.getInt("height", 0)
         val weight = sharedPreferences.getInt("weight", 0)
         val targetWeight = sharedPreferences.getInt("targetWeight", 0)
+
+
+
+
 
         // EditText 포커스 변경 이벤트 처리
         val editTextList = listOf<EditText>(

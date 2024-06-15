@@ -2,6 +2,7 @@ package com.example.mobilenavigationsample
 
 import android.Manifest
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
 import android.os.Build
@@ -13,6 +14,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import com.example.mobilenavigationsample.databinding.FragmentStartExerciseBinding
@@ -29,8 +31,8 @@ import com.google.android.gms.maps.model.AdvancedMarkerOptions
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.common.reflect.TypeToken
-import com.google.firebase.annotations.concurrent.UiThread
 import com.google.gson.Gson
+
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -51,6 +53,9 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
+    // 뒤로가기 버튼 (CallBack)
+    private lateinit var callback: OnBackPressedCallback
 
 
     private var mFusedLocationProviderClient: FusedLocationProviderClient? = null //현재 위치를 가져오기 위한 변수
@@ -116,6 +121,8 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
                      it.tag = "exercisePosition"
                 }
             }
+
+
         }
 
 
@@ -161,12 +168,8 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
 
 
 
-
-    @UiThread
     override fun onMapReady(p0: GoogleMap) {
-        TODO("Not yet implemented")
     } //무슨 기능 인지 알아 봐야 함.,,
-
 
     //함수 기입-------------------------------------------------------------------------------------
 
@@ -188,8 +191,8 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
     private val mLocationCallback = object:LocationCallback(){
         override fun onLocationResult(locationResult: LocationResult){
             //시스템에서 받은 Location 정보를 onLocationChanged()에 전달
-            locationResult.lastLocation
-            locationResult.lastLocation.let { onLocationChanged(it) }
+            locationResult.lastLocation.let(::onLocationChanged)
+
             Log.d("Location", "위도: "+locationResult.lastLocation.latitude+" 경도: "+locationResult.lastLocation.longitude)
             //onLocationChanged(locationResult.lastLocation)
             //으로 작성했는데 되는지 모르겠음
@@ -231,6 +234,7 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
             }
             }
         }
+
 
 
     //--------------------------------------------------------------------

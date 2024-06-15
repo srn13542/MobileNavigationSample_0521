@@ -11,6 +11,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.stateIn
 
 class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,14 +44,19 @@ class SignUpActivity : AppCompatActivity() {
         )
         editTextList.forEach { editText ->
             editText.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
-                if (hasFocus) {
-                    editText.background = focusedBackground
-                } else {
-                    editText.background = originalBackground
-                }
+                editText.background = if (hasFocus) focusedBackground else originalBackground
             }
         }
     }
+
+//    val name = MutableStateFlow("")
+//    val email = MutableStateFlow("")
+//    val phone = MutableStateFlow("")
+//    val username = MutableStateFlow("")
+//    val password = MutableStateFlow("")
+//    val enabledSingUp = combine(name, email, phone, username, password) { n, e, p, u, p2 ->
+//        n.length >= 2 && e.length >= 6 && p.length >= 11 && u.length >= 4 && p2.length >= 8
+//    }.stateIn(lifecycleScope, SharingStarted.WhileSubscribed(), false)
 
     //회원가입 처리 함수
     private fun handleSignUp() {

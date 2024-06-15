@@ -4,10 +4,12 @@
     <!-- Base application theme. -->
     <!-- 기본 색상 정의 -->
     <color name="primary_color">#0047BB</color> <!-- 주요 색상 -->
-
+    <color name="background_color">#FAFFFF</color> <!-- 백그라운드 색상 -->
     <style name="Base.Theme.MobileNavigationSample" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- 앱의 주요 색상 설정 -->
         <item name="colorPrimary">@color/primary_color</item>
+        <item name="android:windowBackground">@color/background_color</item>
+    <item name="android:textColorTertiary">@color/black</item>
     </style>
 
     <!-- DatePicker 스타일 정의 -->
@@ -44,7 +46,7 @@
         <!-- 취소/확인버튼 색상 -->
         <item name="android:textColor">@color/primary_color</item>
 
-        <item name="android:textSize">25sp</item>
+        <item name="android:textSize">20dp</item>
 
         <item name="cornerSize">16dp</item>
 
