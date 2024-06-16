@@ -3643,7 +3643,6 @@ int id search_mag_icon 0x7f0901cd
 int id search_plate 0x7f0901ce
 int id search_src_text 0x7f0901cf
 int id search_voice_btn 0x7f0901d0
-int id selectExerciseButton 0x7f0901d1
 int id selectExerciseListView 0x7f0901d2
 int id select_dialog_listview 0x7f0901d3
 int id selected 0x7f0901d4

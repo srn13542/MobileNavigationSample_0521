@@ -54,7 +54,8 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
     private var param2: String? = null
 
 
-    private var mFusedLocationProviderClient: FusedLocationProviderClient? = null //현재 위치를 가져오기 위한 변수
+    private var mFusedLocationProviderClient: FusedLocationProviderClient? =
+        null //현재 위치를 가져오기 위한 변수
     lateinit var mLastLocation: Location //위치 값을 가지고 있는 객체
     internal lateinit var mLocationRequest: LocationRequest //위치 정보 요청의 매개변수를 저장하는 곳
     private val REQUEST_PERMISSION_LOCATION = 10
@@ -62,10 +63,9 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
     private lateinit var startExerciseCheckButton: Button
     private lateinit var binding: FragmentStartExerciseBinding
 
-   // private val fragmentManager = childFragmentManager
+    // private val fragmentManager = childFragmentManager
     //private var startExerciseMapView: SupportMapFragment? = fragmentManager.findFragmentById(R.id.startExerciseMap) as SupportMapFragment?
     //  private lateinit var startExerciseMapView : MapFragment
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -95,39 +95,61 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
         startExerciseCheckButton = binding.startExerciseButton
 
         val fragmentManager = childFragmentManager
-        val startExerciseMapView: SupportMapFragment? = fragmentManager.findFragmentById(R.id.startExerciseMap) as SupportMapFragment?
-        startExerciseMapView?.getMapAsync{googleMap->
-            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(37.340387,126.733572),16F))
+        val startExerciseMapView: SupportMapFragment? =
+            fragmentManager.findFragmentById(R.id.startExerciseMap) as SupportMapFragment?
+        startExerciseMapView?.getMapAsync { googleMap ->
+            googleMap.moveCamera(
+                CameraUpdateFactory.newLatLngZoom(
+                    LatLng(37.340387, 126.733572),
+                    16F
+                )
+            )
             googleMap.setMinZoomPreference(14F)
 
             //jsonFile 읽어오는 프로세스
-            val jsonLocationString = requireActivity().assets.open("location.json").bufferedReader().use{it.readText()}
-            val jsonLocationType = object: TypeToken<List<LocationInformation>>() {}.type
-            val locations : List<LocationInformation> = Gson().fromJson(jsonLocationString, jsonLocationType)//각각이 객체가 되어 somPlaceMap에 담김
+            val jsonLocationString = requireActivity().assets.open("location.json").bufferedReader()
+                .use { it.readText() }
+            val jsonLocationType = object : TypeToken<List<LocationInformation>>() {}.type
+            val locations: List<LocationInformation> =
+                Gson().fromJson(jsonLocationString, jsonLocationType)//각각이 객체가 되어 somPlaceMap에 담김
 
-            locations.forEach{location->
+            locations.forEach { location ->
                 val icon = BitmapDescriptorFactory.fromResource(R.drawable.exercise_icon)
 
                 googleMap.addMarker(
                     AdvancedMarkerOptions()
-                        .icon(icon).position(LatLng(location.latitude,location.longitude))
+                        .icon(icon).position(LatLng(location.latitude, location.longitude))
                         .title(location.name)
                         .snippet("${location.latitude}, ${location.longitude}")
-                )?.let{
-                     it.tag = "exercisePosition"
+                )?.apply {
+                    tag = location
                 }
             }
+
+
+            // 마커 클릭 리스너 설정
+
+            // 마커 클릭 리스너 설정
+            googleMap.setOnMarkerClickListener { marker ->
+                // 마커에 저장된 위치 정보 객체를 가져옴
+                val location = marker.tag as? LocationInformation
+                if (location != null) {
+                    // SelectExerciseActivity로 이동하는 인텐트 설정
+                    val intent = Intent(context, SelectExerciseActivity::class.java).apply {
+                        putExtra("location_name", location.name)
+                        putExtra("latitude", location.latitude)
+                        putExtra("longitude", location.longitude)
+                        putExtra("Exercise", location.exercise)
+
+                    }
+                    startActivity(intent)
+                }
+                true // true를 반환하여 이벤트 소비 처리
+            }
+
         }
 
-
-
-
-
-
-
-
-
-        mLocationRequest =  LocationRequest.create().apply {
+        mLocationRequest = LocationRequest.create().apply {
 
             priority = LocationRequest.PRIORITY_HIGH_ACCURACY
             //mLocationRequest 는 위치 정보 요청의 매개 변수 저장 하는 곳.
@@ -139,8 +161,8 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
             if (checkPermissionForLocation(requireContext())) {
                 startLocationUpdates()
             }
-            activity?.let{
-                val intent: Intent = Intent(context,SelectExerciseActivity::class.java)
+            activity?.let {
+                val intent: Intent = Intent(context, SelectExerciseActivity::class.java)
                 startActivity(intent)
             }
         }
@@ -154,13 +176,6 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
     //https://navermaps.github.io/android-map-sdk/guide-ko/2-1.html
 
 
-
-
-
-
-
-
-
     @UiThread
     override fun onMapReady(p0: GoogleMap) {
         TODO("Not yet implemented")
@@ -169,27 +184,40 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
 
     //함수 기입-------------------------------------------------------------------------------------
 
-    private fun startLocationUpdates(){
+    private fun startLocationUpdates() {
         //FusedLocationProvideClient 의 인 스턴스 를 생성.
-        mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(requireContext())
+        mFusedLocationProviderClient =
+            LocationServices.getFusedLocationProviderClient(requireContext())
 
-        if(ActivityCompat.checkSelfPermission(requireContext(),Manifest.permission.ACCESS_FINE_LOCATION)!=PackageManager.PERMISSION_GRANTED
-            &&ActivityCompat.checkSelfPermission(requireContext(),Manifest.permission.ACCESS_COARSE_LOCATION)!=PackageManager.PERMISSION_GRANTED){
+        if (ActivityCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+            && ActivityCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
             return
         }
         // 기기의 위치에 관한 정기 업데이 트 요청 하는 메서드 실행
         // 지정한 루퍼 스레드(Looper.myLooper())에서 콜백(mLocationCallback)으로 위치 업데이 트를 요청
 
-        mFusedLocationProviderClient!!.requestLocationUpdates(mLocationRequest,mLocationCallback,
-            Looper.myLooper()?: Looper.getMainLooper())
+        mFusedLocationProviderClient!!.requestLocationUpdates(
+            mLocationRequest, mLocationCallback,
+            Looper.myLooper() ?: Looper.getMainLooper()
+        )
     }
 
-    private val mLocationCallback = object:LocationCallback(){
-        override fun onLocationResult(locationResult: LocationResult){
+    private val mLocationCallback = object : LocationCallback() {
+        override fun onLocationResult(locationResult: LocationResult) {
             //시스템에서 받은 Location 정보를 onLocationChanged()에 전달
             locationResult.lastLocation
             locationResult.lastLocation.let { onLocationChanged(it) }
-            Log.d("Location", "위도: "+locationResult.lastLocation.latitude+" 경도: "+locationResult.lastLocation.longitude)
+            Log.d(
+                "Location",
+                "위도: " + locationResult.lastLocation.latitude + " 경도: " + locationResult.lastLocation.longitude
+            )
             //onLocationChanged(locationResult.lastLocation)
             //으로 작성했는데 되는지 모르겠음
             //본 본문은 https://fre2-dom.tistory.com/134
@@ -197,49 +225,52 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
         }
     }
 
-    fun onLocationChanged(location: Location){
+    fun onLocationChanged(location: Location) {
         mLastLocation = location
         //시스템으로부터 받은 위치 정보를 화면에 갱신해주는 메소드
     }
 
     //위치 권한이 있는지 확인하는 메소드
-    private fun checkPermissionForLocation(context: Context):Boolean{
+    private fun checkPermissionForLocation(context: Context): Boolean {
         // Android 6.0 Marshmallow 이상에서는 위치 권한에 추가 런타임 권한이 필요
-        return if(Build.VERSION.SDK_INT >=Build.VERSION_CODES.M){
-            if(context.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION)==PackageManager.PERMISSION_GRANTED){
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (context.checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                 true
-            }else{
+            } else {
                 //권한이 없으므로 권한 요청 알림 보내기
-                ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), REQUEST_PERMISSION_LOCATION)
+                ActivityCompat.requestPermissions(
+                    requireActivity(),
+                    arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                    REQUEST_PERMISSION_LOCATION
+                )
                 false
             }
-        }else{
+        } else {
             true
         }
     }
 
     //사용자에게 권한 요청 수 결과에 대한 처리 로직
-    fun onRequestPermissionResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray){
+    fun onRequestPermissionResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if(requestCode == REQUEST_PERMISSION_LOCATION){
-            if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
+        if (requestCode == REQUEST_PERMISSION_LOCATION) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startLocationUpdates()
-            }else{
+            } else {
                 Log.d("ttt", "onRequestPermissionsResult() _ 권한 허용 거부")
-                Toast.makeText(requireContext(), "권한이 없어 해당 기능을 실행할 수 없습니다.", Toast.LENGTH_SHORT).show()
-            }
+                Toast.makeText(requireContext(), "권한이 없어 해당 기능을 실행할 수 없습니다.", Toast.LENGTH_SHORT)
+                    .show()
             }
         }
+    }
 
 
     //--------------------------------------------------------------------
     //마커 추가하는 프로세스
-
-
-
-
-
-
 
 
     companion object {

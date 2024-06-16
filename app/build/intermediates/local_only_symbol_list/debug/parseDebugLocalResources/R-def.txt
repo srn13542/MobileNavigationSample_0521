@@ -100,7 +100,6 @@ id pwd_et
 id radioGroupGender
 id re_pwd_et
 id reportFragment
-id selectExerciseButton
 id selectExerciseListView
 id signupbutton
 id startExcerciseFragment
