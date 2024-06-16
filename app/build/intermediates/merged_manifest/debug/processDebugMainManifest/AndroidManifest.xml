@@ -64,6 +64,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.MobileNavigationSample" >
         <activity
+            android:name="com.example.mobilenavigationsample.TimerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.timerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.timer"
+            android:exported="false" />
+        <activity
             android:name="com.example.mobilenavigationsample.SelectExerciseActivity"
             android:exported="false" >
             <intent-filter>

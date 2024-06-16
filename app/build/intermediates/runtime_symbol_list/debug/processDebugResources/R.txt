@@ -3321,6 +3321,7 @@ int id browser_actions_menu_item_text 0x7f090089
 int id browser_actions_menu_items 0x7f09008a
 int id browser_actions_menu_view 0x7f09008b
 int id buttonGoBack 0x7f09008c
+int id buttonLayout 0x7f09025c
 int id buttonPanel 0x7f09008d
 int id buttonSave 0x7f09008e
 int id cache_measures 0x7f090090
@@ -3364,6 +3365,7 @@ int id custom 0x7f0900b5
 int id customPanel 0x7f0900b6
 int id cut 0x7f0900b7
 int id dark 0x7f0900b8
+int id date 0x7f09025d
 int id date_picker 0x7f0900b9
 int id date_picker_actions 0x7f0900ba
 int id decelerate 0x7f0900bb
@@ -3615,6 +3617,7 @@ int id re_pwd_et 0x7f09025a
 int id rectangles 0x7f0901b2
 int id reportFragment 0x7f0901b3
 int id report_drawn 0x7f0901b4
+int id resetButton 0x7f09025e
 int id reverseSawtooth 0x7f0901b5
 int id right 0x7f0901b6
 int id rightToLeft 0x7f0901b7
@@ -3623,6 +3626,7 @@ int id right_side 0x7f0901b9
 int id rounded 0x7f0901ba
 int id row_index_key 0x7f0901bb
 int id satellite 0x7f0901bc
+int id saveButton 0x7f09025f
 int id save_non_transition_alpha 0x7f0901bd
 int id save_overlay_view 0x7f0901be
 int id sawtooth 0x7f0901bf
@@ -3676,6 +3680,7 @@ int id src_in 0x7f0901ee
 int id src_over 0x7f0901ef
 int id standard 0x7f0901f0
 int id start 0x7f0901f1
+int id startButton 0x7f090260
 int id startExcerciseFragment 0x7f0901f2
 int id startExerciseButton 0x7f0901f3
 int id startExerciseMap 0x7f0901f4
@@ -3685,6 +3690,7 @@ int id startVertical 0x7f0901f7
 int id staticLayout 0x7f0901f8
 int id staticPostLayout 0x7f0901f9
 int id stop 0x7f0901fa
+int id stopButton 0x7f090261
 int id stretch 0x7f0901fb
 int id submenuarrow 0x7f0901fc
 int id submit_area 0x7f0901fd
@@ -3735,6 +3741,7 @@ int id textinput_placeholder 0x7f09022a
 int id textinput_prefix_text 0x7f09022b
 int id textinput_suffix_text 0x7f09022c
 int id time 0x7f09022d
+int id timeView 0x7f090262
 int id time_header 0x7f09022e
 int id title 0x7f09022f
 int id titleDividerNoCustom 0x7f090230
@@ -3901,6 +3908,7 @@ int layout activity_navi 0x7f0c0021
 int layout activity_select_exercise 0x7f0c0022
 int layout activity_sign_up 0x7f0c0023
 int layout activity_start_login 0x7f0c0024
+int layout activity_timer 0x7f0c007c
 int layout browser_actions_context_menu_page 0x7f0c0025
 int layout browser_actions_context_menu_row 0x7f0c0026
 int layout custom_dialog 0x7f0c0027

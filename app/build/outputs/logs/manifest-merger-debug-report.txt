@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 meta-data#com.google.android.maps.v2.API_KEY
-INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:74:9-76:47
+INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:84:9-86:47
 	android:value
 		INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:76:13-44
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:86:13-44
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:75:13-62
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:85:13-62
 manifest
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:2:1-92:12
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:2:1-103:12
+INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:2:1-103:12
+INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:2:1-103:12
+INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:2:1-103:12
 MERGED from [androidx.databinding:viewbinding:8.3.0] C:\Users\ghkdt\.gradle\caches\transforms-3\b4837228903cd1887bdc7c92f0dc2c24\transformed\viewbinding-8.3.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ghkdt\.gradle\caches\transforms-3\d967505a27cd77338f3421a51fbbaf0f\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\ghkdt\.gradle\caches\transforms-3\e3ed549d831e649e3493cfca6aaa9e1d\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:2:1-17:12
@@ -189,8 +189,8 @@ ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:
 	android:name
 		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:25:9-54
 application
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:28:5-90:19
-INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:28:5-90:19
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:28:5-101:19
+INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:28:5-101:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ghkdt\.gradle\caches\transforms-3\d967505a27cd77338f3421a51fbbaf0f\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\ghkdt\.gradle\caches\transforms-3\d967505a27cd77338f3421a51fbbaf0f\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\ghkdt\.gradle\caches\transforms-3\e3ed549d831e649e3493cfca6aaa9e1d\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:7:5-15:19
@@ -285,90 +285,108 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\gh
 		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:36:9-60
 	android:dataExtractionRules
 		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:30:9-65
-activity#com.example.mobilenavigationsample.SelectExerciseActivity
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:38:9-45:20
+activity#com.example.mobilenavigationsample.TimerActivity
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
 		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:39:13-51
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:39:13-42
+activity#com.example.mobilenavigationsample.timerActivity
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:41:9-43:40
+	android:exported
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:43:13-37
+	android:name
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:42:13-42
+activity#com.example.mobilenavigationsample.timer
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:44:9-46:40
+	android:exported
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:45:13-34
+activity#com.example.mobilenavigationsample.SelectExerciseActivity
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:47:9-55:20
+	android:exported
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:49:13-37
+	android:name
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:48:13-51
 intent-filter#action:name:android.intent.action.SELECT_EXERCISE+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:41:13-44:29
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:50:13-54:29
 action#android.intent.action.SELECT_EXERCISE
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:42:17-80
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:51:17-80
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:42:25-77
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:51:25-77
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:43:17-77
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:53:17-77
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:43:27-74
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:53:27-74
 activity#com.example.mobilenavigationsample.MapActivity
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:46:9-48:40
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:56:9-58:40
 	android:exported
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:48:13-37
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:58:13-37
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:47:13-40
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:57:13-40
 activity#com.example.mobilenavigationsample.SignUpActivity
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:49:9-51:40
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:59:9-61:40
 	android:exported
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:51:13-37
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:50:13-43
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:60:13-43
 activity#com.example.mobilenavigationsample.StartLoginActivity
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:52:9-54:40
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:62:9-64:40
 	android:exported
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:54:13-37
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:64:13-37
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:53:13-47
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:63:13-47
 activity#com.example.mobilenavigationsample.FirstOptionsActivity
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:55:9-57:40
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:65:9-67:40
 	android:exported
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:57:13-37
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:67:13-37
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:56:13-49
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:66:13-49
 activity#com.example.mobilenavigationsample.FindPwActivity
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:58:9-60:40
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:68:9-70:40
 	android:exported
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:60:13-37
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:70:13-37
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:59:13-43
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:69:13-43
 activity#com.example.mobilenavigationsample.FindIdActivity
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:61:9-63:40
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:71:9-73:40
 	android:exported
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:63:13-37
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:73:13-37
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:62:13-43
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:72:13-43
 activity#com.example.mobilenavigationsample.MainActivity
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:64:9-72:20
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:74:9-82:20
 	android:exported
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:66:13-36
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:76:13-36
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:65:13-41
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:75:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:67:13-71:29
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:77:13-81:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:68:17-69
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:78:17-69
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:68:25-66
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:78:25-66
 uses-library#org.apache.http.legacy
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:78:9-80:40
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:88:9-90:40
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\ghkdt\.gradle\caches\transforms-3\4a16d67e1c017d544d8b11e5e2627247\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\ghkdt\.gradle\caches\transforms-3\4a16d67e1c017d544d8b11e5e2627247\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
 	android:required
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:80:13-37
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:90:13-37
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:79:13-50
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:89:13-50
 activity#com.example.mobilenavigationsample.NaviActivity
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:82:9-89:20
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:92:9-100:20
 	android:exported
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:84:13-37
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:94:13-37
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:83:13-41
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:93:13-41
 intent-filter#action:name:android.intent.action.NAVI+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:85:13-88:29
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:95:13-99:29
 action#android.intent.action.NAVI
-ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:86:17-69
+ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:96:17-69
 	android:name
-		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:86:25-66
+		ADDED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml:96:25-66
 uses-sdk
 INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ghkdt\Desktop\kotlin\Final\app\src\main\AndroidManifest.xml

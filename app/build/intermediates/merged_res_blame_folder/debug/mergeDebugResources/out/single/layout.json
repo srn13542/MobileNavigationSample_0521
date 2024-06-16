@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_select_exercise.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_select_exercise.xml"
-    },
-    {
         "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\fragment_home.xml",
         "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\fragment_home.xml"
     },
@@ -42,6 +38,10 @@
     {
         "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\fragment_bmi_flagment.xml",
         "source": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\fragment_bmi_flagment.xml"
+    },
+    {
+        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_timer.xml",
+        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_timer.xml"
     },
     {
         "merged": "C:\\Users\\ghkdt\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_find_id.xml",

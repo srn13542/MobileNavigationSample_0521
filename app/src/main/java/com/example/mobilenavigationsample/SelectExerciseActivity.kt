@@ -36,8 +36,20 @@ class SelectExerciseActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, exerciseList)
         listView.adapter = adapter
 
+        // 리스트뷰 아이템 클릭 리스너 설정
+        listView.setOnItemClickListener { parent, view, position, id ->
+            val selectedItem = parent.getItemAtPosition(position) as String
+            // 선택한 운동 종목을 기준으로 다음 화면으로 이동
+            navigateToExerciseDetail(selectedItem)
+        }
 
     }
 
-
+    private fun navigateToExerciseDetail(selectedExercise: String) {
+        // 선택한 운동 종목을 가지고 ExerciseDetailActivity로 이동하는 Intent 설정
+        val intent = Intent(this, TimerActivity::class.java).apply {
+            putExtra("selected_exercise", selectedExercise)
+        }
+        startActivity(intent)
+    }
 }

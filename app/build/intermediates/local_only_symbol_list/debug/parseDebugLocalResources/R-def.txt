@@ -71,9 +71,11 @@ id address
 id address_text
 id bmi_result
 id buttonGoBack
+id buttonLayout
 id buttonSave
 id characterImage
 id close
+id date
 id date_picker
 id editTextEmail
 id editTextId
@@ -100,11 +102,15 @@ id pwd_et
 id radioGroupGender
 id re_pwd_et
 id reportFragment
+id resetButton
+id saveButton
 id selectExerciseListView
 id signupbutton
+id startButton
 id startExcerciseFragment
 id startExerciseButton
 id startExerciseMap
+id stopButton
 id textViewAge
 id textViewConfirmPassword
 id textViewEmail
@@ -119,6 +125,7 @@ id textViewTargetWeight
 id textViewTitle
 id textViewWeight
 id text_bmi
+id timeView
 id time_header
 id town
 id town_text
@@ -131,6 +138,7 @@ layout activity_navi
 layout activity_select_exercise
 layout activity_sign_up
 layout activity_start_login
+layout activity_timer
 layout fragment_bmi
 layout fragment_bmi_flagment
 layout fragment_home
