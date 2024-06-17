@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.util.*
 import android.util.Log
 
 class TimerActivity : AppCompatActivity() {
@@ -36,6 +37,7 @@ class TimerActivity : AppCompatActivity() {
     private lateinit var firestore: FirebaseFirestore
     private lateinit var auth: FirebaseAuth
     private var running = false
+    private lateinit var exerciseType: String
 
     private val updateTimer: Runnable = object : Runnable {
         override fun run() {
@@ -73,6 +75,9 @@ class TimerActivity : AppCompatActivity() {
         stopButton = findViewById(R.id.stopButton)
         resetButton = findViewById(R.id.resetButton)
 
+        // 이전 Activity에서 전달된 exerciseType 받아오기
+        exerciseType = intent.getStringExtra("selected_exercise") ?: "Unknown"
+
         startButton.setOnClickListener {
             if (!running) {
                 startTime = SystemClock.uptimeMillis()
@@ -100,23 +105,25 @@ class TimerActivity : AppCompatActivity() {
             running = false
         }
 
-        saveButton.setOnClickListener{
+        saveButton.setOnClickListener {
             val date = getTodayDate().format(formatter)
-            val exerciseType : String = "running" // 테스트용 예시
             val exerciseRecord = timeView.text.toString()
-            val kcal : Int = 100 //테스트용 예시값
+            val kcal: Int = 100 // 테스트용 예시값
 
+            // 운동 기록 데이터
             val user = hashMapOf(
                 "date" to date,
                 "exerciseRecord" to exerciseRecord,
                 "exerciseType" to exerciseType,
-                "kcal" to kcal
+                "kcal" to kcal,
+                "timestamp" to System.currentTimeMillis()
             )
 
             val currentUser = auth.currentUser
             if (currentUser != null) {
+                // 기록을 날짜와 시간 기반으로 저장
                 firestore.collection("record").document(currentUser.uid)
-                    .set(user)
+                    .collection("userRecord").add(user)
                     .addOnSuccessListener {
                         Log.d("Firestore", "DocumentSnapshot successfully written!")
                         Toast.makeText(this, "정보가 저장되었습니다.", Toast.LENGTH_SHORT).show()

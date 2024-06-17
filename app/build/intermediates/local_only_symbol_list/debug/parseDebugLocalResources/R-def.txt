@@ -104,6 +104,7 @@ id re_pwd_et
 id reportFragment
 id resetButton
 id saveButton
+id selectExerciseButton
 id selectExerciseListView
 id signupbutton
 id startButton
