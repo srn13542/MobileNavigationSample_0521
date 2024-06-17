@@ -1,8 +1,5 @@
 package com.example.mobilenavigationsample
 
-//타이머 참조 사이트 https://velog.io/@723poil/%EC%8B%9C%EA%B3%84-%EC%95%B1%EC%9D%98-%EC%8A%A4%ED%86%B1%EC%9B%8C%EC%B9%98-%EA%B8%B0%EB%8A%A5-%EB%A7%8C%EB%93%A4%EA%B8%B0
-
-import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
@@ -16,12 +13,11 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.FirebaseApp
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import android.util.Log // 로그를 추가하기 위해 import
-
+import java.time.LocalDate
+import java.time.format.DateTimeFormatter
+import android.util.Log
 
 class TimerActivity : AppCompatActivity() {
 
@@ -71,7 +67,6 @@ class TimerActivity : AppCompatActivity() {
         val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd") // 날짜 형식화
         date.text = today.format(formatter) // 날짜 화면에 보이기
 
-
         timeView = findViewById(R.id.timeView)
         saveButton = findViewById(R.id.saveButton)
         startButton = findViewById(R.id.startButton)
@@ -107,17 +102,17 @@ class TimerActivity : AppCompatActivity() {
 
         saveButton.setOnClickListener{
             val date = getTodayDate().format(formatter)
-            //val selectedExerciseType = intent.getStringExtra("EXERCISE_TYPE")
             val exerciseType : String = "running" // 테스트용 예시
             val exerciseRecord = timeView.text.toString()
             val kcal : Int = 100 //테스트용 예시값
-            //saveExerciseDetails(selectedExerciseType ?: "Unknown", exerciseTime, date)
+
             val user = hashMapOf(
                 "date" to date,
                 "exerciseRecord" to exerciseRecord,
                 "exerciseType" to exerciseType,
                 "kcal" to kcal
             )
+
             val currentUser = auth.currentUser
             if (currentUser != null) {
                 firestore.collection("record").document(currentUser.uid)
@@ -131,16 +126,15 @@ class TimerActivity : AppCompatActivity() {
                     }
                     .addOnFailureListener { e ->
                         Log.w("Firestore", "Error writing document", e)
-                        Toast.makeText(this, "정보 저장에 실패했습니다: ${e.message}", Toast.LENGTH_SHORT)
-                            .show()
+                        Toast.makeText(this, "정보 저장에 실패했습니다: ${e.message}", Toast.LENGTH_SHORT).show()
                     }
             } else {
                 Log.w("Firestore", "No authenticated user")
                 Toast.makeText(this, "운동 기록 저장 실패", Toast.LENGTH_SHORT).show()
             }
         }
-
     }
+
     private fun saveTime(time: Long) {
         val sharedPreferences = getSharedPreferences("stopwatch", Context.MODE_PRIVATE)
         val editor = sharedPreferences.edit()
@@ -152,7 +146,4 @@ class TimerActivity : AppCompatActivity() {
     fun getTodayDate(): LocalDate {
         return LocalDate.now()
     }
-
-
-
 }
