@@ -64,6 +64,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.MobileNavigationSample" >
         <activity
+            android:name="com.example.mobilenavigationsample.CalKcalActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.mobilenavigationsample.TimerActivity"
             android:exported="false" />
         <activity

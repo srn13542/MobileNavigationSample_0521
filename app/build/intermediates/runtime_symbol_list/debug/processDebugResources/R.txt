@@ -3900,6 +3900,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0c0018
 int layout abc_search_view 0x7f0c0019
 int layout abc_select_dialog_material 0x7f0c001a
 int layout abc_tooltip 0x7f0c001b
+int layout activity_cal_kcal 0x7f0c007d
 int layout activity_find_id 0x7f0c001c
 int layout activity_find_pw 0x7f0c001d
 int layout activity_first_options 0x7f0c001e

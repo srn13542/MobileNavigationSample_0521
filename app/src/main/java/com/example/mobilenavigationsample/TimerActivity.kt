@@ -38,6 +38,11 @@ class TimerActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private var running = false
     private lateinit var exerciseType: String
+    private var totalKcal: Int = 0
+
+    companion object {
+        private const val CALC_KCAL_REQUEST = 1
+    }
 
     private val updateTimer: Runnable = object : Runnable {
         override fun run() {
@@ -106,39 +111,54 @@ class TimerActivity : AppCompatActivity() {
         }
 
         saveButton.setOnClickListener {
-            val date = getTodayDate().format(formatter)
-            val exerciseRecord = timeView.text.toString()
-            val kcal: Int = 100 // 테스트용 예시값
-
-            // 운동 기록 데이터
-            val user = hashMapOf(
-                "date" to date,
-                "exerciseRecord" to exerciseRecord,
-                "exerciseType" to exerciseType,
-                "kcal" to kcal,
-                "timestamp" to System.currentTimeMillis()
-            )
-
-            val currentUser = auth.currentUser
-            if (currentUser != null) {
-                // 기록을 날짜와 시간 기반으로 저장
-                firestore.collection("record").document(currentUser.uid)
-                    .collection("userRecord").add(user)
-                    .addOnSuccessListener {
-                        Log.d("Firestore", "DocumentSnapshot successfully written!")
-                        Toast.makeText(this, "정보가 저장되었습니다.", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this, ReportFragment::class.java)
-                        startActivity(intent)
-                        finish()
-                    }
-                    .addOnFailureListener { e ->
-                        Log.w("Firestore", "Error writing document", e)
-                        Toast.makeText(this, "정보 저장에 실패했습니다: ${e.message}", Toast.LENGTH_SHORT).show()
-                    }
-            } else {
-                Log.w("Firestore", "No authenticated user")
-                Toast.makeText(this, "운동 기록 저장 실패", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, CalKcalActivity::class.java).apply {
+                putExtra("selected_exercise", exerciseType)
+                putExtra("exercise_time", timeView.text.toString())
             }
+            startActivityForResult(intent, CALC_KCAL_REQUEST)
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == CALC_KCAL_REQUEST && resultCode == RESULT_OK) {
+            totalKcal = data?.getIntExtra("total_kcal", 0) ?: 0
+            saveExerciseRecord()
+        }
+    }
+
+    private fun saveExerciseRecord() {
+        val date = getTodayDate().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))
+        val exerciseRecord = timeView.text.toString()
+
+        // 운동 기록 데이터
+        val user = hashMapOf(
+            "date" to date,
+            "exerciseRecord" to exerciseRecord,
+            "exerciseType" to exerciseType,
+            "kcal" to totalKcal,
+            "timestamp" to System.currentTimeMillis()
+        )
+
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            // 기록을 날짜와 시간 기반으로 저장
+            firestore.collection("record").document(currentUser.uid)
+                .collection("userRecord").add(user)
+                .addOnSuccessListener {
+                    Log.d("Firestore", "DocumentSnapshot successfully written!")
+                    Toast.makeText(this, "정보가 저장되었습니다.", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, ReportFragment::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                .addOnFailureListener { e ->
+                    Log.w("Firestore", "Error writing document", e)
+                    Toast.makeText(this, "정보 저장에 실패했습니다: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+        } else {
+            Log.w("Firestore", "No authenticated user")
+            Toast.makeText(this, "운동 기록 저장 실패", Toast.LENGTH_SHORT).show()
         }
     }
 

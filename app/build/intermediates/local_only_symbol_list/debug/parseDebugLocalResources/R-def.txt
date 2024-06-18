@@ -130,6 +130,7 @@ id timeView
 id time_header
 id town
 id town_text
+layout activity_cal_kcal
 layout activity_find_id
 layout activity_find_pw
 layout activity_first_options
