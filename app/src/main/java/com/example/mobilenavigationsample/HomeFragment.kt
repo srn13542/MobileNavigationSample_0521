@@ -1,11 +1,13 @@
 package com.example.mobilenavigationsample
 
-import android.content.Intent
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 
 private const val ARG_PARAM1 = "param1"
@@ -15,7 +17,6 @@ class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     private var burnedCalories = 1500 // 사용자가 소모한 칼로리 (나중에 데이터를 받아오는 것으로 변경 필요)
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -31,19 +32,42 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        // 크레딧 레이아웃 ClickListener
-        val credits_button: View = view.findViewById(R.id.credits_button)
-        credits_button.setOnClickListener {
-            // 크레딧 버튼 눌릴때 CreditActivity로 변경
-            val intent = Intent(activity, DeveloperCreditsActivity::class.java)
-            startActivity(intent)
-        }
-
         // 소모한 칼로리에 따라 음식 종류와 칼로리 설정
         setFoodAndCalories(view)
 
         return view
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // 뒤로가기 버튼 눌렀을 때 실행할 행동 정의
+        val callback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                showExitConfirmationDialog()
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
+    }
+
+    // 다이얼로그를 띄우는 함수
+    private fun showExitConfirmationDialog() {
+        AlertDialog.Builder(requireContext(),R.style.CustomExitDialogTheme)
+            .setTitle("어플리케이션 종료")
+            .setMessage("정말 종료하시겠습니까?")
+            .setPositiveButton("종료") { dialog, which ->
+                // 종료
+                requireActivity().finish()
+            }
+            .setNegativeButton("취소") { dialog, which ->
+                // 닫기
+                dialog.dismiss()
+            }
+            .create()
+
+            .show()
+    }
+
 
     // 소모한 칼로리에 따라 음식 종류와 칼로리 설정
     private fun setFoodAndCalories(view: View) {

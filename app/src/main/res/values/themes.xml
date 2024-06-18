@@ -12,6 +12,30 @@
     <item name="android:textColorTertiary">@color/black</item>
     </style>
 
+    <!-- exit시 dialog 스타일 -->
+    <style name="CustomExitDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textSize">18dp</item>
+        <item name="android:fontFamily">@font/freesentation_6_semibold</item> <!-- 폰트 적용 -->
+        <!-- 다이얼로그 외부 터치 시 닫힘 여부 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!-- 버튼 스타일 지정 -->
+        <item name="buttonBarButtonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <!-- 커스텀 버튼 스타일 정의 -->
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <!-- 버튼 텍스트 색상 설정 -->
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <!-- 커스텀 다이얼로그 제목 스타일 -->
+    <style name="CustomDialogTitle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/freesentation_8_extrabold</item> <!-- 폰트 적용 -->
+    </style>
+
+
     <!-- DatePicker 스타일 정의 -->
 
     <style name="MyDatePickerStyle" parent="Theme.AppCompat.Light">

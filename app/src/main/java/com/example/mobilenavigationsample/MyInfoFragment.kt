@@ -1,6 +1,7 @@
 package com.example.mobilenavigationsample
 
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -109,6 +110,15 @@ class MyInfoFragment : Fragment() {
                 commit()
             }
         }
+
+        // 크레딧 레이아웃 ClickListener
+        val credits_button: View = view.findViewById(R.id.credits_button)
+        credits_button.setOnClickListener {
+            // 크레딧 버튼 눌릴때 CreditActivity로 변경
+            val intent = Intent(activity, DeveloperCreditsActivity::class.java)
+            startActivity(intent)
+        }
+
 
         return view
     }

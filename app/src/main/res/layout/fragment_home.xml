@@ -4,24 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
     android:padding="30dp"> <!-- 바깥 부분의 배경색 및 패딩 -->
 
 
     <!-- 캐릭터 이미지 -->
 
-    <Button
-        android:id="@+id/credits_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:fontFamily="@font/freesentation_6_semibold"
-        android:gravity="center"
-        android:text="정보"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/characterImage"
@@ -31,7 +18,7 @@
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/credits_button" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/exerciseAmountTitle"

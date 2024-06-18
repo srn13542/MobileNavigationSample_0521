@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
     android:paddingTop="20dp">
 
     <!-- Title -->
@@ -22,6 +20,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <TextView
+        android:id="@+id/credits_button"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/freesentation_6_semibold"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="정보"
+        android:textColor="@color/primary_color"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="0dp"
@@ -35,7 +50,9 @@
             android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
             <!-- 이름 입력 -->
             <LinearLayout
@@ -51,7 +68,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
                     android:text="닉네임"
@@ -66,7 +82,7 @@
                     android:gravity="center"
                     android:minHeight="48dp"
                     android:text="닉네임"
-                    android:textSize="20sp" />
+                    android:textSize="20dp" />
             </LinearLayout>
 
             <!-- 성별 입력 -->
@@ -83,7 +99,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
                     android:text="성별"
@@ -103,7 +118,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
-                        android:autoSizeMinTextSize="22sp"
+                        android:autoSizeMinTextSize="22dp"
                         android:fontFamily="@font/freesentation_6_semibold"
                         android:text="남자"
                         android:textSize="22sp" />
@@ -113,7 +128,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:autoSizeMinTextSize="22sp"
+                        android:autoSizeMinTextSize="22dp"
                         android:fontFamily="@font/freesentation_6_semibold"
                         android:text="여자"
                         android:textSize="22sp" />
@@ -127,7 +142,6 @@
                 android:layout_height="0dp"
                 android:layout_weight="0.5"
                 android:gravity="center_vertical"
-
                 android:orientation="horizontal"
                 android:paddingTop="15dp">
 
@@ -136,7 +150,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
                     android:text="나이"
@@ -147,7 +160,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:autoSizeTextType="uniform"
                     android:background="@drawable/edittext_border"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
@@ -171,7 +183,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
                     android:text="키"
@@ -205,7 +216,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
                     android:text="몸무게"
@@ -216,7 +226,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:autoSizeTextType="uniform"
                     android:background="@drawable/edittext_border"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
@@ -241,7 +250,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
                     android:text="목표\n몸무게"
@@ -252,7 +260,6 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:autoSizeTextType="uniform"
                     android:background="@drawable/edittext_border"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
@@ -278,7 +285,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/navigationView"
         android:layout_marginTop="15dp"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationView"
