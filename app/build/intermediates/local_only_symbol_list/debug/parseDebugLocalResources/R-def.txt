@@ -85,7 +85,6 @@ id email_et
 id exercise
 id exerciseAmountTitle
 id exercise_text
-id goExerciseButton
 id homeFragment
 id ideal_weight_range
 id lineView

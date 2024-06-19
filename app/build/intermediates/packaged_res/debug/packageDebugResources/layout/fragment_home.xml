@@ -127,15 +127,6 @@
             </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/goExerciseButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="운동하러 가기"
-            android:textSize="20sp"
-            android:fontFamily="@font/freesentation_8_extrabold"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#0047BB"/>
 
         <LinearLayout
             android:layout_width="match_parent"

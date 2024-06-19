@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/font_freesentation_2_extralight.ttf.flat",
-        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/font/freesentation_2_extralight.ttf"
-    },
-    {
         "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/font_freesentation_1_thin.ttf.flat",
         "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/font/freesentation_1_thin.ttf"
+    },
+    {
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/font_freesentation_2_extralight.ttf.flat",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/font/freesentation_2_extralight.ttf"
     },
     {
         "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/font_freesentation_8_extrabold.ttf.flat",
@@ -36,12 +36,12 @@
         "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/layout_activity_first_options.xml.flat",
-        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_first_options.xml"
-    },
-    {
         "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/drawable_nav_exercise_hide.xml.flat",
         "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/drawable/nav_exercise_hide.xml"
+    },
+    {
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/layout_activity_first_options.xml.flat",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_first_options.xml"
     },
     {
         "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/font_freesentation_3_light.ttf.flat",
@@ -148,10 +148,6 @@
         "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/fragment_my_info.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-debug-43:/layout_fragment_report.xml.flat",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_report.xml"
-    },
-    {
         "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/drawable_pw_edittext_border.xml.flat",
         "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/drawable/pw_edittext_border.xml"
     },
@@ -204,6 +200,10 @@
         "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/font/freesentation_7_bold.ttf"
     },
     {
+        "merged": "com.example.mobilenavigationsample.app-debug-43:/layout_fragment_home.xml.flat",
+        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_home.xml"
+    },
+    {
         "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/layout_activity_navi.xml.flat",
         "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_navi.xml"
     },
@@ -232,12 +232,12 @@
         "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_cal_kcal.xml"
     },
     {
-        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/drawable_nav_myinfo_hide.xml.flat",
-        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/drawable/nav_myinfo_hide.xml"
-    },
-    {
         "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/layout_fragment_report.xml.flat",
         "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/fragment_report.xml"
+    },
+    {
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/drawable_nav_myinfo_hide.xml.flat",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/drawable/nav_myinfo_hide.xml"
     },
     {
         "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-debug-43:/font_freesentation_4_regular.ttf.flat",

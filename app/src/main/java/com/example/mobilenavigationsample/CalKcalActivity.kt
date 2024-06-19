@@ -53,6 +53,7 @@ class CalKcalActivity : AppCompatActivity() {
             "그라운드 골프" -> 2
             "워터파크" -> 5
             "썰매" -> 5
+            "축구" -> 8
             else -> 0
         }
 
