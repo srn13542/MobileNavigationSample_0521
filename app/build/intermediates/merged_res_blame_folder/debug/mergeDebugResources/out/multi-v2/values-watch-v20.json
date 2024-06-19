@@ -4,7 +4,7 @@
             "outputFile": "com.example.mobilenavigationsample.app-mergeDebugResources-41:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/melon/.gradle/caches/transforms-3/54c90dbacc7a7371072d1a1c14f02520/transformed/appcompat-1.6.1/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "C:\\Users\\ghkdt\\.gradle\\caches\\transforms-3\\54c90dbacc7a7371072d1a1c14f02520\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/melon/.gradle/caches/transforms-3/e288b4c1bf231a74964bf851119b4061/transformed/play-services-auth-20.7.0/res/values-watch-v20/values.xml",
+                    "source": "C:\\Users\\ghkdt\\.gradle\\caches\\transforms-3\\e288b4c1bf231a74964bf851119b4061\\transformed\\play-services-auth-20.7.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
