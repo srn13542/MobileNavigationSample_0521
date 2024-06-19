@@ -9,10 +9,13 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -22,6 +25,8 @@ class MyInfoFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
     private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var firestore: FirebaseFirestore
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +34,9 @@ class MyInfoFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+        firestore = FirebaseFirestore.getInstance()
+        auth = FirebaseAuth.getInstance()
     }
 
     override fun onCreateView(
@@ -77,31 +85,71 @@ class MyInfoFragment : Fragment() {
         view.findViewById<EditText>(R.id.Weight).setText(weight.toString())
         view.findViewById<EditText>(R.id.TargetWeight).setText(targetWeight.toString())
 
+        // Firebase Firestore에서 사용자 정보 가져오기
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            val userDocRef = firestore.collection("User").document(currentUser.uid)
+            userDocRef.get()
+                .addOnSuccessListener { document ->
+                    if (document.exists()) {
+                        // 가져온 데이터를 뷰에 설정
+                        view.findViewById<TextView>(R.id.Nickname).text = document.getString("nickname")
+                        val gender = document.getString("gender")
+                        if (gender == "남자") {
+                            view.findViewById<RadioButton>(R.id.BtnMan).isChecked = true
+                        } else {
+                            view.findViewById<RadioButton>(R.id.BtnWoman).isChecked = true
+                        }
+                        view.findViewById<EditText>(R.id.Age).setText(document.getLong("age")?.toString())
+                        view.findViewById<EditText>(R.id.Height).setText(document.getLong("height")?.toString())
+                        view.findViewById<EditText>(R.id.Weight).setText(document.getLong("weight")?.toString())
+                        view.findViewById<EditText>(R.id.TargetWeight).setText(document.getLong("targetWeight")?.toString())
+                    }
+                }
+                .addOnFailureListener { e ->
+                    Toast.makeText(requireContext(), "사용자 정보를 불러오는 데 실패했습니다: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+        }
+
         // 저장 버튼 클릭 시 동작
         btnSave.setOnClickListener {
             // 수정된 사용자 정보 저장
+            val editedNickname = view.findViewById<TextView>(R.id.Nickname).text.toString()
             val editedGender = if (view.findViewById<RadioButton>(R.id.BtnMan).isChecked) "남자" else "여자"
             val editedAge = view.findViewById<EditText>(R.id.Age).text.toString().toInt()
             val editedHeight = view.findViewById<EditText>(R.id.Height).text.toString().toInt()
             val editedWeight = view.findViewById<EditText>(R.id.Weight).text.toString().toInt()
             val editedTargetWeight = view.findViewById<EditText>(R.id.TargetWeight).text.toString().toInt()
 
-            // SharedPreferences에 저장
-            sharedPreferences.edit().apply {
-                putString("gender", editedGender)
-                putInt("age", editedAge)
-                putInt("height", editedHeight)
-                putInt("weight", editedWeight)
-                putInt("targetWeight", editedTargetWeight)
-                apply()
-            }
+            // Firebase Firestore에 저장
+            val user = hashMapOf(
+                "nickname" to editedNickname,
+                "gender" to editedGender,
+                "age" to editedAge,
+                "height" to editedHeight,
+                "weight" to editedWeight,
+                "targetWeight" to editedTargetWeight
+            )
 
-            // BmiFragment로 이동
-            val bmiFragment = BmiFragment.newInstance("", "")
-            parentFragmentManager.beginTransaction().apply {
-                replace(R.id.mainFrameLayout, bmiFragment, TAG_BMI)
-                addToBackStack(TAG_BMI)
-                commit()
+            if (currentUser != null) {
+                firestore.collection("User").document(currentUser.uid)
+                    .set(user)
+                    .addOnSuccessListener {
+                        Toast.makeText(requireContext(), "정보가 저장되었습니다.", Toast.LENGTH_SHORT).show()
+                        // BmiFragment로 이동
+                        val bmiFragment = BmiFragment.newInstance("", "")
+                        parentFragmentManager.beginTransaction().apply {
+                            replace(R.id.mainFrameLayout, bmiFragment, TAG_BMI)
+                            addToBackStack(TAG_BMI)
+                            commit()
+                        }
+                    }
+                    .addOnFailureListener { e ->
+                        Toast.makeText(requireContext(), "정보 저장에 실패했습니다: ${e.message}", Toast.LENGTH_SHORT)
+                            .show()
+                    }
+            } else {
+                Toast.makeText(requireContext(), "사용자 인증 실패", Toast.LENGTH_SHORT).show()
             }
         }
 

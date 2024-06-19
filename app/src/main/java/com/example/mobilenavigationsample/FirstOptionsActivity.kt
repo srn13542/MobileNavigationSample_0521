@@ -27,6 +27,22 @@ class FirstOptionsActivity : AppCompatActivity() {
         firestore = FirebaseFirestore.getInstance()
         auth = FirebaseAuth.getInstance()
 
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            val userDocRef = firestore.collection("User").document(currentUser.uid)
+            userDocRef.get()
+                .addOnSuccessListener { document ->
+                    if (document.exists()) {
+                        // 사용자 정보가 이미 존재하면 NaviActivity로 이동
+                        val intent = Intent(this, NaviActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+                .addOnFailureListener { e ->
+                    Toast.makeText(this, "사용자 정보를 확인하는 데 실패했습니다: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+        }
         val btnSave: Button = findViewById(R.id.buttonSave)
 
         btnSave.setOnClickListener {
@@ -48,7 +64,6 @@ class FirstOptionsActivity : AppCompatActivity() {
                 "targetWeight" to editedTargetWeight
             )
 
-            val currentUser = auth.currentUser
             if (currentUser != null) {
                 firestore.collection("User").document(currentUser.uid)
                     .set(user)

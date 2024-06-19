@@ -1,5 +1,6 @@
 package com.example.mobilenavigationsample
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -41,7 +42,9 @@ class HomeFragment : Fragment() {
 
         goExerciseButton.setOnClickListener {
             // 운동하러 가기 버튼 클릭 시 동작 (현재 토스트 메시지 출력. 추후 변경.)
-            Toast.makeText(requireContext(), "운동하러 가기 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show()
+            val intent = Intent(requireActivity(), StartExerciseFragment::class.java)
+            startActivity(intent)
+            //finish()
         }
 
         // 소모한 칼로리에 따라 음식 종류와 칼로리 설정
