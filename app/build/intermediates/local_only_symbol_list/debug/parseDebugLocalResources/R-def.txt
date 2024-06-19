@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color background_color
 color black
 color primary_color
 color white
@@ -42,22 +43,23 @@ id Calorie
 id CurrentState
 id Exercise1
 id Exercise1_Calories
-id Exercise1_Layout
 id Exercise1_Time
 id Exercise2
 id Exercise2_Calories
-id Exercise2_Layout
 id Exercise2_Time
 id Exercise3
 id Exercise3_Calories
-id Exercise3_Layout
 id Exercise3_Time
 id FindId
 id FindPw
 id Food
 id Height
 id IdealWeight
+id Layout_Exercise1
+id Layout_Exercise2
+id Layout_Exercise3
 id Nickname
+id ScrollView
 id SignUp
 id TargetWeight
 id TextViewCalcorie
@@ -75,10 +77,13 @@ id buttonLayout
 id buttonSave
 id characterImage
 id close
+id creditsTextView
+id credits_button
 id date
 id date_picker
 id editTextEmail
 id editTextId
+id editTextLayout
 id editTextName
 id editTextPhone
 id email_et
@@ -90,6 +95,8 @@ id ideal_weight_range
 id lineView
 id lineView1
 id lineView2
+id linearLayout3
+id linearLayout4
 id loginButton
 id main
 id mainFrameLayout
@@ -103,8 +110,10 @@ id re_pwd_et
 id reportFragment
 id resetButton
 id saveButton
+id scrollView
 id selectExerciseButton
 id selectExerciseListView
+id showCreditsButton
 id signupbutton
 id startButton
 id startExcerciseFragment
@@ -116,13 +125,13 @@ id textViewConfirmPassword
 id textViewEmail
 id textViewGender
 id textViewHeight
-id textViewId
 id textViewName
 id textViewNickname
 id textViewPassword
 id textViewPhone
 id textViewTargetWeight
 id textViewTitle
+id textViewUsername
 id textViewWeight
 id text_bmi
 id timeView
@@ -130,6 +139,7 @@ id time_header
 id town
 id town_text
 layout activity_cal_kcal
+layout activity_developer_credits
 layout activity_find_id
 layout activity_find_pw
 layout activity_first_options
@@ -140,6 +150,7 @@ layout activity_select_exercise
 layout activity_sign_up
 layout activity_start_login
 layout activity_timer
+layout dialog_credit
 layout fragment_bmi
 layout fragment_bmi_flagment
 layout fragment_home
@@ -159,6 +170,9 @@ string google_storage_bucket
 string hello_blank_fragment
 string project_id
 style Base.Theme.MobileNavigationSample
+style CustomButtonStyle
+style CustomDialogTitle
+style CustomExitDialogTheme
 style MyDatePickerStyle
 style Theme.MobileNavigationSample
 xml backup_rules

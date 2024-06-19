@@ -2,32 +2,32 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffffff"> <!-- 바깥 부분의 배경색 -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/main"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
-        android:background="#ffffff"
-        android:orientation="vertical">
+        android:layout_marginTop="10dp"
+        android:id="@+id/main">
 
         <!-- Logo Section -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
-            android:gravity="center"
             android:orientation="vertical"
+            android:gravity="center"
             android:padding="16dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="헬시 로고"
-                android:src="@drawable/logo" />
+                android:src="@drawable/logo"
+                android:contentDescription="헬시 로고" />
 
         </LinearLayout>
 
@@ -36,69 +36,71 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="5"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1.5"
+                android:layout_weight="1.8"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="3dp">
+                android:padding="3dp"
+                >
 
                 <EditText
                     android:id="@+id/email_et"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/id_edittext_border"
+                    android:layout_weight="1.5"
                     android:drawableLeft="@drawable/id_icon"
                     android:drawablePadding="15dp"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:hint="아이디"
-                    android:inputType="text"
                     android:paddingLeft="10dp"
-                    android:paddingTop="3dp"></EditText>
+                    android:hint="이메일"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:background="@drawable/id_edittext_border"
+                    android:inputType="text"
+                    ></EditText>
 
                 <EditText
                     android:id="@+id/pwd_et"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+                    android:layout_weight="1.5"
                     android:layout_gravity="bottom"
-                    android:layout_weight="1"
-                    android:background="@drawable/pw_edittext_border"
                     android:drawableLeft="@drawable/pw_icon"
                     android:drawablePadding="15dp"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:hint="비밀번호"
-                    android:inputType="textPassword"
                     android:paddingLeft="10dp"
-                    android:paddingTop="1dp"></EditText>
+                    android:hint="비밀번호"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:background="@drawable/pw_edittext_border"
+                    android:inputType="textPassword"
+                    ></EditText>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="0.9"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:padding="10dp">
-
+                android:minHeight="48dp"
+                android:layout_marginTop="13dp">
                 <Button
                     android:id="@+id/loginButton"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:backgroundTint="#0047BB"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:onClick="onLoginClick"
+                    android:layout_height="wrap_content"
                     android:text="로그인"
-                    android:textSize="22dp"></Button>
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:textSize="22dp"
+                    android:backgroundTint="#0047BB"
+                    android:gravity="center"
+                    android:onClick="onLoginClick"
+                    ></Button>
             </LinearLayout>
 
-
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
@@ -106,14 +108,14 @@
                     android:id="@+id/FindId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:minHeight="48dp"
-                    android:onClick="onFindId"
                     android:text="아이디 찾기"
-                    android:textSize="18dp" />
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:onClick="onFindId"
+                    android:minHeight="48dp"
+                    android:layout_marginRight="5dp" />
 
                 <View
                     android:id="@+id/lineView1"
@@ -126,14 +128,15 @@
                     android:id="@+id/FindPw"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top"
-                    android:layout_margin="10dp"
-                    android:fontFamily="@font/freesentation_6_semibold"
                     android:gravity="center"
-                    android:minHeight="48dp"
-                    android:onClick="onFindPw"
+                    android:layout_gravity="top"
                     android:text="비밀번호 찾기"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:onClick="onFindPw"
+                    android:minHeight="48dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
 
                 <View
                     android:id="@+id/lineView2"
@@ -146,17 +149,16 @@
                     android:id="@+id/SignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:gravity="center"
-                    android:minHeight="48dp"
-                    android:onClick="onSignUp"
                     android:text="회원가입"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:onClick="onSignUp"
                     android:textColor="#0047BB"
-                    android:textSize="18dp" />
+                    android:minHeight="48dp"
+                    android:layout_marginLeft="10dp"/>
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -165,7 +167,6 @@
                 android:gravity="top|center"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp">
-
 
             </LinearLayout>
         </LinearLayout>

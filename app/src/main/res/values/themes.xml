@@ -4,11 +4,37 @@
     <!-- Base application theme. -->
     <!-- 기본 색상 정의 -->
     <color name="primary_color">#0047BB</color> <!-- 주요 색상 -->
-
+    <color name="background_color">#FAFFFF</color> <!-- 백그라운드 색상 -->
     <style name="Base.Theme.MobileNavigationSample" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- 앱의 주요 색상 설정 -->
         <item name="colorPrimary">@color/primary_color</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textColorTertiary">@color/black</item>
     </style>
+
+    <!-- exit시 dialog 스타일 -->
+    <style name="CustomExitDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textSize">18dp</item>
+        <item name="android:fontFamily">@font/freesentation_6_semibold</item> <!-- 폰트 적용 -->
+        <!-- 다이얼로그 외부 터치 시 닫힘 여부 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!-- 버튼 스타일 지정 -->
+        <item name="buttonBarButtonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <!-- 커스텀 버튼 스타일 정의 -->
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <!-- 버튼 텍스트 색상 설정 -->
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <!-- 커스텀 다이얼로그 제목 스타일 -->
+    <style name="CustomDialogTitle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/freesentation_8_extrabold</item> <!-- 폰트 적용 -->
+    </style>
+
 
     <!-- DatePicker 스타일 정의 -->
 
@@ -44,7 +70,7 @@
         <!-- 취소/확인버튼 색상 -->
         <item name="android:textColor">@color/primary_color</item>
 
-        <item name="android:textSize">25sp</item>
+        <item name="android:textSize">20dp</item>
 
         <item name="cornerSize">16dp</item>
 

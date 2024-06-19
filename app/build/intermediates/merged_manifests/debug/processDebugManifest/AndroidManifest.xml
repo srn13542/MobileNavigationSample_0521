@@ -64,6 +64,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.MobileNavigationSample" >
         <activity
+            android:name="com.example.mobilenavigationsample.DeveloperCreditsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.DeveloperCreditActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.mobilenavigationsample.CalKcalActivity"
             android:exported="false" />
         <activity

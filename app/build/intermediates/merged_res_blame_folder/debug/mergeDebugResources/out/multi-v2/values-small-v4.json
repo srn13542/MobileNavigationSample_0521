@@ -4,7 +4,7 @@
             "outputFile": "com.example.mobilenavigationsample.app-mergeDebugResources-41:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/melon/.gradle/caches/transforms-3/2b06a344f0cac7465f61c770c4d6633a/transformed/material-1.11.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "C:\\Users\\whdbs\\.gradle\\caches\\transforms-3\\2b06a344f0cac7465f61c770c4d6633a\\transformed\\material-1.11.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -72,6 +74,37 @@ class HomeFragment : Fragment() {
                     Toast.makeText(requireContext(), "칼로리 데이터를 가져오는 중 오류가 발생했습니다.", Toast.LENGTH_SHORT).show()
                 }
         }
+    }
+
+    // 추가된 부분 (0618)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // 뒤로가기 버튼 눌렀을 때 실행할 행동 정의
+        val callback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                showExitConfirmationDialog()
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
+    }
+
+    // 다이얼로그를 띄우는 함수
+    private fun showExitConfirmationDialog() {
+        AlertDialog.Builder(requireContext(),R.style.CustomExitDialogTheme)
+            .setTitle("어플리케이션 종료")
+            .setMessage("정말 종료하시겠습니까?")
+            .setPositiveButton("종료") { dialog, which ->
+                // 종료
+                requireActivity().finish()
+            }
+            .setNegativeButton("취소") { dialog, which ->
+                // 닫기
+                dialog.dismiss()
+            }
+            .create()
+
+            .show()
     }
 
     // Set food and calories based on burned calories
