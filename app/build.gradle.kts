@@ -49,6 +49,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -62,7 +63,9 @@ dependencies {
     implementation ("com.google.android.gms:play-services-location:19.0.1")
     implementation ("com.google.android.gms:play-services-maps:18.2.0")
     implementation("com.google.code.gson:gson:2.10.1") //JSON 읽어옴
-
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-analytics")
+    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
 
 }
 

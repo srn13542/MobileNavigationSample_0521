@@ -1,55 +1,71 @@
 [
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_bmi_flagment.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_bmi_flagment.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_cal_kcal.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_cal_kcal.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_report.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_report.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_report.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/fragment_report.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_find_id.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_find_id.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_map.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_map.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_map.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_map.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_sign_up.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_sign_up.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_start_login.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_start_login.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_start_login.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_start_login.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_find_pw.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_find_pw.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_find_id.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_find_id.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_my_info.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_my_info.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_start_exercise.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/fragment_start_exercise.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_navi.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_navi.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_timer.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_timer.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_start_exercise.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_start_exercise.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_select_exercise.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_select_exercise.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_main.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_main.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_navi.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_navi.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_bmi.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_bmi.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_find_pw.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_find_pw.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_first_options.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_first_options.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_bmi_flagment.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/fragment_bmi_flagment.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_sign_up.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/activity_sign_up.xml"
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_my_info.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/fragment_my_info.xml"
+    },
+    {
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_bmi.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/fragment_bmi.xml"
+    },
+    {
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_first_options.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/activity_first_options.xml"
+    },
+    {
+        "merged": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_home.xml",
+        "source": "/Users/melon/.gradle/daemon/8.4/com.example.mobilenavigationsample.app-main-45:/layout/fragment_home.xml"
     },
     {
         "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_home.xml",
