@@ -9,54 +9,54 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:5:5-79
-11-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:5:22-76
+11-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:5:22-76
 12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-12-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:6:5-81
-12-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:6:22-78
+12-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:6:5-81
+12-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:6:22-78
 13
 14    <uses-feature
-14-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:8:5-10:35
+14-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:8:5-10:35
 15        android:glEsVersion="0x00020000"
-15-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:9:9-41
+15-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:9:9-41
 16        android:required="true" />
-16-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:10:9-32
+16-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:10:9-32
 17
 18    <permission
-18-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:12:5-14:37
+18-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:12:5-14:37
 19        android:name="com.cookandroid.cookmap.permission.MAPS_RECEIVE"
-19-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:13:9-71
+19-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:13:9-71
 20        android:label="signature" />
-20-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:14:9-34
+20-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:14:9-34
 21
 22    <uses-permission android:name="android.permission.INTERNET" />
-22-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:16:5-67
-22-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:16:22-64
+22-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:16:5-67
+22-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:16:22-64
 23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-23-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:17:5-81
-23-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:17:22-78
+23-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:17:5-81
+23-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:17:22-78
 24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-24-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:18:5-79
-24-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:18:22-76
+24-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:18:5-79
+24-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:18:22-76
 25    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-25-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:5:5-79
-25-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:5:22-76
+25-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:5:5-79
+25-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:5:22-76
 26    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-26-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:6:5-81
-26-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:6:22-78
+26-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:6:5-81
+26-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:6:22-78
 27    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-27-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:21:5-98
-27-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:21:22-95
+27-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:21:5-98
+27-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:21:22-95
 28    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-28-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:5:5-79
-28-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:5:22-76
+28-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:5:5-79
+28-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:5:22-76
 29
 30    <meta-data
-30-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:24:5-26:65
+30-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:24:5-26:65
 31        android:name="com.google.android.gms.version"
-31-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:25:9-54
+31-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:25:9-54
 32        android:value="@integer/google_play_services_version" />
-32-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:26:9-62
+32-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:26:9-62
 33
 34    <uses-permission android:name="android.permission.WAKE_LOCK" />
 34-->[com.google.android.gms:play-services-measurement-api:22.0.0] /Users/melon/.gradle/caches/transforms-3/14d785272c2563fa6e06e7fb567604e4/transformed/play-services-measurement-api-22.0.0/AndroidManifest.xml:24:5-68
@@ -96,151 +96,151 @@
 51-->[androidx.core:core:1.13.0] /Users/melon/.gradle/caches/transforms-3/b712aba3cd2454dd1a5a4f9b79930b12/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
 52
 53    <application
-53-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:28:5-104:19
+53-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:28:5-104:19
 54        android:allowBackup="true"
-54-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:29:9-35
+54-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:29:9-35
 55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 55-->[androidx.core:core:1.13.0] /Users/melon/.gradle/caches/transforms-3/b712aba3cd2454dd1a5a4f9b79930b12/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
 56        android:dataExtractionRules="@xml/data_extraction_rules"
-56-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:30:9-65
+56-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:30:9-65
 57        android:debuggable="true"
 58        android:extractNativeLibs="false"
 59        android:fullBackupContent="@xml/backup_rules"
-59-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:31:9-54
+59-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:31:9-54
 60        android:icon="@mipmap/ic_launcher"
-60-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:32:9-43
+60-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:32:9-43
 61        android:label="@string/app_name"
-61-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:33:9-41
+61-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:33:9-41
 62        android:roundIcon="@mipmap/ic_launcher_round"
-62-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:34:9-54
+62-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:34:9-54
 63        android:supportsRtl="true"
-63-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:35:9-35
+63-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:35:9-35
 64        android:testOnly="true"
 65        android:theme="@style/Theme.MobileNavigationSample" >
-65-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:36:9-60
+65-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:36:9-60
 66        <activity
-66-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:38:9-40:40
+66-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:38:9-40:40
 67            android:name="com.example.mobilenavigationsample.CalKcalActivity"
-67-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:39:13-44
+67-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:39:13-44
 68            android:exported="false" />
-68-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:40:13-37
+68-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:40:13-37
 69        <activity
-69-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:41:9-43:40
+69-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:41:9-43:40
 70            android:name="com.example.mobilenavigationsample.TimerActivity"
-70-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:42:13-42
+70-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:42:13-42
 71            android:exported="false" />
-71-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:43:13-37
+71-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:43:13-37
 72        <activity
-72-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:44:9-46:40
+72-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:44:9-46:40
 73            android:name="com.example.mobilenavigationsample.timerActivity"
-73-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:45:13-42
+73-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:45:13-42
 74            android:exported="false" />
-74-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:46:13-37
+74-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:46:13-37
 75        <activity
-75-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:47:9-49:40
+75-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:47:9-49:40
 76            android:name="com.example.mobilenavigationsample.timer"
-76-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:48:13-34
+76-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:48:13-34
 77            android:exported="false" />
-77-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:49:13-37
+77-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:49:13-37
 78        <activity
-78-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:50:9-58:20
+78-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:50:9-58:20
 79            android:name="com.example.mobilenavigationsample.SelectExerciseActivity"
-79-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:51:13-51
+79-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:51:13-51
 80            android:exported="false" >
-80-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:52:13-37
+80-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:52:13-37
 81            <intent-filter>
-81-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:53:13-57:29
+81-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:53:13-57:29
 82                <action android:name="android.intent.action.SELECT_EXERCISE" />
-82-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:54:17-80
-82-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:54:25-77
+82-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:54:17-80
+82-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:54:25-77
 83
 84                <category android:name="android.intent.category.LAUNCHER" />
-84-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:56:17-77
-84-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:56:27-74
+84-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:56:17-77
+84-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:56:27-74
 85            </intent-filter>
 86        </activity>
 87        <activity
-87-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:59:9-61:40
+87-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:59:9-61:40
 88            android:name="com.example.mobilenavigationsample.MapActivity"
-88-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:60:13-40
+88-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:60:13-40
 89            android:exported="false" />
-89-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:61:13-37
+89-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:61:13-37
 90        <activity
-90-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:62:9-64:40
+90-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:62:9-64:40
 91            android:name="com.example.mobilenavigationsample.SignUpActivity"
-91-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:63:13-43
+91-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:63:13-43
 92            android:exported="false" />
-92-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:64:13-37
+92-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:64:13-37
 93        <activity
-93-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:65:9-67:40
+93-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:65:9-67:40
 94            android:name="com.example.mobilenavigationsample.StartLoginActivity"
-94-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:66:13-47
+94-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:66:13-47
 95            android:exported="false" />
-95-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:67:13-37
+95-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:67:13-37
 96        <activity
-96-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:68:9-70:40
+96-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:68:9-70:40
 97            android:name="com.example.mobilenavigationsample.FirstOptionsActivity"
-97-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:69:13-49
+97-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:69:13-49
 98            android:exported="false" />
-98-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:70:13-37
+98-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:70:13-37
 99        <activity
-99-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:71:9-73:40
+99-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:71:9-73:40
 100            android:name="com.example.mobilenavigationsample.FindPwActivity"
-100-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:72:13-43
+100-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:72:13-43
 101            android:exported="false" />
-101-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:73:13-37
+101-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:73:13-37
 102        <activity
-102-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:74:9-76:40
+102-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:74:9-76:40
 103            android:name="com.example.mobilenavigationsample.FindIdActivity"
-103-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:75:13-43
+103-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:75:13-43
 104            android:exported="false" />
-104-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:76:13-37
+104-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:76:13-37
 105        <activity
-105-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:77:9-85:20
+105-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:77:9-85:20
 106            android:name="com.example.mobilenavigationsample.MainActivity"
-106-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:78:13-41
+106-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:78:13-41
 107            android:exported="true" >
-107-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:79:13-36
+107-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:79:13-36
 108            <intent-filter>
-108-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:80:13-84:29
+108-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:80:13-84:29
 109                <action android:name="android.intent.action.MAIN" />
-109-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:81:17-69
-109-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:81:25-66
+109-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:81:17-69
+109-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:81:25-66
 110
 111                <category android:name="android.intent.category.LAUNCHER" />
-111-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:56:17-77
-111-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:56:27-74
+111-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:56:17-77
+111-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:56:27-74
 112            </intent-filter>
 113        </activity>
 114
 115        <meta-data
 116            android:name="com.google.android.maps.v2.API_KEY"
-116-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:88:13-62
+116-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:88:13-62
 117            android:value="AIzaSyCJdgFTAtfL4qk9gNR07lHeiDJBU3Q2Zaw" />
-117-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:89:13-44
+117-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:89:13-44
 118
 119        <uses-library
-119-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:91:9-93:40
+119-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:91:9-93:40
 120            android:name="org.apache.http.legacy"
-120-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:92:13-50
+120-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:92:13-50
 121            android:required="false" />
-121-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:93:13-37
+121-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:93:13-37
 122
 123        <activity
-123-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:95:9-103:20
+123-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:95:9-103:20
 124            android:name="com.example.mobilenavigationsample.NaviActivity"
-124-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:96:13-41
+124-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:96:13-41
 125            android:exported="false" >
-125-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:97:13-37
+125-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:97:13-37
 126            <intent-filter>
-126-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:98:13-102:29
+126-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:98:13-102:29
 127                <action android:name="android.intent.action.NAVI" />
-127-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:99:17-69
-127-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:99:25-66
+127-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:99:17-69
+127-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:99:25-66
 128
 129                <category android:name="android.intent.category.LAUNCHER" />
-129-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:56:17-77
-129-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:56:27-74
+129-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:56:17-77
+129-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:56:27-74
 130            </intent-filter>
 131        </activity>
 132
@@ -507,11 +507,11 @@
 272-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] /Users/melon/.gradle/caches/transforms-3/2cc664d83ffff3b6785ac11c4f30fd54/transformed/ads-adservices-1.0.0-beta05/AndroidManifest.xml:25:13-37
 273
 274        <meta-data
-274-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:24:5-26:65
+274-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:24:5-26:65
 275            android:name="com.google.android.gms.version"
-275-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:25:9-54
+275-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:25:9-54
 276            android:value="@integer/google_play_services_version" />
-276-->/Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:26:9-62
+276-->/Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:26:9-62
 277
 278        <provider
 278-->[androidx.emoji2:emoji2:1.2.0] /Users/melon/.gradle/caches/transforms-3/9ef2a139550764b91e13f095499839af/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20

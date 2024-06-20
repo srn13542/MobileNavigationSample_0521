@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 meta-data#com.google.android.maps.v2.API_KEY
-INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:87:9-89:47
+INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:87:9-89:47
 	android:value
-		INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:89:13-44
+		INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:89:13-44
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:88:13-62
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:88:13-62
 manifest
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:2:1-106:12
-INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:2:1-106:12
-INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:2:1-106:12
-INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:2:1-106:12
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:2:1-106:12
+INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:2:1-106:12
+INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:2:1-106:12
+INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:2:1-106:12
 MERGED from [androidx.databinding:viewbinding:8.3.0] /Users/melon/.gradle/caches/transforms-3/3d766fae6ea310cedb70b31ae6fd2b99/transformed/viewbinding-8.3.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/melon/.gradle/caches/transforms-3/e315676b450af899d0bd57ddaa4d36b9/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.android.material:material:1.11.0] /Users/melon/.gradle/caches/transforms-3/2b06a344f0cac7465f61c770c4d6633a/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
@@ -96,39 +96,39 @@ MERGED from [androidx.print:print:1.0.0] /Users/melon/.gradle/caches/transforms-
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] /Users/melon/.gradle/caches/transforms-3/209fc67196200081886a23348449705b/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/melon/.gradle/caches/transforms-3/da53290474f37aa1bb31c29b3c72c82e/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:5:5-79
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:5:5-79
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:6:5-81
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:6:22-78
 uses-feature#0x00020000
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:8:5-10:35
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:8:5-10:35
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/melon/.gradle/caches/transforms-3/1eab14926e74fe336b532eab84c9e30d/transformed/play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/melon/.gradle/caches/transforms-3/1eab14926e74fe336b532eab84c9e30d/transformed/play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:9:9-41
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:9:9-41
 	android:required
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:10:9-32
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:10:9-32
 permission#com.cookandroid.cookmap.permission.MAPS_RECEIVE
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:12:5-14:37
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:12:5-14:37
 	android:label
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:14:9-34
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:14:9-34
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:13:9-71
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:13:9-71
 uses-permission#android.permission.INTERNET
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:16:5-67
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:16:5-67
 MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/melon/.gradle/caches/transforms-3/e6bf5601a0e08ad1a02af0ba93945da5/transformed/firebase-auth-23.0.0/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/melon/.gradle/caches/transforms-3/e6bf5601a0e08ad1a02af0ba93945da5/transformed/firebase-auth-23.0.0/AndroidManifest.xml:25:5-67
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] /Users/melon/.gradle/caches/transforms-3/8308f411cadf97e5f0e7d59afb15eaa2/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:11:5-67
@@ -148,13 +148,13 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:22.0.0] /User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.0] /Users/melon/.gradle/caches/transforms-3/fbe9eda01e8275c2013b26ce55217526/transformed/play-services-measurement-sdk-api-22.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.0] /Users/melon/.gradle/caches/transforms-3/fbe9eda01e8275c2013b26ce55217526/transformed/play-services-measurement-sdk-api-22.0.0/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:16:22-64
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:16:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:17:5-81
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:17:22-78
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:17:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:18:5-79
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:18:5-79
 MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/melon/.gradle/caches/transforms-3/e6bf5601a0e08ad1a02af0ba93945da5/transformed/firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-auth:23.0.0] /Users/melon/.gradle/caches/transforms-3/e6bf5601a0e08ad1a02af0ba93945da5/transformed/firebase-auth-23.0.0/AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-firestore:25.0.0] /Users/melon/.gradle/caches/transforms-3/8308f411cadf97e5f0e7d59afb15eaa2/transformed/firebase-firestore-25.0.0/AndroidManifest.xml:10:5-79
@@ -176,22 +176,22 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:22.0.0] /U
 MERGED from [io.grpc:grpc-android:1.57.2] /Users/melon/.gradle/caches/transforms-3/5282d16b46360201d035ffdedff662eb/transformed/grpc-android-1.57.2/AndroidManifest.xml:7:5-79
 MERGED from [io.grpc:grpc-android:1.57.2] /Users/melon/.gradle/caches/transforms-3/5282d16b46360201d035ffdedff662eb/transformed/grpc-android-1.57.2/AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:18:22-76
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:18:22-76
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:21:5-98
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:21:5-98
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/melon/.gradle/caches/transforms-3/7d130fad16906f55c69deae3233bd982/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:5-98
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] /Users/melon/.gradle/caches/transforms-3/7d130fad16906f55c69deae3233bd982/transformed/recaptcha-18.4.0/AndroidManifest.xml:9:5-98
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:21:22-95
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:21:22-95
 meta-data#com.google.android.gms.version
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:24:5-26:65
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:24:5-26:65
 	android:value
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:26:9-62
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:26:9-62
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:25:9-54
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:25:9-54
 application
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:28:5-104:19
-INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:28:5-104:19
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:28:5-104:19
+INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:28:5-104:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/melon/.gradle/caches/transforms-3/e315676b450af899d0bd57ddaa4d36b9/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/melon/.gradle/caches/transforms-3/e315676b450af899d0bd57ddaa4d36b9/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/melon/.gradle/caches/transforms-3/2b06a344f0cac7465f61c770c4d6633a/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
@@ -267,139 +267,139 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/melon/.gradle/caches
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/melon/.gradle/caches/transforms-3/14dd5b03bd4b4eddcaf455731a1a55aa/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/melon/.gradle/caches/transforms-3/14dd5b03bd4b4eddcaf455731a1a55aa/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-		INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] /Users/melon/.gradle/caches/transforms-3/b712aba3cd2454dd1a5a4f9b79930b12/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:35:9-35
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:35:9-35
 	android:label
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:33:9-41
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:33:9-41
 	android:fullBackupContent
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:31:9-54
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:31:9-54
 	android:roundIcon
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:34:9-54
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:34:9-54
 	tools:targetApi
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:37:9-29
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:37:9-29
 	android:icon
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:32:9-43
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:32:9-43
 	android:allowBackup
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:29:9-35
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:29:9-35
 	android:theme
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:36:9-60
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:36:9-60
 	android:dataExtractionRules
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:30:9-65
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:30:9-65
 activity#com.example.mobilenavigationsample.CalKcalActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:38:9-40:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:38:9-40:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:40:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:39:13-44
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:39:13-44
 activity#com.example.mobilenavigationsample.TimerActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:41:9-43:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:41:9-43:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:43:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:43:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:42:13-42
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:42:13-42
 activity#com.example.mobilenavigationsample.timerActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:44:9-46:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:44:9-46:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:46:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:45:13-42
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:45:13-42
 activity#com.example.mobilenavigationsample.timer
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:47:9-49:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:49:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:48:13-34
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:48:13-34
 activity#com.example.mobilenavigationsample.SelectExerciseActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:50:9-58:20
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:50:9-58:20
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:52:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:51:13-51
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:51:13-51
 intent-filter#action:name:android.intent.action.SELECT_EXERCISE+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:53:13-57:29
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:53:13-57:29
 action#android.intent.action.SELECT_EXERCISE
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:54:17-80
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:54:17-80
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:54:25-77
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:54:25-77
 category#android.intent.category.LAUNCHER
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:56:17-77
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:56:17-77
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:56:27-74
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:56:27-74
 activity#com.example.mobilenavigationsample.MapActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:59:9-61:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:59:9-61:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:61:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:60:13-40
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:60:13-40
 activity#com.example.mobilenavigationsample.SignUpActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:62:9-64:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:62:9-64:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:64:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:64:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:63:13-43
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:63:13-43
 activity#com.example.mobilenavigationsample.StartLoginActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:65:9-67:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:65:9-67:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:67:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:67:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:66:13-47
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:66:13-47
 activity#com.example.mobilenavigationsample.FirstOptionsActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:68:9-70:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:68:9-70:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:70:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:70:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:69:13-49
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:69:13-49
 activity#com.example.mobilenavigationsample.FindPwActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:71:9-73:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:71:9-73:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:73:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:73:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:72:13-43
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:72:13-43
 activity#com.example.mobilenavigationsample.FindIdActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:74:9-76:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:74:9-76:40
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:76:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:76:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:75:13-43
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:75:13-43
 activity#com.example.mobilenavigationsample.MainActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:77:9-85:20
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:77:9-85:20
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:79:13-36
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:79:13-36
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:78:13-41
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:78:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:80:13-84:29
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:80:13-84:29
 action#android.intent.action.MAIN
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:81:17-69
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:81:17-69
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:81:25-66
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:81:25-66
 uses-library#org.apache.http.legacy
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:91:9-93:40
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:91:9-93:40
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/melon/.gradle/caches/transforms-3/1eab14926e74fe336b532eab84c9e30d/transformed/play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] /Users/melon/.gradle/caches/transforms-3/1eab14926e74fe336b532eab84c9e30d/transformed/play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
 	android:required
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:93:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:93:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:92:13-50
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:92:13-50
 activity#com.example.mobilenavigationsample.NaviActivity
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:95:9-103:20
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:95:9-103:20
 	android:exported
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:97:13-37
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:97:13-37
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:96:13-41
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:96:13-41
 intent-filter#action:name:android.intent.action.NAVI+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:98:13-102:29
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:98:13-102:29
 action#android.intent.action.NAVI
-ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:99:17-69
+ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:99:17-69
 	android:name
-		ADDED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml:99:25-66
+		ADDED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml:99:25-66
 uses-sdk
-INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml
-INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml
+INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml
+INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.3.0] /Users/melon/.gradle/caches/transforms-3/3d766fae6ea310cedb70b31ae6fd2b99/transformed/viewbinding-8.3.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.3.0] /Users/melon/.gradle/caches/transforms-3/3d766fae6ea310cedb70b31ae6fd2b99/transformed/viewbinding-8.3.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/melon/.gradle/caches/transforms-3/e315676b450af899d0bd57ddaa4d36b9/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:5:5-44
@@ -571,9 +571,9 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/melon
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:23.0.0] /Users/melon/.gradle/caches/transforms-3/e6bf5601a0e08ad1a02af0ba93945da5/transformed/firebase-auth-23.0.0/AndroidManifest.xml:23:9-148
 	android:targetSdkVersion
-		INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/melon/AndroidStudioProjects/plzzzzzzzplzzzzplzzz/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/melon/AndroidStudioProjects/yoonsu_0620/app/src/main/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-firestore-ktx:25.0.0] /Users/melon/.gradle/caches/transforms-3/e315676b450af899d0bd57ddaa4d36b9/transformed/firebase-firestore-ktx-25.0.0/AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-auth-ktx:23.0.0] /Users/melon/.gradle/caches/transforms-3/596190251c31f24ae48046cf13600d80/transformed/firebase-auth-ktx-23.0.0/AndroidManifest.xml:8:9-14:19
