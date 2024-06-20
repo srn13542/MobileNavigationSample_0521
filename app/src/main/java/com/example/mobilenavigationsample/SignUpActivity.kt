@@ -35,10 +35,18 @@ class SignUpActivity : AppCompatActivity() {
         confirmPasswordEt = findViewById(R.id.re_pwd_et)
         signupBtn = findViewById(R.id.signupbutton)
 
+
+        // yoonsu 0620수정. 입력이 비어 있을 시, 오류 해결 및 토스트 메세지 출력
         signupBtn.setOnClickListener {
-            val email = emailEt.text.toString().trim()
-            val password = passwordEt.text.toString().trim()
-            val confirmPassword = confirmPasswordEt.text.toString()
+            var email = emailEt.text.toString().trim()
+            var password = passwordEt.text.toString().trim()
+            var confirmPassword = confirmPasswordEt.text.toString().trim()
+
+            if (email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
+                Toast.makeText(this, "모두 입력해 주세요.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             if (password == confirmPassword) {
                 auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener { task ->
@@ -47,19 +55,19 @@ class SignUpActivity : AppCompatActivity() {
                             val intent = Intent(this, StartLoginActivity::class.java)
                             startActivity(intent)
                             finish()
-                            // 회원가입 성공 시 로그인 화면으로 이동
                         } else {
-                            Toast.makeText(
-                                this,
-                                "회원가입 실패: 이미 존재하는 계정이거나 이메일 형식을 확인해주세요.",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                            if (password.length < 6) {
+                                Toast.makeText(this, "회원가입 실패: 비밀번호를 6자 이상 입력해주세요.", Toast.LENGTH_SHORT).show()
+                            } else {
+                                Toast.makeText(this, "회원가입 실패: 이미 존재하는 계정이거나 이메일 형식을 확인해주세요.", Toast.LENGTH_SHORT).show()
+                            }
                         }
                     }
             } else {
                 Toast.makeText(this, "비밀번호가 일치하지 않습니다.", Toast.LENGTH_SHORT).show()
             }
         }
+
 
 
         // 원래의 배경과 포커스를 받은 배경을 가져옴
