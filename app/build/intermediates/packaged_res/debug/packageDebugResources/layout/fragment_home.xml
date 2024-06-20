@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:text="이번 주 운동량"
-                android:textSize="24sp"
+                android:textSize="24dp"
                 android:layout_marginBottom="10dp"
                 android:textStyle="bold"
                 android:fontFamily="@font/freesentation_8_extrabold"
@@ -72,26 +72,26 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center">
-            <TextView
-                android:id="@+id/Calorie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="1000"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#0047BB"
-                android:fontFamily="@font/freesentation_8_extrabold">
+                <TextView
+                    android:id="@+id/Calorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="1000"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#0047BB"
+                    android:fontFamily="@font/freesentation_8_extrabold">
 
-            </TextView>
-            <TextView
-                android:id="@+id/TextViewCalcorie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text=" 칼로리를 소모했어요"
-                android:textSize="18sp"
-                android:fontFamily="@font/freesentation_6_semibold" />
+                </TextView>
+                <TextView
+                    android:id="@+id/TextViewCalcorie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" 칼로리를 소모했어요"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/freesentation_6_semibold" />
             </LinearLayout>
         </LinearLayout>
 
@@ -101,41 +101,32 @@
             android:layout_weight="1"
             android:orientation="horizontal"
             android:gravity="center">
-                <LinearLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center">
-            <TextView
-                android:id="@+id/Food"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="치킨 한 마리"
-                android:textSize="22sp"
-                android:textColor="#0047BB"
-                android:fontFamily="@font/freesentation_8_extrabold" />
+                <TextView
+                    android:id="@+id/Food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="치킨 한 마리"
+                    android:textSize="20dp"
+                    android:textColor="#0047BB"
+                    android:fontFamily="@font/freesentation_8_extrabold" />
 
-                    <TextView
-                        android:id="@+id/TextViewFood"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:fontFamily="@font/freesentation_6_semibold"
-                        android:text=" 만큼 불태웠어요!"
-                        android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/TextViewFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:text=" 만큼 불태웠어요!"
+                    android:textSize="18dp" />
             </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/goExerciseButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="운동하러 가기"
-            android:textSize="20sp"
-            android:fontFamily="@font/freesentation_8_extrabold"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#0047BB"/>
 
         <LinearLayout
             android:layout_width="match_parent"

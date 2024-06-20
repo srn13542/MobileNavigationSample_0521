@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="background_color">#FAFFFF</color>
     <color name="black">#FF000000</color>
+    <color name="primary_color">#0047BB</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">MobileNavigationSample</string>
     <string name="default_web_client_id" translatable="false">618179154402-lun9ilm1ph5vk9l95h8p084mfsprf7k9.apps.googleusercontent.com</string>
@@ -13,7 +15,68 @@
     <string name="project_id" translatable="false">mobilenavi-d771f</string>
     <style name="Base.Theme.MobileNavigationSample" parent="Theme.Material3.DayNight.NoActionBar">
         
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:textColorTertiary">@color/black</item>
+    </style>
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
         
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+    <style name="CustomDialogTitle">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/freesentation_8_extrabold</item> 
+    </style>
+    <style name="CustomExitDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textSize">18dp</item>
+        <item name="android:fontFamily">@font/freesentation_6_semibold</item> 
+        
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        
+        <item name="buttonBarButtonStyle">@style/CustomButtonStyle</item>
+    </style>
+    <style name="MyDatePickerStyle" parent="Theme.AppCompat.Light">
+
+        
+        <item name="android:fontFamily">@font/freesentation_9_black</item>
+
+        
+        <item name="colorAccent">@color/primary_color</item>
+
+        
+        <item name="colorControlActivated">@color/primary_color</item>
+
+        
+        <item name="colorControlHighlight">@color/white</item>
+
+        
+        <item name="android:colorBackground">@color/white</item>
+
+        
+        <item name="android:textColorSecondary">@color/black</item>
+
+        
+        <item name="android:textColorPrimary">@color/black</item>
+
+        
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+
+        
+        <item name="android:textColorSecondaryInverse">@color/white</item>
+
+        
+        <item name="android:textColor">@color/primary_color</item>
+
+        <item name="android:textSize">20dp</item>
+
+        <item name="cornerSize">16dp</item>
+
+        <item name="windowActionBar">true</item>
+
+        <item name="windowNoTitle">true</item>
+
+
     </style>
     <style name="Theme.MobileNavigationSample" parent="Base.Theme.MobileNavigationSample"/>
 </resources>

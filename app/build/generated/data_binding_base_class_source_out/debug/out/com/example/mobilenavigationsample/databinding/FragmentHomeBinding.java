@@ -4,7 +4,6 @@ package com.example.mobilenavigationsample.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -41,9 +40,6 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final TextView exerciseAmountTitle;
 
   @NonNull
-  public final Button goExerciseButton;
-
-  @NonNull
   public final View lineView;
 
   @NonNull
@@ -52,7 +48,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   private FragmentHomeBinding(@NonNull RelativeLayout rootView, @NonNull TextView Calorie,
       @NonNull TextView Food, @NonNull TextView TextViewCalcorie, @NonNull TextView TextViewFood,
       @NonNull ImageView characterImage, @NonNull TextView exerciseAmountTitle,
-      @NonNull Button goExerciseButton, @NonNull View lineView, @NonNull LinearLayout main) {
+      @NonNull View lineView, @NonNull LinearLayout main) {
     this.rootView = rootView;
     this.Calorie = Calorie;
     this.Food = Food;
@@ -60,7 +56,6 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.TextViewFood = TextViewFood;
     this.characterImage = characterImage;
     this.exerciseAmountTitle = exerciseAmountTitle;
-    this.goExerciseButton = goExerciseButton;
     this.lineView = lineView;
     this.main = main;
   }
@@ -128,12 +123,6 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.goExerciseButton;
-      Button goExerciseButton = ViewBindings.findChildViewById(rootView, id);
-      if (goExerciseButton == null) {
-        break missingId;
-      }
-
       id = R.id.lineView;
       View lineView = ViewBindings.findChildViewById(rootView, id);
       if (lineView == null) {
@@ -147,7 +136,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       return new FragmentHomeBinding((RelativeLayout) rootView, Calorie, Food, TextViewCalcorie,
-          TextViewFood, characterImage, exerciseAmountTitle, goExerciseButton, lineView, main);
+          TextViewFood, characterImage, exerciseAmountTitle, lineView, main);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

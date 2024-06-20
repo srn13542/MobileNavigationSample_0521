@@ -11,12 +11,10 @@
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
         android:id= "@+id/startExerciseMap"
-        android:name="com.google.android.gms.maps.MapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        map:cameraTargetLat = "37.340"
-        map:cameraTargetLng = "126.733"
-        map:cameraZoom="15"
+
         />
     <Button
         android:layout_width="match_parent"

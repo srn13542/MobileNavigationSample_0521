@@ -1,266 +1,305 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"> <!-- 바깥 부분의 배경색 -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:background="#ffffff"
-        android:id="@+id/main"
-        android:orientation="vertical">
+    android:paddingTop="20dp">
 
-        <TextView
-            android:id="@+id/textViewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="0.7"
-            android:text="회원정보"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/freesentation_8_extrabold"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"/>
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원정보"
+        android:textSize="28dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="@font/freesentation_8_extrabold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
+    <TextView
+        android:id="@+id/credits_button"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/freesentation_6_semibold"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="정보"
+        android:textColor="@color/primary_color"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textViewNickname"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:textSize="20sp"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:text="닉네임"
-                android:gravity="center"/>
-
-            <TextView
-                android:id="@+id/Nickname"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:fontFamily="@font/freesentation_8_extrabold"
-                android:text="임시 닉네임"
-                android:gravity="center"/>
-
-        </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/textViewGender"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="성별"
-                android:textSize="20sp"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"/>
-
-            <RadioGroup
-                android:id="@+id/radioGroupGender"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="2"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <RadioButton
-                    android:id="@+id/BtnMan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:text="남자"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/freesentation_6_semibold"
-
-                    android:minHeight="48dp"/>
-
-                <RadioButton
-                    android:id="@+id/BtnWoman"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:text="여자"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/freesentation_6_semibold" />
-
-            </RadioGroup>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/textViewAge"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="나이"
-                android:textSize="20sp"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"/>
-
-            <EditText
-                android:id="@+id/Age"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="2"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"
-                android:inputType="number"
-                android:hint="세"
-                android:textSize="24sp"
-                android:background="@drawable/edittext_border"
-                />
-            <!--
-            <NumberPicker
-                android:id="@+id/Age"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2" />
-     -->
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/textViewHeight"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="키"
-                android:textSize="20sp"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"/>
-
-            <EditText
-                android:id="@+id/Height"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="2"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"
-                android:inputType="number"
-                android:hint="cm"
-                android:textSize="24sp"
-                android:background="@drawable/edittext_border"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/textViewWeight"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="몸무게"
-                android:textSize="20sp"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center" />
-
-            <EditText
-                android:id="@+id/Weight"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="2"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"
-                android:inputType="number"
-                android:hint="kg"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="24sp"
-                android:background="@drawable/edittext_border"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/textViewTargetWeight"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="목표 몸무게"
-                android:textSize="20sp"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"/>
-
-            <EditText
-                android:id="@+id/TargetWeight"
-                android:layout_width="0dp"
-                android:layout_height="48dp"
-                android:layout_weight="2"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"
-                android:inputType="number"
-                android:hint="kg"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="24sp"
-                android:background="@drawable/edittext_border"/>
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/buttonSave"
+            android:id="@+id/main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="저장 / BMI 확인"
-            android:textSize="20sp"
-            android:fontFamily="@font/freesentation_6_semibold"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#0047BB"/>
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
+            <!-- 이름 입력 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/textViewNickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:text="닉네임"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/Nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:minHeight="48dp"
+                    android:text="닉네임"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <!-- 성별 입력 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/textViewGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:text="성별"
+                    android:textSize="20dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupGender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:minHeight="48dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/BtnMan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:autoSizeMinTextSize="22dp"
+                        android:fontFamily="@font/freesentation_6_semibold"
+                        android:text="남자"
+                        android:textSize="22sp" />
+
+                    <RadioButton
+                        android:id="@+id/BtnWoman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:autoSizeMinTextSize="22dp"
+                        android:fontFamily="@font/freesentation_6_semibold"
+                        android:text="여자"
+                        android:textSize="22sp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- 나이 입력 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/textViewAge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:text="나이"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/Age"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edittext_border"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:hint="세"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <!-- 키 입력 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/textViewHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:text="키"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/Height"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edittext_border"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:hint="cm"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <!-- 몸무게 입력 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/textViewWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:text="몸무게"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/Weight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edittext_border"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:hint="kg"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <!-- 목표 몸무게 입력 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/textViewTargetWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:text="목표\n몸무게"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/TargetWeight"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@drawable/edittext_border"
+                    android:fontFamily="@font/freesentation_6_semibold"
+                    android:gravity="center"
+                    android:hint="kg"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textSize="20dp" />
+            </LinearLayout>
         </LinearLayout>
 
-    </LinearLayout>
-</RelativeLayout>
+    </ScrollView>
+
+    <!-- 저장 버튼 -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="저장"
+        android:textSize="20dp"
+        android:backgroundTint="#0047BB"
+        android:fontFamily="@font/freesentation_6_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigationView"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/menu_click_color"
+        app:itemTextColor="@drawable/menu_click_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/navi_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

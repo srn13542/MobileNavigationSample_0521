@@ -64,6 +64,33 @@
         android:testOnly="true"
         android:theme="@style/Theme.MobileNavigationSample" >
         <activity
+            android:name="com.example.mobilenavigationsample.DeveloperCreditsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.DeveloperCreditActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.CalKcalActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.TimerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.timerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.timer"
+            android:exported="false" />
+        <activity
+            android:name="com.example.mobilenavigationsample.SelectExerciseActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.SELECT_EXERCISE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.mobilenavigationsample.MapActivity"
             android:exported="false" />
         <activity
@@ -101,17 +128,32 @@
 
         <activity
             android:name="com.example.mobilenavigationsample.NaviActivity"
-            android:exported="false" />
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.NAVI" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
             android:directBootAware="true"
             android:exported="false" >
             <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"

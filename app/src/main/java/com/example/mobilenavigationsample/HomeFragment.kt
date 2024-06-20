@@ -7,19 +7,26 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 /**
- * 간단한 [Fragment] 서브클래스.
- * [HomeFragment.newInstance] 팩토리 메서드를 사용하여 이 프래그먼트의 인스턴스를 생성하세요.
+ * A simple [Fragment] subclass.
+ * Use the [HomeFragment.newInstance] factory method to
+ * create an instance of this fragment.
  */
 class HomeFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
-    private var burnedCalories = 1500 // 사용자가 소모한 칼로리 (나중에 데이터를 받아오는 것으로 변경 필요)
+    private var burnedCalories = 0 // Used to store burned calories
+    private lateinit var firestore: FirebaseFirestore
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +34,12 @@ class HomeFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+
+        firestore = FirebaseFirestore.getInstance()
+        auth = FirebaseAuth.getInstance()
+
+        // Fetch burned calories from Firestore
+        fetchBurnedCalories()
     }
 
     override fun onCreateView(
@@ -37,27 +50,71 @@ class HomeFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val goExerciseButton: Button = view.findViewById(R.id.goExerciseButton)
 
-        goExerciseButton.setOnClickListener {
-            // 운동하러 가기 버튼 클릭 시 동작 (현재 토스트 메시지 출력. 추후 변경.)
-            Toast.makeText(requireContext(), "운동하러 가기 버튼이 클릭되었습니다.", Toast.LENGTH_SHORT).show()
-        }
-
-        // 소모한 칼로리에 따라 음식 종류와 칼로리 설정
+        // Set food and calories based on burned calories
         setFoodAndCalories(view)
 
         return view
     }
 
-    // 소모한 칼로리에 따라 음식 종류와 칼로리 설정
+    // Fetch burned calories from Firestore
+    private fun fetchBurnedCalories() {
+        val currentUser = auth.currentUser
+        if (currentUser != null) {
+            firestore.collection("record").document(currentUser.uid)
+                .collection("userRecord")
+                .get()
+                .addOnSuccessListener { documents ->
+                    for (document in documents) {
+                        burnedCalories += document.getLong("kcal")?.toInt() ?: 0
+                    }
+                    view?.let { setFoodAndCalories(it) }
+                }
+                .addOnFailureListener { exception ->
+                    Toast.makeText(requireContext(), "칼로리 데이터를 가져오는 중 오류가 발생했습니다.", Toast.LENGTH_SHORT).show()
+                }
+        }
+    }
+
+    // 추가된 부분 (0618)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // 뒤로가기 버튼 눌렀을 때 실행할 행동 정의
+        val callback = object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                showExitConfirmationDialog()
+            }
+        }
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, callback)
+    }
+
+    // 다이얼로그를 띄우는 함수
+    private fun showExitConfirmationDialog() {
+        AlertDialog.Builder(requireContext(),R.style.CustomExitDialogTheme)
+            .setTitle("어플리케이션 종료")
+            .setMessage("정말 종료하시겠습니까?")
+            .setPositiveButton("종료") { dialog, which ->
+                // 종료
+                requireActivity().finish()
+            }
+            .setNegativeButton("취소") { dialog, which ->
+                // 닫기
+                dialog.dismiss()
+            }
+            .create()
+
+            .show()
+    }
+
+    // Set food and calories based on burned calories
     private fun setFoodAndCalories(view: View) {
         val food: TextView = view.findViewById(R.id.Food)
         val calorie: TextView = view.findViewById(R.id.Calorie)
 
         calorie.text = burnedCalories.toString()
 
-        // 소모한 칼로리 범위에 따라 음식 종류 설정
+        // Set food text based on the range of burned calories
         val foodText = when {
             burnedCalories < 150 -> "탕후루 1개"
             burnedCalories < 200 -> "초코파이 1개"
@@ -82,14 +139,13 @@ class HomeFragment : Fragment() {
 
     companion object {
         /**
-         * 이 팩토리 메서드를 사용하여 이 프래그먼트의 새 인스턴스를 생성합니다.
-         * 제공된 매개변수를 사용하여.
+         * Use this factory method to create a new instance of
+         * this fragment using the provided parameters.
          *
-         * @param param1 매개변수 1.
-         * @param param2 매개변수 2.
-         * @return HomeFragment의 새 인스턴스.
+         * @param param1 Parameter 1.
+         * @param param2 Parameter 2.
+         * @return A new instance of fragment HomeFragment.
          */
-        // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             HomeFragment().apply {

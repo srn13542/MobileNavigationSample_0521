@@ -1,174 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"> <!-- 바깥 부분의 배경색 -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:background="#ffffff"
-        android:id="@+id/main"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textViewTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_weight="0.7"
-            android:text="체질량 지수 (BMI)"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/freesentation_8_extrabold"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/text_bmi"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="26sp"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:text="나의 BMI"
-                android:gravity="center"/>
+    android:paddingTop="20dp">
 
 
-        </LinearLayout>
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/freesentation_8_extrabold"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="체질량 지수 (BMI)"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
+    <TextView
+        android:id="@+id/text_bmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:fontFamily="@font/freesentation_6_semibold"
+        android:text="나의 BMI"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
 
-            <TextView
-                android:id="@+id/bmi_result"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="25.25"
-                android:textSize="28sp"
-                android:fontFamily="@font/freesentation_8_extrabold"
-                android:gravity="center"/>
+    <TextView
+        android:id="@+id/bmi_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25.25"
+        android:textSize="28dp"
+        android:fontFamily="@font/freesentation_8_extrabold"
+        app:layout_constraintTop_toBottomOf="@id/text_bmi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
 
+    <TextView
+        android:id="@+id/TextViewCurrentState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="현재상태"
+        android:textSize="26dp"
+        android:fontFamily="@font/freesentation_6_semibold"
+        app:layout_constraintTop_toBottomOf="@id/bmi_result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
 
-        </LinearLayout>
+    <TextView
+        android:id="@+id/CurrentState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정상"
+        android:textSize="34dp"
+        android:fontFamily="@font/freesentation_8_extrabold"
+        app:layout_constraintTop_toBottomOf="@id/TextViewCurrentState"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
+    <TextView
+        android:id="@+id/ideal_weight_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이상적인 체중"
+        android:textSize="26dp"
+        android:fontFamily="@font/freesentation_6_semibold"
+        app:layout_constraintTop_toBottomOf="@id/CurrentState"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
 
-            <TextView
-                android:id="@+id/TextViewCurrentState"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="현재상태"
-                android:textSize="26sp"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"/>
+    <TextView
+        android:id="@+id/IdealWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="65 ~ 72 kg"
+        android:textSize="24dp"
+        android:fontFamily="@font/freesentation_8_extrabold"
+        app:layout_constraintTop_toBottomOf="@id/ideal_weight_range"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
 
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp"
-            >
-
-            <TextView
-                android:id="@+id/CurrentState"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="정상"
-                android:textSize="34sp"
-                android:fontFamily="@font/freesentation_8_extrabold"
-                android:gravity="center"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/ideal_weight_range"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="이상적인 체중"
-                android:textSize="26sp"
-                android:fontFamily="@font/freesentation_6_semibold"
-                android:gravity="center"/>
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-
-            <TextView
-                android:id="@+id/IdealWeight"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="65 ~ 72 kg"
-                android:textSize="24sp"
-                android:fontFamily="@font/freesentation_8_extrabold"
-                android:gravity="center"/>
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="돌아가기"
+        android:textSize="20dp"
+        android:fontFamily="@font/freesentation_6_semibold"
+        app:layout_constraintTop_toBottomOf="@id/IdealWeight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigationView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#0047BB"
+        android:layout_marginTop="1.5dp"/>
 
 
-        </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@drawable/menu_click_color"
+        app:itemTextColor="@drawable/menu_click_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/navi_menu" />
 
-        <Button
-            android:id="@+id/buttonGoBack"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="돌아가기"
-            android:textSize="20sp"
-            android:fontFamily="@font/freesentation_6_semibold"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#0047BB"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:paddingTop="5dp">
-        </LinearLayout>
-
-    </LinearLayout>
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

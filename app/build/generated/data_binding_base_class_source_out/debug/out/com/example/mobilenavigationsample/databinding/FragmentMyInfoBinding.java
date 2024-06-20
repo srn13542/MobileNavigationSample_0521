@@ -9,20 +9,22 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.mobilenavigationsample.R;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class FragmentMyInfoBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final EditText Age;
@@ -49,10 +51,19 @@ public final class FragmentMyInfoBinding implements ViewBinding {
   public final Button buttonSave;
 
   @NonNull
+  public final TextView creditsButton;
+
+  @NonNull
   public final LinearLayout main;
 
   @NonNull
+  public final BottomNavigationView navigationView;
+
+  @NonNull
   public final RadioGroup radioGroupGender;
+
+  @NonNull
+  public final ScrollView scrollView;
 
   @NonNull
   public final TextView textViewAge;
@@ -75,14 +86,15 @@ public final class FragmentMyInfoBinding implements ViewBinding {
   @NonNull
   public final TextView textViewWeight;
 
-  private FragmentMyInfoBinding(@NonNull RelativeLayout rootView, @NonNull EditText Age,
+  private FragmentMyInfoBinding(@NonNull ConstraintLayout rootView, @NonNull EditText Age,
       @NonNull RadioButton BtnMan, @NonNull RadioButton BtnWoman, @NonNull EditText Height,
       @NonNull TextView Nickname, @NonNull EditText TargetWeight, @NonNull EditText Weight,
-      @NonNull Button buttonSave, @NonNull LinearLayout main, @NonNull RadioGroup radioGroupGender,
-      @NonNull TextView textViewAge, @NonNull TextView textViewGender,
-      @NonNull TextView textViewHeight, @NonNull TextView textViewNickname,
-      @NonNull TextView textViewTargetWeight, @NonNull TextView textViewTitle,
-      @NonNull TextView textViewWeight) {
+      @NonNull Button buttonSave, @NonNull TextView creditsButton, @NonNull LinearLayout main,
+      @NonNull BottomNavigationView navigationView, @NonNull RadioGroup radioGroupGender,
+      @NonNull ScrollView scrollView, @NonNull TextView textViewAge,
+      @NonNull TextView textViewGender, @NonNull TextView textViewHeight,
+      @NonNull TextView textViewNickname, @NonNull TextView textViewTargetWeight,
+      @NonNull TextView textViewTitle, @NonNull TextView textViewWeight) {
     this.rootView = rootView;
     this.Age = Age;
     this.BtnMan = BtnMan;
@@ -92,8 +104,11 @@ public final class FragmentMyInfoBinding implements ViewBinding {
     this.TargetWeight = TargetWeight;
     this.Weight = Weight;
     this.buttonSave = buttonSave;
+    this.creditsButton = creditsButton;
     this.main = main;
+    this.navigationView = navigationView;
     this.radioGroupGender = radioGroupGender;
+    this.scrollView = scrollView;
     this.textViewAge = textViewAge;
     this.textViewGender = textViewGender;
     this.textViewHeight = textViewHeight;
@@ -105,7 +120,7 @@ public final class FragmentMyInfoBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -178,15 +193,33 @@ public final class FragmentMyInfoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.credits_button;
+      TextView creditsButton = ViewBindings.findChildViewById(rootView, id);
+      if (creditsButton == null) {
+        break missingId;
+      }
+
       id = R.id.main;
       LinearLayout main = ViewBindings.findChildViewById(rootView, id);
       if (main == null) {
         break missingId;
       }
 
+      id = R.id.navigationView;
+      BottomNavigationView navigationView = ViewBindings.findChildViewById(rootView, id);
+      if (navigationView == null) {
+        break missingId;
+      }
+
       id = R.id.radioGroupGender;
       RadioGroup radioGroupGender = ViewBindings.findChildViewById(rootView, id);
       if (radioGroupGender == null) {
+        break missingId;
+      }
+
+      id = R.id.scrollView;
+      ScrollView scrollView = ViewBindings.findChildViewById(rootView, id);
+      if (scrollView == null) {
         break missingId;
       }
 
@@ -232,10 +265,10 @@ public final class FragmentMyInfoBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentMyInfoBinding((RelativeLayout) rootView, Age, BtnMan, BtnWoman, Height,
-          Nickname, TargetWeight, Weight, buttonSave, main, radioGroupGender, textViewAge,
-          textViewGender, textViewHeight, textViewNickname, textViewTargetWeight, textViewTitle,
-          textViewWeight);
+      return new FragmentMyInfoBinding((ConstraintLayout) rootView, Age, BtnMan, BtnWoman, Height,
+          Nickname, TargetWeight, Weight, buttonSave, creditsButton, main, navigationView,
+          radioGroupGender, scrollView, textViewAge, textViewGender, textViewHeight,
+          textViewNickname, textViewTargetWeight, textViewTitle, textViewWeight);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

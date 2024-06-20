@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -34,7 +34,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileNavigationSample"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".DeveloperCreditsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeveloperCreditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalKcalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".timerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".timer"
+            android:exported="false" />
+        <activity
+            android:name=".SelectExerciseActivity"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.SELECT_EXERCISE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MapActivity"
             android:exported="false" />
@@ -55,7 +82,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -70,9 +97,16 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+
         <activity
             android:name=".NaviActivity"
-            android:exported="false"></activity>
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.NAVI" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
