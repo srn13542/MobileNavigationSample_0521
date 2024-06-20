@@ -60,9 +60,21 @@ class StartLoginActivity : AppCompatActivity() {
                     .addOnCompleteListener { task ->
                         if (task.isSuccessful) {
                             Toast.makeText(this, "로그인에 성공했습니다!", Toast.LENGTH_SHORT).show()
-                            val intent = Intent(this, FirstOptionsActivity::class.java)
-                            startActivity(intent)
-                            finish()
+                            // yoonsu_0620_14:00 추가
+                            // 이전에 로그인한 적이 있는지 확인
+                            val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
+                            if (isLoggedIn) {
+                                // 이전 로그인 기록이 있으면 NaviActivity로 이동
+                                val intent = Intent(this, NaviActivity::class.java)
+                                startActivity(intent)
+                                finish()
+                            } else {
+                                // 처음 로그인하는 경우 FirstOptionsActivity로 이동
+                                val intent = Intent(this, FirstOptionsActivity::class.java)
+                                startActivity(intent)
+                                finish()
+                            }
+                         // 수정 끝
                         } else {
                             Toast.makeText(this, "아이디와 비밀번호를 확인해주세요.", Toast.LENGTH_SHORT)
                                 .show()
