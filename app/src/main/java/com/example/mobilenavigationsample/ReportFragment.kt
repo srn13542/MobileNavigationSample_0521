@@ -36,7 +36,10 @@ class ReportFragment : Fragment() {
         firestore = FirebaseFirestore.getInstance()
         auth = FirebaseAuth.getInstance()
 
-        datePicker.init(datePicker.year, datePicker.month, datePicker.dayOfMonth) { _, year, month, day ->
+        val today = Calendar.getInstance()
+        fetchExerciseData(today.time)
+
+        datePicker.init(today.get(Calendar.YEAR), today.get(Calendar.MONTH), today.get(Calendar.DAY_OF_MONTH)) { _, year, month, day ->
             val selectedDate = Calendar.getInstance()
             selectedDate.set(year, month, day)
             fetchExerciseData(selectedDate.time)
