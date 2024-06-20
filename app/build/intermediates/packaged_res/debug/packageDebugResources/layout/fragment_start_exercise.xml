@@ -25,7 +25,7 @@
         android:textSize="22sp"
         android:backgroundTint="#0047BB"
         android:layout_gravity="bottom|center"
-        android:visibility="visible"
+        android:visibility="invisible"
         android:layout_marginBottom="150dp"
         android:layout_marginRight="60dp"
         android:layout_marginLeft="60dp"
