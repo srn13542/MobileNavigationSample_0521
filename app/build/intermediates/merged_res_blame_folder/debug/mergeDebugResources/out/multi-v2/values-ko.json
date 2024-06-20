@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mobilenavigationsample.app-mergeDebugResources-41:/values-ko/values-ko.xml",
+            "outputFile": "mobilenavigationsample.example.mobilenavigationsample.app-mergeDebugResources-41:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "C:\\Users\\srnb1\\.gradle\\caches\\transforms-3\\2b06a344f0cac7465f61c770c4d6633a\\transformed\\material-1.11.0\\res\\values-ko\\values-ko.xml",

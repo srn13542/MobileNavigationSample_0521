@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mobilenavigationsample"
+    package="mobilenavigationsample.example.mobilenavigationsample"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -45,10 +45,10 @@
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <permission
-        android:name="com.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="mobilenavigationsample.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="mobilenavigationsample.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -64,25 +64,25 @@
         android:testOnly="true"
         android:theme="@style/Theme.MobileNavigationSample" >
         <activity
-            android:name="com.example.mobilenavigationsample.DeveloperCreditsActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.DeveloperCreditsActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.DeveloperCreditActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.DeveloperCreditActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.CalKcalActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.CalKcalActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.TimerActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.TimerActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.timerActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.timerActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.timer"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.timer"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.SelectExerciseActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.SelectExerciseActivity"
             android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.SELECT_EXERCISE" />
@@ -91,25 +91,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.mobilenavigationsample.MapActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.MapActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.SignUpActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.StartLoginActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.StartLoginActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.FirstOptionsActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.FirstOptionsActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.FindPwActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.FindPwActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.FindIdActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.FindIdActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.mobilenavigationsample.MainActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -127,7 +127,7 @@
             android:required="false" />
 
         <activity
-            android:name="com.example.mobilenavigationsample.NaviActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.NaviActivity"
             android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.NAVI" />
@@ -247,7 +247,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.example.mobilenavigationsample.firebaseinitprovider"
+            android:authorities="mobilenavigationsample.example.mobilenavigationsample.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
@@ -283,7 +283,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.mobilenavigationsample.androidx-startup"
+            android:authorities="mobilenavigationsample.example.mobilenavigationsample.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

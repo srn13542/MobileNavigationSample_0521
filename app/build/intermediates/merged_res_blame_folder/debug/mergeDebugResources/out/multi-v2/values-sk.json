@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mobilenavigationsample.app-mergeDebugResources-41:/values-sk/values-sk.xml",
+            "outputFile": "mobilenavigationsample.example.mobilenavigationsample.app-mergeDebugResources-41:/values-sk/values-sk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\srnb1\\.gradle\\caches\\transforms-3\\2b06a344f0cac7465f61c770c4d6633a\\transformed\\material-1.11.0\\res\\values-sk\\values-sk.xml",

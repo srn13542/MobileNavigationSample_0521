@@ -36,13 +36,13 @@
         android:theme="@style/Theme.MobileNavigationSample"
         tools:targetApi="31" >
         <activity
-            android:name=".DeveloperCreditsActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.DeveloperCreditsActivity"
             android:exported="false" />
         <activity
             android:name=".DeveloperCreditActivity"
             android:exported="false" />
         <activity
-            android:name=".CalKcalActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.CalKcalActivity"
             android:exported="false" />
         <activity
             android:name=".TimerActivity"
@@ -54,7 +54,7 @@
             android:name=".timer"
             android:exported="false" />
         <activity
-            android:name=".SelectExerciseActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.SelectExerciseActivity"
             android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.SELECT_EXERCISE" />
@@ -63,25 +63,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MapActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.MapActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".StartLoginActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.StartLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".FirstOptionsActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.FirstOptionsActivity"
             android:exported="false" />
         <activity
-            android:name=".FindPwActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.FindPwActivity"
             android:exported="false" />
         <activity
-            android:name=".FindIdActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.FindIdActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -99,7 +99,7 @@
             android:required="false" />
 
         <activity
-            android:name=".NaviActivity"
+            android:name="mobilenavigationsample.example.mobilenavigationsample.NaviActivity"
             android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.NAVI" />

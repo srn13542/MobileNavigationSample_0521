@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.mobilenavigationsample"
+3    package="mobilenavigationsample.example.mobilenavigationsample"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -86,12 +86,12 @@
 46
 47    <permission
 47-->[androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
-48        android:name="com.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48        android:name="mobilenavigationsample.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 48-->[androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
 49        android:protectionLevel="signature" />
 49-->[androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 50
-51    <uses-permission android:name="com.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51    <uses-permission android:name="mobilenavigationsample.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 51-->[androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
 51-->[androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 52
@@ -120,44 +120,44 @@
 65-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:36:9-60
 66        <activity
 66-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:38:9-40:40
-67            android:name="com.example.mobilenavigationsample.DeveloperCreditsActivity"
-67-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:39:13-53
+67            android:name="mobilenavigationsample.example.mobilenavigationsample.DeveloperCreditsActivity"
+67-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:39:13-106
 68            android:exported="false" />
 68-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:40:13-37
 69        <activity
 69-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:41:9-43:40
-70            android:name="com.example.mobilenavigationsample.DeveloperCreditActivity"
+70            android:name="mobilenavigationsample.example.mobilenavigationsample.DeveloperCreditActivity"
 70-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:42:13-52
 71            android:exported="false" />
 71-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:43:13-37
 72        <activity
 72-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:44:9-46:40
-73            android:name="com.example.mobilenavigationsample.CalKcalActivity"
-73-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:45:13-44
+73            android:name="mobilenavigationsample.example.mobilenavigationsample.CalKcalActivity"
+73-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:45:13-97
 74            android:exported="false" />
 74-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:46:13-37
 75        <activity
 75-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:47:9-49:40
-76            android:name="com.example.mobilenavigationsample.TimerActivity"
+76            android:name="mobilenavigationsample.example.mobilenavigationsample.TimerActivity"
 76-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:48:13-42
 77            android:exported="false" />
 77-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:49:13-37
 78        <activity
 78-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:50:9-52:40
-79            android:name="com.example.mobilenavigationsample.timerActivity"
+79            android:name="mobilenavigationsample.example.mobilenavigationsample.timerActivity"
 79-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:51:13-42
 80            android:exported="false" />
 80-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:52:13-37
 81        <activity
 81-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:53:9-55:40
-82            android:name="com.example.mobilenavigationsample.timer"
+82            android:name="mobilenavigationsample.example.mobilenavigationsample.timer"
 82-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:54:13-34
 83            android:exported="false" />
 83-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:55:13-37
 84        <activity
 84-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:56:9-64:20
-85            android:name="com.example.mobilenavigationsample.SelectExerciseActivity"
-85-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:57:13-51
+85            android:name="mobilenavigationsample.example.mobilenavigationsample.SelectExerciseActivity"
+85-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:57:13-104
 86            android:exported="false" >
 86-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:58:13-37
 87            <intent-filter>
@@ -173,44 +173,44 @@
 92        </activity>
 93        <activity
 93-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:65:9-67:40
-94            android:name="com.example.mobilenavigationsample.MapActivity"
-94-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:66:13-40
+94            android:name="mobilenavigationsample.example.mobilenavigationsample.MapActivity"
+94-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:66:13-93
 95            android:exported="false" />
 95-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:67:13-37
 96        <activity
 96-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:68:9-70:40
-97            android:name="com.example.mobilenavigationsample.SignUpActivity"
-97-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:69:13-43
+97            android:name="mobilenavigationsample.example.mobilenavigationsample.SignUpActivity"
+97-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:69:13-96
 98            android:exported="false" />
 98-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:70:13-37
 99        <activity
 99-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:71:9-73:40
-100            android:name="com.example.mobilenavigationsample.StartLoginActivity"
-100-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:72:13-47
+100            android:name="mobilenavigationsample.example.mobilenavigationsample.StartLoginActivity"
+100-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:72:13-100
 101            android:exported="false" />
 101-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:73:13-37
 102        <activity
 102-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:74:9-76:40
-103            android:name="com.example.mobilenavigationsample.FirstOptionsActivity"
-103-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:75:13-49
+103            android:name="mobilenavigationsample.example.mobilenavigationsample.FirstOptionsActivity"
+103-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:75:13-102
 104            android:exported="false" />
 104-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:76:13-37
 105        <activity
 105-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:77:9-79:40
-106            android:name="com.example.mobilenavigationsample.FindPwActivity"
-106-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:78:13-43
+106            android:name="mobilenavigationsample.example.mobilenavigationsample.FindPwActivity"
+106-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:78:13-96
 107            android:exported="false" />
 107-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:79:13-37
 108        <activity
 108-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:80:9-82:40
-109            android:name="com.example.mobilenavigationsample.FindIdActivity"
-109-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:81:13-43
+109            android:name="mobilenavigationsample.example.mobilenavigationsample.FindIdActivity"
+109-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:81:13-96
 110            android:exported="false" />
 110-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:82:13-37
 111        <activity
 111-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:83:9-91:20
-112            android:name="com.example.mobilenavigationsample.MainActivity"
-112-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:84:13-41
+112            android:name="mobilenavigationsample.example.mobilenavigationsample.MainActivity"
+112-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:84:13-94
 113            android:exported="true" >
 113-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:85:13-36
 114            <intent-filter>
@@ -240,8 +240,8 @@
 128
 129        <activity
 129-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:101:9-109:20
-130            android:name="com.example.mobilenavigationsample.NaviActivity"
-130-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:102:13-41
+130            android:name="mobilenavigationsample.example.mobilenavigationsample.NaviActivity"
+130-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:102:13-94
 131            android:exported="false" >
 131-->D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:103:13-37
 132            <intent-filter>
@@ -464,7 +464,7 @@
 248-->[com.google.firebase:firebase-common:21.0.0] C:\Users\srnb1\.gradle\caches\transforms-3\6a5ca6446617b31f2de884f4316cc9fb\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
 249            android:name="com.google.firebase.provider.FirebaseInitProvider"
 249-->[com.google.firebase:firebase-common:21.0.0] C:\Users\srnb1\.gradle\caches\transforms-3\6a5ca6446617b31f2de884f4316cc9fb\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
-250            android:authorities="com.example.mobilenavigationsample.firebaseinitprovider"
+250            android:authorities="mobilenavigationsample.example.mobilenavigationsample.firebaseinitprovider"
 250-->[com.google.firebase:firebase-common:21.0.0] C:\Users\srnb1\.gradle\caches\transforms-3\6a5ca6446617b31f2de884f4316cc9fb\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
 251            android:directBootAware="true"
 251-->[com.google.firebase:firebase-common:21.0.0] C:\Users\srnb1\.gradle\caches\transforms-3\6a5ca6446617b31f2de884f4316cc9fb\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
@@ -529,7 +529,7 @@
 284-->[androidx.emoji2:emoji2:1.2.0] C:\Users\srnb1\.gradle\caches\transforms-3\9ef2a139550764b91e13f095499839af\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 285            android:name="androidx.startup.InitializationProvider"
 285-->[androidx.emoji2:emoji2:1.2.0] C:\Users\srnb1\.gradle\caches\transforms-3\9ef2a139550764b91e13f095499839af\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-286            android:authorities="com.example.mobilenavigationsample.androidx-startup"
+286            android:authorities="mobilenavigationsample.example.mobilenavigationsample.androidx-startup"
 286-->[androidx.emoji2:emoji2:1.2.0] C:\Users\srnb1\.gradle\caches\transforms-3\9ef2a139550764b91e13f095499839af\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 287            android:exported="false" >
 287-->[androidx.emoji2:emoji2:1.2.0] C:\Users\srnb1\.gradle\caches\transforms-3\9ef2a139550764b91e13f095499839af\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37

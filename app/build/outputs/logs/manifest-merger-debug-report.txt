@@ -288,48 +288,48 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sr
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:36:9-60
 	android:dataExtractionRules
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:30:9-65
-activity#com.example.mobilenavigationsample.DeveloperCreditsActivity
+activity#mobilenavigationsample.example.mobilenavigationsample.DeveloperCreditsActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:38:9-40:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:39:13-53
-activity#com.example.mobilenavigationsample.DeveloperCreditActivity
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:39:13-106
+activity#mobilenavigationsample.example.mobilenavigationsample.DeveloperCreditActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:41:9-43:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:43:13-37
 	android:name
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:42:13-52
-activity#com.example.mobilenavigationsample.CalKcalActivity
+activity#mobilenavigationsample.example.mobilenavigationsample.CalKcalActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:44:9-46:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:45:13-44
-activity#com.example.mobilenavigationsample.TimerActivity
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:45:13-97
+activity#mobilenavigationsample.example.mobilenavigationsample.TimerActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:48:13-42
-activity#com.example.mobilenavigationsample.timerActivity
+activity#mobilenavigationsample.example.mobilenavigationsample.timerActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:51:13-42
-activity#com.example.mobilenavigationsample.timer
+activity#mobilenavigationsample.example.mobilenavigationsample.timer
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:54:13-34
-activity#com.example.mobilenavigationsample.SelectExerciseActivity
+activity#mobilenavigationsample.example.mobilenavigationsample.SelectExerciseActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:56:9-64:20
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:58:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:57:13-51
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:57:13-104
 intent-filter#action:name:android.intent.action.SELECT_EXERCISE+category:name:android.intent.category.LAUNCHER
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:59:13-63:29
 action#android.intent.action.SELECT_EXERCISE
@@ -340,48 +340,48 @@ category#android.intent.category.LAUNCHER
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:62:17-77
 	android:name
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:62:27-74
-activity#com.example.mobilenavigationsample.MapActivity
+activity#mobilenavigationsample.example.mobilenavigationsample.MapActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:65:9-67:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:67:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:66:13-40
-activity#com.example.mobilenavigationsample.SignUpActivity
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:66:13-93
+activity#mobilenavigationsample.example.mobilenavigationsample.SignUpActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:68:9-70:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:70:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:69:13-43
-activity#com.example.mobilenavigationsample.StartLoginActivity
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:69:13-96
+activity#mobilenavigationsample.example.mobilenavigationsample.StartLoginActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:71:9-73:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:73:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:72:13-47
-activity#com.example.mobilenavigationsample.FirstOptionsActivity
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:72:13-100
+activity#mobilenavigationsample.example.mobilenavigationsample.FirstOptionsActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:74:9-76:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:76:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:75:13-49
-activity#com.example.mobilenavigationsample.FindPwActivity
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:75:13-102
+activity#mobilenavigationsample.example.mobilenavigationsample.FindPwActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:77:9-79:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:79:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:78:13-43
-activity#com.example.mobilenavigationsample.FindIdActivity
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:78:13-96
+activity#mobilenavigationsample.example.mobilenavigationsample.FindIdActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:80:9-82:40
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:82:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:81:13-43
-activity#com.example.mobilenavigationsample.MainActivity
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:81:13-96
+activity#mobilenavigationsample.example.mobilenavigationsample.MainActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:83:9-91:20
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:85:13-36
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:84:13-41
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:84:13-94
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:86:13-90:29
 action#android.intent.action.MAIN
@@ -396,12 +396,12 @@ MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\srnb1\.g
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:99:13-37
 	android:name
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:98:13-50
-activity#com.example.mobilenavigationsample.NaviActivity
+activity#mobilenavigationsample.example.mobilenavigationsample.NaviActivity
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:101:9-109:20
 	android:exported
 		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:103:13-37
 	android:name
-		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:102:13-41
+		ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:102:13-94
 intent-filter#action:name:android.intent.action.NAVI+category:name:android.intent.category.LAUNCHER
 ADDED from D:\MobileNavigationSample_0521\app\src\main\AndroidManifest.xml:104:13-108:29
 action#android.intent.action.NAVI
@@ -898,7 +898,7 @@ ADDED from [androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-
 		ADDED from [androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
-permission#com.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#mobilenavigationsample.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
@@ -908,7 +908,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
-uses-permission#com.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#mobilenavigationsample.example.mobilenavigationsample.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.13.0] C:\Users\srnb1\.gradle\caches\transforms-3\b712aba3cd2454dd1a5a4f9b79930b12\transformed\core-1.13.0\AndroidManifest.xml:26:22-94

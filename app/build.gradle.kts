@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mobilenavigationsample"
+    namespace = "mobilenavigationsample.example.mobilenavigationsample"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mobilenavigationsample"
+        applicationId = "mobilenavigationsample.example.mobilenavigationsample"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
