@@ -60,7 +60,7 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
     internal lateinit var mLocationRequest: LocationRequest //위치 정보 요청의 매개변수를 저장하는 곳
     private val REQUEST_PERMISSION_LOCATION = 10
 
-    private lateinit var startExerciseCheckButton: Button
+    //private lateinit var startExerciseCheckButton: Button
     private lateinit var binding: FragmentStartExerciseBinding
 
     // private val fragmentManager = childFragmentManager
@@ -92,7 +92,7 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
             //본 함수를 통해 위기 정보 요청의 매개변수를 저장..,불러옴?
         }*/
         binding = FragmentStartExerciseBinding.bind(startExerciseView)
-        startExerciseCheckButton = binding.startExerciseButton
+        //startExerciseCheckButton = binding.startExerciseButton
 
         val fragmentManager = childFragmentManager
         val startExerciseMapView: SupportMapFragment? =
@@ -157,7 +157,7 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
         }
 
         // 버튼 이벤트 를 통해 현재 위치 찾기
-        startExerciseCheckButton.setOnClickListener {
+       /* startExerciseCheckButton.setOnClickListener {
             if (checkPermissionForLocation(requireContext())) {
                 startLocationUpdates()
             }
@@ -165,7 +165,7 @@ class StartExerciseFragment() : Fragment(), OnMapReadyCallback {
                 val intent: Intent = Intent(context, SelectExerciseActivity::class.java)
                 startActivity(intent)
             }
-        }
+        }*/
 
         // 버튼 이벤트 설정
 

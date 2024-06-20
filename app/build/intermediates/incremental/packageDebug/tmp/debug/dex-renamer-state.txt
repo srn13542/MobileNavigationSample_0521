@@ -1,10 +1,10 @@
-#Thu Jun 20 02:51:53 KST 2024
-base.0=C\:\\Users\\whdbs\\AndroidStudioProjects\\yoonsu_0620\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\whdbs\\AndroidStudioProjects\\yoonsu_0620\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\whdbs\\AndroidStudioProjects\\yoonsu_0620\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.3=C\:\\Users\\whdbs\\AndroidStudioProjects\\yoonsu_0620\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.4=C\:\\Users\\whdbs\\AndroidStudioProjects\\yoonsu_0620\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.5=C\:\\Users\\whdbs\\AndroidStudioProjects\\yoonsu_0620\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+#Thu Jun 20 16:01:16 KST 2024
+base.0=D\:\\MobileNavigationSample_0521\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=D\:\\MobileNavigationSample_0521\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=D\:\\MobileNavigationSample_0521\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.3=D\:\\MobileNavigationSample_0521\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.4=D\:\\MobileNavigationSample_0521\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.5=D\:\\MobileNavigationSample_0521\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=15/classes.dex
