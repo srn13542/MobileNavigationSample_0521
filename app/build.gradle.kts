@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mobilenavigationsample"
+    namespace = "com.org.mobilenavigationsample"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mobilenavigationsample"
+        applicationId = "com.org.mobilenavigationsample"
         minSdk = 28
         targetSdk = 34
         versionCode = 1
@@ -53,13 +53,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
     implementation("com.google.firebase:firebase-analytics")
     implementation ("com.google.firebase:firebase-auth-ktx")
-
-    implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
+    implementation(platform("com.google.firebase:firebase-bom:33.1.0"))
     implementation("com.google.firebase:firebase-analytics")
-
     implementation ("com.google.android.gms:play-services-location:19.0.1")
     implementation ("com.google.android.gms:play-services-maps:18.2.0")
     implementation("com.google.code.gson:gson:2.10.1") //JSON 읽어옴

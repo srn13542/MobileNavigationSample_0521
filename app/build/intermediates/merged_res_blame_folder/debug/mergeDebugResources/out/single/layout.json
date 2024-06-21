@@ -1,82 +1,78 @@
 [
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\dialog_credit.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\dialog_credit.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_report.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/fragment_report.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\fragment_bmi_flagment.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\fragment_bmi_flagment.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_find_id.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_find_id.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_find_pw.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_find_pw.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_first_options.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_first_options.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\fragment_my_info.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\fragment_my_info.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_navi.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_navi.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_developer_credits.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_developer_credits.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_timer.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_timer.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_start_login.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_start_login.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\fragment_start_exercise.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\fragment_start_exercise.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_bmi.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/fragment_bmi.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\fragment_bmi.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\fragment_bmi.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_home.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_select_exercise.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_select_exercise.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_developer_credits.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_developer_credits.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_navi.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_navi.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_cal_kcal.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_cal_kcal.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_main.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_bmi_flagment.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/fragment_bmi_flagment.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\fragment_report.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\fragment_report.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_sign_up.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\fragment_home.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_start_exercise.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/fragment_start_exercise.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_cal_kcal.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_cal_kcal.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_select_exercise.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_select_exercise.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_sign_up.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_sign_up.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/dialog_credit.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/dialog_credit.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_start_login.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_start_login.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_map.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_map.xml"
     },
     {
-        "merged": "com.example.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_bmi.xml",
-        "source": "com.example.mobilenavigationsample.app-main-45:/layout/fragment_bmi.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_timer.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_timer.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_map.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_map.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_find_pw.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_find_pw.xml"
     },
     {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_find_id.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_find_id.xml"
-    },
-    {
-        "merged": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-mergeDebugResources-42:\\layout\\activity_first_options.xml",
-        "source": "C:\\Users\\whdbs\\.gradle\\daemon\\8.4\\com.example.mobilenavigationsample.app-main-45:\\layout\\activity_first_options.xml"
+        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_my_info.xml",
+        "source": "com.org.mobilenavigationsample.app-main-45:/layout/fragment_my_info.xml"
     }
 ]
