@@ -13,6 +13,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 
+
+
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
@@ -43,7 +45,7 @@ class BmiFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_bmi, container, false)
+        val view = inflater.inflate(R.layout.fragment_bmi_flagment, container, false)
 
         // SharedPreferences에서 키와 몸무게 가져오기
         val sharedPreferences: SharedPreferences =

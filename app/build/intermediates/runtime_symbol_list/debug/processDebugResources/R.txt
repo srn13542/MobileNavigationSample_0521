@@ -3938,7 +3938,6 @@ int layout design_navigation_menu_item 0x7f0c0037
 int layout design_text_input_end_icon 0x7f0c0038
 int layout design_text_input_start_icon 0x7f0c0039
 int layout dialog_credit 0x7f0c003a
-int layout fragment_bmi 0x7f0c003b
 int layout fragment_bmi_flagment 0x7f0c003c
 int layout fragment_home 0x7f0c003d
 int layout fragment_my_info 0x7f0c003e
