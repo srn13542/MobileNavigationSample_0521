@@ -13,6 +13,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.org.mobilenavigationsample.R
 
+//화이팅
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
