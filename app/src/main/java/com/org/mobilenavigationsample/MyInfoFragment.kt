@@ -48,11 +48,9 @@ class MyInfoFragment : Fragment() {
 
         val btnSave: Button = view.findViewById(R.id.buttonSave)
 
-        // 원래의 배경과 포커스를 받은 배경을 가져옴
         val originalBackground = ContextCompat.getDrawable(requireContext(), R.drawable.edittext_border)
         val focusedBackground = ContextCompat.getDrawable(requireContext(), R.drawable.click_edittext_border)
 
-        // 이전에 저장된 사용자 정보 불러오기
         val nickname = sharedPreferences.getString("nickname", "")
         val gender = sharedPreferences.getString("gender", "")
         val age = sharedPreferences.getInt("age", 0)
@@ -60,7 +58,6 @@ class MyInfoFragment : Fragment() {
         val weight = sharedPreferences.getInt("weight", 0)
         val targetWeight = sharedPreferences.getInt("targetWeight", 0)
 
-        // EditText 포커스 변경 이벤트 처리
         val editTextList = listOf<EditText>(
             view.findViewById(R.id.Age),
             view.findViewById(R.id.Height),
@@ -77,7 +74,6 @@ class MyInfoFragment : Fragment() {
             }
         }
 
-        // 화면에 사용자 정보 설정
         view.findViewById<TextView>(R.id.Nickname).text = nickname
         view.findViewById<RadioButton>(if (gender == "남자") R.id.BtnMan else R.id.BtnWoman).isChecked = true
         view.findViewById<EditText>(R.id.Age).setText(age.toString())
@@ -85,23 +81,18 @@ class MyInfoFragment : Fragment() {
         view.findViewById<EditText>(R.id.Weight).setText(weight.toString())
         view.findViewById<EditText>(R.id.TargetWeight).setText(targetWeight.toString())
 
-
-        // 크레딧 레이아웃 ClickListener
         val credits_button: View = view.findViewById(R.id.credits_button)
         credits_button.setOnClickListener {
-            // 크레딧 버튼 눌릴때 CreditActivity로 변경
             val intent = Intent(activity, DeveloperCreditsActivity::class.java)
             startActivity(intent)
         }
 
-        // Firebase Firestore에서 사용자 정보 가져오기
         val currentUser = auth.currentUser
         if (currentUser != null) {
             val userDocRef = firestore.collection("User").document(currentUser.uid)
             userDocRef.get()
                 .addOnSuccessListener { document ->
                     if (document.exists()) {
-                        // 가져온 데이터를 뷰에 설정
                         view.findViewById<TextView>(R.id.Nickname).text = document.getString("nickname")
                         val gender = document.getString("gender")
                         if (gender == "남자") {
@@ -120,15 +111,23 @@ class MyInfoFragment : Fragment() {
                 }
         }
 
-        // 저장 버튼 클릭 시 동작
         btnSave.setOnClickListener {
-            // 수정된 사용자 정보 저장
             val editedNickname = view.findViewById<TextView>(R.id.Nickname).text.toString()
             val editedGender = if (view.findViewById<RadioButton>(R.id.BtnMan).isChecked) "남자" else "여자"
             val editedAge = view.findViewById<EditText>(R.id.Age).text.toString().toInt()
             val editedHeight = view.findViewById<EditText>(R.id.Height).text.toString().toInt()
             val editedWeight = view.findViewById<EditText>(R.id.Weight).text.toString().toInt()
             val editedTargetWeight = view.findViewById<EditText>(R.id.TargetWeight).text.toString().toInt()
+
+            // SharedPreferences에 저장
+            val editor = sharedPreferences.edit()
+            editor.putString("nickname", editedNickname)
+            editor.putString("gender", editedGender)
+            editor.putInt("age", editedAge)
+            editor.putInt("height", editedHeight)
+            editor.putInt("weight", editedWeight)
+            editor.putInt("targetWeight", editedTargetWeight)
+            editor.apply()
 
             // Firebase Firestore에 저장
             val user = hashMapOf(
@@ -145,7 +144,6 @@ class MyInfoFragment : Fragment() {
                     .set(user)
                     .addOnSuccessListener {
                         Toast.makeText(requireContext(), "정보가 저장되었습니다.", Toast.LENGTH_SHORT).show()
-                        // BmiFragment로 이동
                         val bmiFragment = BmiFragment.newInstance("", "")
                         parentFragmentManager.beginTransaction().apply {
                             replace(R.id.mainFrameLayout, bmiFragment, TAG_BMI)
