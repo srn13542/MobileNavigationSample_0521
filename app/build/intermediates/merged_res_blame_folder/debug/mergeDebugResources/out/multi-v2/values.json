@@ -4,23 +4,6 @@
             "outputFile": "com.org.mobilenavigationsample.app-mergeDebugResources-41:/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/melon/AndroidStudioProjects/BMI_revision/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,97",
-                        "endColumns": "41,41",
-                        "endOffsets": "92,134"
-                    },
-                    "to": {
-                        "startLines": "641,973",
-                        "startColumns": "4,4",
-                        "startOffsets": "32849,57493",
-                        "endColumns": "41,41",
-                        "endOffsets": "32886,57530"
-                    }
-                },
-                {
                     "source": "/Users/melon/.gradle/caches/transforms-3/a3c3f96c72a2bf228bccc7b8f3c78e84/transformed/transition-1.2.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11",
@@ -95,6 +78,25 @@
                     }
                 },
                 {
+                    "source": "/Users/melon/AndroidStudioProjects/sungon4/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "6,5,7,25,31,15,40,83",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "178,115,247,1099,1310,625,1589,2896",
+                        "endLines": "6,5,12,28,35,22,81,83",
+                        "endColumns": "50,47,12,12,12,12,12,92",
+                        "endOffsets": "224,158,589,1274,1550,1066,2890,2984"
+                    },
+                    "to": {
+                        "startLines": "636,952,2591,5576,5580,5585,5687,6630",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "32479,56039,183639,393270,393429,393660,400470,464631",
+                        "endLines": "636,952,2596,5579,5584,5592,5728,6630",
+                        "endColumns": "50,47,12,12,12,12,12,91",
+                        "endOffsets": "32525,56082,183961,393424,393655,394041,401526,464718"
+                    }
+                },
+                {
                     "source": "/Users/melon/.gradle/caches/transforms-3/c4524ef1ea538424ff600fecd92d2e26/transformed/cardview-1.0.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,35,36,37,38,45,47,50,7",
@@ -114,22 +116,20 @@
                     }
                 },
                 {
-                    "source": "/Users/melon/AndroidStudioProjects/BMI_revision/app/src/main/res/values/themes.xml",
+                    "source": "/Users/melon/AndroidStudioProjects/sungon4/app/src/main/res/values/strings.xml",
                     "from": {
-                        "startLines": "6,5,7,25,31,15,40,83",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "178,115,247,1099,1310,625,1589,2896",
-                        "endLines": "6,5,12,28,35,22,81,83",
-                        "endColumns": "50,47,12,12,12,12,12,92",
-                        "endOffsets": "224,158,589,1274,1550,1066,2890,2984"
+                        "startLines": "1,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "16,134",
+                        "endColumns": "59,69",
+                        "endOffsets": "71,199"
                     },
                     "to": {
-                        "startLines": "636,952,2591,5576,5580,5585,5687,6630",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "32479,56039,183639,393270,393429,393660,400470,464631",
-                        "endLines": "636,952,2596,5579,5584,5592,5728,6630",
-                        "endColumns": "50,47,12,12,12,12,12,91",
-                        "endOffsets": "32525,56082,183961,393424,393655,394041,401526,464718"
+                        "startLines": "1987,2040",
+                        "startColumns": "4,4",
+                        "startOffsets": "131776,137718",
+                        "endColumns": "59,69",
+                        "endOffsets": "131831,137783"
                     }
                 },
                 {
@@ -279,6 +279,23 @@
                     }
                 },
                 {
+                    "source": "/Users/melon/AndroidStudioProjects/sungon4/app/build/generated/res/processDebugGoogleServices/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,137,241,350,470,566",
+                        "endColumns": "81,103,108,119,95,72",
+                        "endOffsets": "132,236,345,465,561,634"
+                    },
+                    "to": {
+                        "startLines": "2035,2036,2037,2038,2039,2155",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "137207,137289,137393,137502,137622,154469",
+                        "endColumns": "81,103,108,119,95,72",
+                        "endOffsets": "137284,137388,137497,137617,137713,154537"
+                    }
+                },
+                {
                     "source": "/Users/melon/.gradle/caches/transforms-3/7745cdbf7b6b839a9babfbe575116ba0/transformed/credentials-play-services-auth-1.2.0-rc01/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -406,20 +423,20 @@
                     }
                 },
                 {
-                    "source": "/Users/melon/AndroidStudioProjects/BMI_revision/app/build/generated/res/processDebugGoogleServices/values/values.xml",
+                    "source": "/Users/melon/AndroidStudioProjects/sungon4/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "55,137,241,350,470,566",
-                        "endColumns": "81,103,108,119,95,72",
-                        "endOffsets": "132,236,345,465,561,634"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,97",
+                        "endColumns": "41,41",
+                        "endOffsets": "92,134"
                     },
                     "to": {
-                        "startLines": "2035,2036,2037,2038,2039,2155",
-                        "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "137207,137289,137393,137502,137622,154469",
-                        "endColumns": "81,103,108,119,95,72",
-                        "endOffsets": "137284,137388,137497,137617,137713,154537"
+                        "startLines": "641,973",
+                        "startColumns": "4,4",
+                        "startOffsets": "32849,57493",
+                        "endColumns": "41,41",
+                        "endOffsets": "32886,57530"
                     }
                 },
                 {
@@ -456,23 +473,6 @@
                         "endLines": "470,634,635,654,655,950,951,1062,1063,1064,1065,1066,1067,1068,1749,1750,1751,1752,1753,1754,1755,1756,1757,1758,1759,1760,1761,1762,1763,1774,1775,1776,1777,1778,1779,1780,1781,1782,1783,1784,1785,1786,1787,1788,1789,1790,1791,1792,1793,1794,1795,1796,1797,1798,1799,1800,1801,1802,1803,1804,1805,1806,1807,1808,1818,1819,1848,1849,1850,1851,1852,1853,1854,1855,1856,1857,1858,1859,1860,1861,1862,1870,1952,1995,1996,1997,1998,1999,2000,2001,2164,6148,6152,6153,6157,6158,7278,7279,10232,10594,11460,11481,11529,11535",
                         "endColumns": "59,71,87,64,65,68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,64,58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,34,34,54,62,54,57,57,60,62,56,50,49,60,56,65,33,34,34,69,66,71,68,68,73,71,87,70,116,12,109,12,128,71,66,24,24,24,24,24,24",
                         "endOffsets": "24144,32386,32474,33841,33907,55971,56034,63482,63550,63622,63692,63753,63827,63900,117111,117172,117234,117298,117360,117421,117489,117589,117649,117715,117788,117857,117914,117966,118028,118830,118906,118971,119030,119089,119149,119209,119269,119329,119389,119449,119509,119569,119629,119689,119748,119808,119868,119928,119988,120048,120108,120168,120228,120288,120348,120407,120467,120527,120586,120645,120704,120763,120822,120881,121365,121400,122939,123002,123057,123115,123173,123234,123297,123354,123405,123455,123516,123573,123639,123673,123708,124090,129336,133137,133209,133278,133347,133421,133493,133581,155517,431909,432110,432220,432421,432550,513236,513303,676313,688996,724262,724943,726169,726336"
-                    }
-                },
-                {
-                    "source": "/Users/melon/AndroidStudioProjects/BMI_revision/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "16,134",
-                        "endColumns": "59,69",
-                        "endOffsets": "71,199"
-                    },
-                    "to": {
-                        "startLines": "1987,2040",
-                        "startColumns": "4,4",
-                        "startOffsets": "131776,137718",
-                        "endColumns": "59,69",
-                        "endOffsets": "131831,137783"
                     }
                 },
                 {

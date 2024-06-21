@@ -40,10 +40,6 @@
         "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_cal_kcal.xml"
     },
     {
-        "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/fragment_bmi_flagment.xml",
-        "source": "com.org.mobilenavigationsample.app-main-45:/layout/fragment_bmi_flagment.xml"
-    },
-    {
         "merged": "com.org.mobilenavigationsample.app-mergeDebugResources-42:/layout/activity_sign_up.xml",
         "source": "com.org.mobilenavigationsample.app-main-45:/layout/activity_sign_up.xml"
     },

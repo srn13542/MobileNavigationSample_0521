@@ -3939,7 +3939,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_credit
-layout fragment_bmi_flagment
+layout fragment_bmi
 layout fragment_home
 layout fragment_my_info
 layout fragment_report

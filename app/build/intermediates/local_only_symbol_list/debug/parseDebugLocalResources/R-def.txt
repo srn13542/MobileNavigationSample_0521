@@ -151,7 +151,7 @@ layout activity_sign_up
 layout activity_start_login
 layout activity_timer
 layout dialog_credit
-layout fragment_bmi_flagment
+layout fragment_bmi
 layout fragment_home
 layout fragment_my_info
 layout fragment_report
