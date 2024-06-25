@@ -27,11 +27,11 @@ class ReportFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_report, container, false)
-
+// Exercise1 Exercise1_Time Exercise1_Calories
         datePicker = view.findViewById(R.id.date_picker)
-        exerciseTextView = view.findViewById(R.id.TextViewExercise)
-        timeTextView = view.findViewById(R.id.time_header)
-        caloriesTextView = view.findViewById(R.id.TextViewCalories)
+        exerciseTextView = view.findViewById(R.id.Exercise1)
+        timeTextView = view.findViewById(R.id.Exercise1_Time)
+        caloriesTextView = view.findViewById(R.id.Exercise1_Calories)
 
         firestore = FirebaseFirestore.getInstance()
         auth = FirebaseAuth.getInstance()

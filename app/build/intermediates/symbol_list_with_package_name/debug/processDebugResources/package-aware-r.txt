@@ -3084,6 +3084,7 @@ drawable ic_password
 drawable ic_search_black_24
 drawable id_edittext_border
 drawable id_icon
+drawable information_button
 drawable logo
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3201,8 +3202,6 @@ id Exercise3
 id Exercise3_Calories
 id Exercise3_Time
 id FUNCTION
-id FindId
-id FindPw
 id Food
 id Height
 id IdealWeight
@@ -3654,7 +3653,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id selectExerciseButton
 id selectExerciseListView
 id select_dialog_listview
 id selected
@@ -3691,7 +3689,6 @@ id standard
 id start
 id startButton
 id startExcerciseFragment
-id startExerciseButton
 id startExerciseMap
 id startHorizontal
 id startToEnd
@@ -3940,7 +3937,6 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dialog_credit
 layout fragment_bmi
-layout fragment_bmi_flagment
 layout fragment_home
 layout fragment_my_info
 layout fragment_report
@@ -4082,6 +4078,7 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string copy_toast_msg
+string default_web_client_id
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

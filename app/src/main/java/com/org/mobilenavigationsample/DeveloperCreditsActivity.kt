@@ -23,9 +23,13 @@ class DeveloperCreditsActivity : AppCompatActivity() {
             // 출처 텍스트 설정
             val creditsTextView = dialog.findViewById<TextView>(R.id.creditsTextView)
             val imageCredits =
-                "출처 1\n" +
-                        "이미지 출처 2\n" +
-                        "이미지 출처 3"
+                "https://www.flaticon.com/kr/free-icons/-id\n" +
+                        "https://www.flaticon.com/kr/free-icons" +
+                        "https://www.flaticon.com/kr/free-icons\n"+
+                        "https://www.flaticon.com/kr/free-icons\n"+
+                        "https://www.flaticon.com/kr/free-icons/-\n"+
+                        "https://www.flaticon.com/kr/free-icons\n"+
+                        "https://www.flaticon.com/kr/free-icons/-\n"
             creditsTextView.text = imageCredits
 
             // 다이얼로그 표시

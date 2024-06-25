@@ -104,18 +104,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center">
 
-                <TextView
-                    android:id="@+id/FindId"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="아이디 찾기"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:onClick="onFindId"
-                    android:minHeight="48dp"
-                    android:layout_marginRight="5dp" />
+
 
                 <View
                     android:id="@+id/lineView1"
@@ -125,18 +114,19 @@
                     android:background="#888888" />
 
                 <TextView
-                    android:id="@+id/FindPw"
+                    android:id="@+id/SignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_gravity="top"
-                    android:text="비밀번호 찾기"
-                    android:textSize="18dp"
+                    android:text="회원가입"
+                    android:textSize="24dp"
                     android:fontFamily="@font/freesentation_6_semibold"
-                    android:onClick="onFindPw"
+                    android:onClick="onSignUp"
                     android:minHeight="48dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"/>
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#0047BB"/>
 
                 <View
                     android:id="@+id/lineView2"
@@ -145,19 +135,6 @@
                     android:layout_gravity="center"
                     android:background="#888888" />
 
-                <TextView
-                    android:id="@+id/SignUp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="회원가입"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/freesentation_6_semibold"
-                    android:onClick="onSignUp"
-                    android:textColor="#0047BB"
-                    android:minHeight="48dp"
-                    android:layout_marginLeft="10dp"/>
             </LinearLayout>
 
             <LinearLayout

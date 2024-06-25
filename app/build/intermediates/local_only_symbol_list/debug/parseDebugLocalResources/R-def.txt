@@ -13,6 +13,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable id_edittext_border
 drawable id_icon
+drawable information_button
 drawable logo
 drawable menu_click_color
 drawable nav_exercise_hide
@@ -50,8 +51,6 @@ id Exercise2_Time
 id Exercise3
 id Exercise3_Calories
 id Exercise3_Time
-id FindId
-id FindPw
 id Food
 id Height
 id IdealWeight
@@ -111,13 +110,11 @@ id reportFragment
 id resetButton
 id saveButton
 id scrollView
-id selectExerciseButton
 id selectExerciseListView
 id showCreditsButton
 id signupbutton
 id startButton
 id startExcerciseFragment
-id startExerciseButton
 id startExerciseMap
 id stopButton
 id textViewAge
@@ -152,7 +149,6 @@ layout activity_start_login
 layout activity_timer
 layout dialog_credit
 layout fragment_bmi
-layout fragment_bmi_flagment
 layout fragment_home
 layout fragment_my_info
 layout fragment_report
@@ -162,6 +158,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 mipmap proto_app_icon_
 string app_name
+string default_web_client_id
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id

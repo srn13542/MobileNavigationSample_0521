@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="20dp">
+    android:paddingTop="50dp">
 
 
     <TextView
@@ -25,89 +26,89 @@
         android:id="@+id/text_bmi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="26dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/freesentation_6_semibold"
         android:text="나의 BMI"
-        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="26dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
 
     <TextView
         android:id="@+id/bmi_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/freesentation_8_extrabold"
         android:text="25.25"
         android:textSize="28dp"
-        android:fontFamily="@font/freesentation_8_extrabold"
-        app:layout_constraintTop_toBottomOf="@id/text_bmi"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_bmi" />
 
     <TextView
         android:id="@+id/TextViewCurrentState"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/freesentation_6_semibold"
         android:text="현재상태"
         android:textSize="26dp"
-        android:fontFamily="@font/freesentation_6_semibold"
-        app:layout_constraintTop_toBottomOf="@id/bmi_result"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bmi_result" />
 
     <TextView
         android:id="@+id/CurrentState"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/freesentation_8_extrabold"
         android:text="정상"
         android:textSize="34dp"
-        android:fontFamily="@font/freesentation_8_extrabold"
-        app:layout_constraintTop_toBottomOf="@id/TextViewCurrentState"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextViewCurrentState" />
 
     <TextView
         android:id="@+id/ideal_weight_range"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/freesentation_6_semibold"
         android:text="이상적인 체중"
         android:textSize="26dp"
-        android:fontFamily="@font/freesentation_6_semibold"
-        app:layout_constraintTop_toBottomOf="@id/CurrentState"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/CurrentState" />
 
     <TextView
         android:id="@+id/IdealWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/freesentation_8_extrabold"
         android:text="65 ~ 72 kg"
         android:textSize="24dp"
-        android:fontFamily="@font/freesentation_8_extrabold"
-        app:layout_constraintTop_toBottomOf="@id/ideal_weight_range"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="10dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ideal_weight_range" />
 
     <Button
         android:id="@+id/buttonGoBack"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#0047BB"
+        android:fontFamily="@font/freesentation_6_semibold"
         android:text="돌아가기"
         android:textSize="20dp"
-        android:fontFamily="@font/freesentation_6_semibold"
-        app:layout_constraintTop_toBottomOf="@id/IdealWeight"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/navigationView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/navigationView"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="#0047BB"
-        android:layout_marginTop="1.5dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -118,8 +119,8 @@
         app:itemIconTint="@drawable/menu_click_color"
         app:itemTextColor="@drawable/menu_click_color"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navi_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

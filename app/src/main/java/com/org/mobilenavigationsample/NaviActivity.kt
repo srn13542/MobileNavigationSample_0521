@@ -1,13 +1,14 @@
 package com.org.mobilenavigationsample
 
-import com.org.mobilenavigationsample.R
+
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-//import androidx.lifecycle.viewmodel.CreationExtras.Empty.map
 import com.org.mobilenavigationsample.databinding.ActivityNaviBinding
+
+//import androidx.lifecycle.viewmodel.CreationExtras.Empty.map
 
 //import com.google.gson.Gson
 //import com.google.gson.reflect.TypeToken
