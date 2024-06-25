@@ -49,21 +49,21 @@
                 >
 
                 <EditText
-                    android:id="@+id/editTextId"
+                    android:id="@+id/email_et"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1.5"
                     android:drawableLeft="@drawable/id_icon"
                     android:drawablePadding="15dp"
                     android:paddingLeft="10dp"
-                    android:hint="아이디"
+                    android:hint="이메일"
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:background="@drawable/id_edittext_border"
                     android:inputType="text"
                     ></EditText>
 
                 <EditText
-                    android:id="@+id/editTextPw"
+                    android:id="@+id/pwd_et"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1.5"
@@ -135,7 +135,7 @@
                     android:fontFamily="@font/freesentation_6_semibold"
                     android:onClick="onFindPw"
                     android:minHeight="48dp"
-                   android:layout_marginRight="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_marginLeft="10dp"/>
 
                 <View

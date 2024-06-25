@@ -283,7 +283,7 @@
         android:fontFamily="@font/freesentation_6_semibold"
         android:text="저장"
         android:textSize="20dp"
-          android:layout_marginRight="20dp"
+        android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
